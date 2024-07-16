@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-link {
+        @apply block py-2 px-3 text-gray-900 rounded md:p-0;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        @apply text-custom-hover;
+    }
+}
+
+@layer base {
+    body {
+        @apply bg-tri-color-gradient bg-cover bg-no-repeat bg-fixed;
+    }
+}

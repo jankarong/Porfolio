@@ -1,0 +1,170 @@
+body {
+
+    margin: 0;
+    /* Ensure the background covers the entire page */
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+
+
+.swiper-container {
+    width: 100%;
+    max-width: 1500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    width: 100%;
+    max-width: 350px;
+    /* Match the width of your SVG viewBox */
+    height: auto;
+    position: relative;
+}
+
+.shape {
+    width: 100%;
+    height: 0;
+    padding-bottom: 73.14%;
+    /* Maintain aspect ratio based on your SVG viewBox dimensions (219 / 390 * 100) */
+    position: relative;
+    clip-path: path("M284.538 26.2962C247.695 32.8734 102.979 27.158 66.5362 2.44138C41.9076 -14.2627 -5.33538 58.7206 0.493469 100.612C8.74878 159.943 64.5704 275.461 90 252C115.43 228.539 203.243 237.763 252.5 252C301.757 266.237 336.645 185.479 348.134 132.113C357.545 88.3985 330.591 18.0746 284.538 26.2962Z");
+    overflow: hidden;
+}
+
+.shape img,
+.shape video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Play button styling */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    /* Ensure the button is circular */
+    height: 50px;
+    /* Ensure the button is circular */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    /* Ensure the button is circular */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 20;
+    /* Ensure it's above other elements */
+}
+
+/* Hover effect for audio slide */
+.audio-slide:hover img {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+/* Hide default Swiper buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+/* Custom navigation button styling */
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    /* Ensure the button is circular */
+    height: 50px;
+    /* Ensure the button is circular */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    /* Ensure the button is circular */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.custom-prev {
+    left: 10px;
+}
+
+.custom-next {
+    right: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1512px) {
+    .swiper-container {
+        max-width: 1512px;
+    }
+
+    .swiper-slide {
+        max-width: 350px;
+        /* Adjusted width */
+    }
+
+    .shape {
+        padding-bottom: 73.14%;
+
+        /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 1024px) {
+    .swiper-container {
+        max-width: 1024px;
+    }
+
+    .swiper-slide {
+        max-width: 350px;
+        /* Adjusted width */
+    }
+
+    .shape {
+        padding-bottom: 73.14%;
+        /* Maintain aspect ratio */
+    }
+
+
+
+
+}
+
+@media (max-width: 390px) {
+    .swiper-container {
+        max-width: 350px;
+    }
+
+    .swiper-slide {
+        max-width: 300px;
+        /* Adjusted width */
+    }
+
+    .shape {
+        padding-bottom: 50%;
+        /* Maintain aspect ratio */
+    }
+}
