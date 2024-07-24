@@ -83,7 +83,7 @@
 
         <main class="mx-4 sm:mx-8 md:mx-16 lg:mx-24">
 
-            <div id="category-buttons" class="flex items-center justify-center py-8 md:py-12 flex-wrap">
+            <div id="category-buttons" class="flex items-center justify-center py-8 md:py-12 flex-wrap ">
                 <button type="button" data-category="all"
                     class="category-btn text-gray-800 hover:text-primary focus:text-primary font-medium px-5 py-2.5 text-center me-8 mb-6 bg-white bg-opacity-50 rounded">
                     All projects
@@ -231,18 +231,20 @@
 
                 <div class="product-item" data-category="side-projects">
                     <img class="h-auto max-w-full rounded-lg" src="../image/img1.png" alt="Side projects">
-                    <span
-                        class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">Photoshop</span>
-                    <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded ">After
-                        Effect/>
+
                 </div>
                 <div class="product-item" data-category="side-projects">
-                    <img class="h-auto max-w-full rounded-lg" src="../image/img2.png" alt="Side projects">
+                    <iframe class="w-full h-full rounded-lg shadow-lg"
+                        src="https://player.vimeo.com/video/989356710?h=81238160bd&byline=0&title=0&portrait=0&transparent="
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="product-item" data-category="side-projects">
                     <img class="h-auto max-w-full rounded-lg" src="../image/img3.png" alt="Side projects">
                 </div>
-                <!-- 其他项目... -->
+                <div class="product-item" data-category="side-projects">
+                    <video class="h-auto max-w-full rounded-lg" src="../video/Rj.mp4" controls alt="Side projects">
+                </div>
+
             </div>
 
             <div id="pagination" class="flex justify-center items-center mt-8 ">
@@ -288,8 +290,7 @@
 
         <script src="../js/toogle.js"></script>
 
-        <script src="../js/audioPlay.js"></script>
-        <script src="../js/videoPlay.js"></script>
+
         <script src="../js/fliter.js"></script>
         <script src="../js/pagination.js"></script>
 
