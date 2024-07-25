@@ -2,7 +2,7 @@
     const tutorialSteps = [
         { image: "../image/sportpal1.png", text: "Have you ever want to join a sport event near your places?" },
         { image: "../image/alone.png", text: "And you don't know how to find it or you don't have friends to come with you." },
-        { image: "../image/thinking.png", text: "I have the same feeling." },
+        { image: "../image/Thinking.png", text: "I have the same feeling." },
         { image: "../image/idea.png", text: "So I have an idea to help us." },
         { image: "../image/Welcome.png", text: "Which is Sportpal." },
     ];

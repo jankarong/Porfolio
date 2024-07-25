@@ -38,6 +38,12 @@ body {
     overflow: hidden;
 }
 
+/* .shape iframe {
+    pointer-events: none; 
+} */
+
+
+
 .shape img,
 .shape video {
     position: absolute;
