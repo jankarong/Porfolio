@@ -243,20 +243,24 @@
                     <p class="text-sm md:text-base lg:text-lg">The user flow focuses on the event joining function, from
                         home page to checkout. I've made it direct and clean, allowing
                         users to <span class="text-primary"> input essential information </span>like<span
-                            class="text-primary">contact details and
+                            class="text-primary"> contact details and
                             members</span>. This design enables
                         users to efficiently
                         complete event registration while providing all necessary details with minimal friction. </p>
                 </div>
-
-                <!-- Style Guide section -->
                 <div id="research" class="mb-16">
-                    <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">Style Guide
-                    </h1>
-
-                    <img src="../image/Style Guide.jpg" alt="Style Guide" class="mb-4">
+                    <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">Style Guide</h1>
+                    <img src="../image/Style Guide.jpg" alt="Style Guide" class="mb-4 cursor-pointer"
+                        id="zoomableStyleGuideImage">
                 </div>
 
+                <!-- 模态框 -->
+                <div id="styleGuideImageModal"
+                    class="fixed inset-0 bg-black bg-opacity-80 items-center justify-center z-[9999] hidden"
+                    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8);">
+                    <img id="styleGuideModalImage" class="max-w-[90%] max-h-[90%] object-contain"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                </div>
                 <!-- User Test section -->
                 <div id="insights" class="mb-16">
                     <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">User Test-Maze</h1>
@@ -420,7 +424,44 @@
     <script src="../js/onboarding.js"></script>
 
     <script>
+        (function () {
+            const styleGuideImg = document.getElementById('zoomableStyleGuideImage');
+            const styleGuideModal = document.getElementById('styleGuideImageModal');
+            const styleGuideModalImg = document.getElementById('styleGuideModalImage');
+            const closeModalBtn = document.getElementById('closeModal');
 
+            function openModal() {
+                styleGuideModal.classList.remove('hidden');
+                styleGuideModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                styleGuideModal.classList.add('hidden');
+                styleGuideModal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+
+            if (styleGuideImg && styleGuideModal && styleGuideModalImg) {
+                styleGuideImg.addEventListener('click', function () {
+                    styleGuideModalImg.src = this.src;
+                    openModal();
+                });
+
+                styleGuideModalImg.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    closeModal();
+                });
+
+                styleGuideModal.addEventListener('click', function (e) {
+                    if (e.target === this) {
+                        closeModal();
+                    }
+                });
+            } else {
+                console.log("有些元素没有找到");
+            }
+        })();
     </script>
 </body>
 
