@@ -34,6 +34,28 @@
 
     <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
 
+    <style>
+        .group {
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes svgPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(0.9);
+            }
+        }
+
+        .effect-pulse:hover svg {
+            animation: svgPulse 1s ease-in-out infinite;
+        }
+    </style>
 
 
 
@@ -114,7 +136,7 @@
             <div class="container mx-auto px-4 md:px-8 lg:px-16">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 md:gap-16 lg:gap-20">
                     <!-- Naillabo Salon -->
-                    <div class="group">
+                    <div class="group effect-pulse">
                         <div class="relative" style="padding-bottom: 75%;">
                             <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +168,7 @@
                     </div>
 
                     <!-- AI Inlink -->
-                    <div class="group">
+                    <div class="group effect-pulse">
                         <div class="relative" style="padding-bottom: 75%;">
                             <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -179,7 +201,7 @@
                     </div>
 
                     <!-- Sportpal -->
-                    <div class="group">
+                    <div class="group effect-pulse">
                         <div class="relative" style="padding-bottom: 75%;">
                             <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -213,7 +235,7 @@
 
 
                     <!-- Bogcaada Wedding Winery -->
-                    <div class="group">
+                    <div class="group effect-pulse">
                         <div class="relative" style="padding-bottom: 75%;">
                             <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -341,6 +363,8 @@
         <script src="./js/slider.js"></script>
 
         <script src="./js/videoPlay.js"></script>
+
+
 
 
 </body>
