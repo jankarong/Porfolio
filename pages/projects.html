@@ -26,6 +26,30 @@
     <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
 
 
+    <style>
+        .group {
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes svgPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(0.9);
+            }
+        }
+
+        .effect-pulse:hover svg {
+            animation: svgPulse 1s ease-in-out infinite;
+        }
+    </style>
+
+
 
 
 
@@ -85,7 +109,7 @@
 
         <main class="mx-4 sm:mx-8 md:mx-16 lg:mx-24">
 
-            <div id="category-buttons" class="flex items-center justify-center py-8 md:py-12 flex-wrap ">
+            <div id="category-buttons" class="flex items-center justify-center py-8 md:py-12 flex-wrap">
                 <button type="button" data-category="all"
                     class="category-btn text-gray-800 hover:text-primary focus:text-primary font-medium px-5 py-2.5 text-center me-8 mb-6 bg-white bg-opacity-50 rounded">
                     All projects
@@ -106,7 +130,7 @@
 
             <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
 
-                <div class="group product-item" data-category="ui-ux web-development">
+                <div class="group product-item effect-pulse" data-category="ui-ux web-development">
                     <div class="relative" style="padding-bottom: 75%;">
                         <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +162,7 @@
                 </div>
 
                 <!-- AI Inlink -->
-                <div class="group product-item" data-category="ui-ux web-development">
+                <div class="group product-item effect-pulse" data-category="ui-ux web-development">
                     <div class="relative" style="padding-bottom: 75%;">
                         <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -168,7 +192,7 @@
                 </div>
 
                 <!-- Sportpal -->
-                <div class="group product-item" data-category="ui-ux">
+                <div class="group product-item effect-pulse" data-category="ui-ux">
                     <div class="relative" style="padding-bottom: 75%;">
                         <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -199,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="group product-item" data-category="ui-ux">
+                <div class="group product-item effect-pulse" data-category="ui-ux">
                     <div class="relative" style="padding-bottom: 75%;">
                         <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
