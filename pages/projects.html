@@ -47,6 +47,14 @@
         .effect-pulse:hover svg {
             animation: svgPulse 1s ease-in-out infinite;
         }
+
+        #cursor-trail {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+        }
     </style>
 
 
@@ -57,6 +65,7 @@
 </head>
 
 <body>
+    <canvas id="cursor-trail"></canvas>
     <div class="bg-tri-color-gradient min-h-screen ">
         <header>
             <nav class="bg-white bg-opacity-30 border-gray-200">
@@ -320,6 +329,7 @@
 
         <script src="../js/fliter.js"></script>
         <script src="../js/pagination.js"></script>
+        <script src="../js/mousedraw.js"></script>
 
 
 </body>

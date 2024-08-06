@@ -55,12 +55,21 @@
         .effect-pulse:hover svg {
             animation: svgPulse 1s ease-in-out infinite;
         }
+
+        #cursor-trail {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+        }
     </style>
 
 
 
 
 </head>
+<canvas id="cursor-trail"></canvas>
 
 <body>
     <div class="bg-tri-color-gradient min-h-screen ">
@@ -363,6 +372,8 @@
         <script src="./js/slider.js"></script>
 
         <script src="./js/videoPlay.js"></script>
+
+        <script src="./js/mousedraw.js"></script>
 
 
 

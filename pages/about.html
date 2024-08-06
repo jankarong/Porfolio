@@ -26,38 +26,6 @@
     <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
 
     <style>
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .animate-fadeInLeft {
-            animation: fadeInLeft 1.5s ease-out;
-        }
-
-        .animate-fadeInRight {
-            animation: fadeInRight 1.5s ease-out;
-        }
-
         @keyframes sway {
 
             0%,
@@ -74,6 +42,14 @@
         .animate-sway {
             animation: sway 3s ease-in-out infinite;
         }
+
+        #cursor-trail {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+        }
     </style>
 
 
@@ -84,6 +60,8 @@
 </head>
 
 <body>
+    <canvas id="cursor-trail"></canvas>
+
     <div class="bg-tri-color-gradient min-h-screen ">
         <header>
             <nav class="bg-white bg-opacity-30 border-gray-200">
@@ -138,15 +116,14 @@
             <!-- 上半部分：图片和介绍 -->
             <div class="flex flex-col md:flex-row items-center mb-12 md:mb-16">
                 <!-- 左侧图片 -->
-                <div
-                    class="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center md:justify-center items-center animate-fadeInLeft">
+                <div class="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center md:justify-center items-center ">
                     <div class="w-1/2 sm:w-2/5 md:w-3/5 lg:w-1/2 animate-sway">
                         <img src="../image/photo.png" alt="Jing Rong" class="w-full h-auto object-cover rounded-lg">
                     </div>
                 </div>
 
                 <!-- 右侧文本 -->
-                <div class="w-full md:w-1/2 animate-fadeInRight">
+                <div class="w-full md:w-1/2 ">
                     <h1 class="text-sm md:text-base lg:text-lg font-medium mb-2 sm:mb-6">Hi, I am Jing Rong.</h1>
 
                     <p class="text-sm md:text-base lg:text-lg font-medium mb-2 sm:mb-6 leading-relaxed">
@@ -182,7 +159,7 @@
             <!-- 下半部分：Mission 和 Goal -->
             <div class="flex flex-col lg:flex-row mt-12 md:mt-16">
                 <!-- Mission Section -->
-                <div class="w-full lg:w-1/2 pr-0 lg:pr-8 mb-8 lg:mb-0 animate-fadeInLeft">
+                <div class="w-full lg:w-1/2 pr-0 lg:pr-8 mb-8 lg:mb-0 ">
                     <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">Mission</h1>
                     <p class="text-sm md:text-base lg:text-lg mb-4 leading-relaxed">
                         As a <span class="text-primary">curious tech enthusiast</span>, I am driven to enhance user
@@ -197,7 +174,7 @@
                 </div>
 
                 <!-- Goal Section -->
-                <div class="w-full lg:w-1/2 lg:pl-8 animate-fadeInRight">
+                <div class="w-full lg:w-1/2 lg:pl-8">
                     <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">Goal</h1>
                     <p class="text-sm md:text-base lg:text-lg mb-4 leading-relaxed">
                         <span class="font-semibold">Short-term Goal:</span>
@@ -221,7 +198,7 @@
             </h1>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mb-8 ">
-                <div class="aspect-square relative group p-4 animate-sway">
+                <div class="aspect-square relative group p-4 ">
                     <img src="../image/hobby/badminton.png" alt="Badminton"
                         class="w-3/4 h-3/4 object-contain cursor-pointer transition-opacity rounded-lg mx-auto">
                     <div
@@ -231,7 +208,7 @@
                     </div>
                 </div>
 
-                <div class="aspect-square relative group p-4 animate-sway">
+                <div class="aspect-square relative group p-4 ">
                     <img src="../image/hobby/Basketball.png" alt="Basketball"
                         class="w-3/4 h-3/4 object-contain cursor-pointer transition-opacity rounded-lg mx-auto">
                     <div
@@ -241,7 +218,7 @@
                     </div>
                 </div>
 
-                <div class="aspect-square relative group p-4 animate-sway">
+                <div class="aspect-square relative group p-4 ">
                     <img src="../image/hobby/cook.png" alt="Cooking"
                         class="w-3/4 h-3/4 object-contain cursor-pointer transition-opacity rounded-lg mx-auto">
                     <div
@@ -251,7 +228,7 @@
                     </div>
                 </div>
 
-                <div class="aspect-square relative group p-4 animate-sway">
+                <div class="aspect-square relative group p-4 ">
                     <img src="../image/hobby/drawing.png" alt="Drawing"
                         class="w-3/4 h-3/4 object-contain cursor-pointer transition-opacity rounded-lg mx-auto">
                     <div
@@ -261,7 +238,7 @@
                     </div>
                 </div>
 
-                <div class="aspect-square relative group p-4 animate-sway">
+                <div class="aspect-square relative group p-4 ">
                     <img src="../image/hobby/eating.png" alt="Eating"
                         class="w-3/4 h-3/4 object-contain cursor-pointer transition-opacity rounded-lg mx-auto">
                     <div
@@ -271,7 +248,7 @@
                     </div>
                 </div>
 
-                <div class="aspect-square relative group p-4 animate-sway">
+                <div class="aspect-square relative group p-4">
                     <img src="../image/hobby/listening music.png" alt="Listening to Music"
                         class="w-3/4 h-3/4 object-contain cursor-pointer transition-opacity rounded-lg mx-auto">
                     <div
@@ -281,7 +258,7 @@
                     </div>
                 </div>
 
-                <div class="aspect-square relative group p-4 animate-sway">
+                <div class="aspect-square relative group p-4">
                     <img src="../image/hobby/poker.png" alt="Playing Poker"
                         class="w-3/4 h-3/4 object-contain cursor-pointer transition-opacity rounded-lg mx-auto">
                     <div
@@ -291,7 +268,7 @@
                     </div>
                 </div>
 
-                <div class="aspect-square relative group p-4 animate-sway">
+                <div class="aspect-square relative group p-4">
                     <img src="../image/hobby/takephoto.png" alt="Taking Photos"
                         class="w-3/4 h-3/4 object-contain cursor-pointer transition-opacity rounded-lg mx-auto">
                     <div
@@ -301,7 +278,7 @@
                     </div>
                 </div>
 
-                <div class="aspect-square relative group p-4 animate-sway">
+                <div class="aspect-square relative group p-4">
                     <img src="../image/hobby/travel.png" alt="Traveling"
                         class="w-3/4 h-3/4 object-contain cursor-pointer transition-opacity rounded-lg mx-auto">
                     <div
@@ -311,7 +288,7 @@
                     </div>
                 </div>
 
-                <div class="aspect-square relative group p-4 animate-sway">
+                <div class="aspect-square relative group p-4">
                     <img src="../image/hobby/watchTV.png" alt="Watching TV"
                         class="w-3/4 h-3/4 object-contain cursor-pointer transition-opacity rounded-lg mx-auto">
                     <div
@@ -375,6 +352,7 @@
         <script src="../js/fliter.js"></script>
         <script src="../js/pagination.js"></script>
         <script src="../js/guessGame.js"></script>
+        <script src="../js/mousedraw.js"></script>
 
 
 
