@@ -11,6 +11,22 @@
     .nav-link.active {
         @apply text-custom-hover;
     }
+
+    h1 {
+        @apply text-lg md:text-xl lg:text-2xl font-medium;
+    }
+
+    h2 {
+        @apply text-base md:text-lg lg:text-xl font-medium;
+    }
+
+    p {
+        @apply text-sm md:text-base lg:text-lg;
+    }
+
+    ul {
+        @apply text-sm md:text-base lg:text-lg;
+    }
 }
 
 @layer base {

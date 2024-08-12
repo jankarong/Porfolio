@@ -25,6 +25,10 @@
 
     <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
 
+    <!-- cursortrail css link -->
+    <link rel="stylesheet" href="../css/cursortrail.css">
+
+
 
     <style>
         .group {
@@ -47,14 +51,6 @@
         .effect-pulse:hover svg {
             animation: svgPulse 1s ease-in-out infinite;
         }
-
-        #cursor-trail {
-            position: fixed;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 9999;
-        }
     </style>
 
 
@@ -63,6 +59,7 @@
 
 
 </head>
+<canvas id="cursor-trail"></canvas>
 
 <body>
     <canvas id="cursor-trail"></canvas>
@@ -139,7 +136,7 @@
 
             <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
 
-                <div class="group product-item effect-pulse" data-category="ui-ux web-development">
+                <div class="group product-item effect-pulse" data-category="web-development">
                     <div class="relative" style="padding-bottom: 75%;">
                         <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -155,8 +152,7 @@
                     </div>
                     <div class="p-4">
                         <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">
-                            Naillabo Salon Website Design
-
+                            Naillabo Salon Website
                         </h1>
                         <h2 class="text-base md:text-lg lg:text-xl font-medium mb-2 text-gray-800">NailLabo Salon's
                             website
@@ -171,7 +167,7 @@
                 </div>
 
                 <!-- AI Inlink -->
-                <div class="group product-item effect-pulse" data-category="ui-ux web-development">
+                <div class="group product-item effect-pulse" data-category="web-development">
                     <div class="relative" style="padding-bottom: 75%;">
                         <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
                             xmlns="http://www.w3.org/2000/svg">

@@ -25,6 +25,10 @@
 
     <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
 
+    <!-- cursortrail css link -->
+    <link rel="stylesheet" href="../css/cursortrail.css">
+
+
     <style>
         @keyframes sway {
 
@@ -41,14 +45,6 @@
 
         .animate-sway {
             animation: sway 3s ease-in-out infinite;
-        }
-
-        #cursor-trail {
-            position: fixed;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 9999;
         }
     </style>
 
@@ -113,16 +109,16 @@
         </header>
 
         <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24">
-            <!-- 上半部分：图片和介绍 -->
+
             <div class="flex flex-col md:flex-row items-center mb-12 md:mb-16">
-                <!-- 左侧图片 -->
+
                 <div class="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center md:justify-center items-center ">
                     <div class="w-1/2 sm:w-2/5 md:w-3/5 lg:w-1/2 animate-sway">
                         <img src="../image/photo.png" alt="Jing Rong" class="w-full h-auto object-cover rounded-lg">
                     </div>
                 </div>
 
-                <!-- 右侧文本 -->
+
                 <div class="w-full md:w-1/2 ">
                     <h1 class="text-sm md:text-base lg:text-lg font-medium mb-2 sm:mb-6">Hi, I am Jing Rong.</h1>
 
@@ -141,7 +137,7 @@
                     </p>
 
                     <p class="text-sm md:text-base lg:text-lg font-medium mb-2 sm:mb-6 leading-relaxed">
-                        During my spare time, I like eating delicious food, doing sports and watch TV shows. My
+                        During my spare time, I like eating delicious food, doing sports and watching TV shows. My
                         favorite fruit is durian. I also enjoy cooking.
                     </p>
 

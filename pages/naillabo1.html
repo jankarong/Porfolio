@@ -25,12 +25,18 @@
 
     <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
 
+    <!-- zoomable css link -->
 
+    <link rel="stylesheet" href="../css/zoomable.css">
 
+    <!-- cursortrail css link -->
+    <link rel="stylesheet" href="../css/cursortrail.css">
 
 
 
 </head>
+
+<canvas id="cursor-trail"></canvas>
 
 <body>
     <div class="bg-tri-color-gradient min-h-screen ">
@@ -95,8 +101,8 @@
             <!-- Right side - Text and navigation -->
             <div class="w-full md:w-1/2 p-4 flex flex-col items-center">
                 <div id="sportpal-tutorial-text" class="text-center mb-8">
-                    <h1 class="text-xl italic font-medium md:text-2xl text-center mb-2">Elevate any small business with
-                        a simple yet powerful website</h1>
+                    <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2">Have you ever want
+                        to join a sport event near your places?</h1>
                 </div>
 
                 <!-- Navigation dots with arrows -->
@@ -142,6 +148,7 @@
                     <div class="grid grid-cols-2 gap-6">
                         <div class="mb-4">
                             <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-3 text-primary">Time Line</h1>
+
                             <h2 class="text-base md:text-lg lg:text-xl font-medium text-gray-800">2024 March - May</h2>
                         </div>
                         <div class="mb-4">
@@ -166,20 +173,18 @@
                         <h2 class="text-base md:text-lg lg:text-xl font-medium text-gray-800">
                             SportPal is an app for sports lovers to easily find and join local sports
                             activities. It <span class="text-primary">simplifies organizing sports events</span>
-                            and builds a <span class="text-primary">supportive community</span>supportive community for
+                            and builds a <span class="text-primary">supportive community</span> for
                             enjoying sports anytime, anywhere.
                         </h2>
                     </div>
                     <div class="mb-4">
                         <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-3 text-primary">Link</h1>
-                        <h2 class="text-base md:text-lg lg:text-xl font-medium text-gray-800">Figma prototype <a
-                                href="https://www.figma.com/proto/hJBMRkP5ttwot8BbeRnY6x/Term-Project---Phase-3?page-id=2261%3A986&node-id=2261-987&viewport=-6%2C141%2C0.46&t=HnGxCQsAUiKxGSVH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2261%3A987"
-                                target="_blank" rel="noopener noreferrer"
-                                class="text-primary hover:text-primary-dark ml-2">
-                                <i class="fa-solid fa-link"></i>
+                        <h2 class="text-base md:text-lg lg:text-xl font-medium text-gray-800">
+                            <a href="https://www.figma.com/proto/hJBMRkP5ttwot8BbeRnY6x/Term-Project---Phase-3?page-id=2261%3A986&node-id=2261-987&viewport=-6%2C141%2C0.46&t=HnGxCQsAUiKxGSVH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2261%3A987"
+                                target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-dark">
+                                Figma prototype <i class="fa-solid fa-link ml-2"></i>
                             </a>
                         </h2>
-
                     </div>
                 </div>
             </div>
@@ -191,29 +196,25 @@
         <div class="flex flex-col md:flex-row">
             <!-- Sidebar navigation -->
             <nav class="w-full md:w-64 mb-8 md:mb-0">
-                <!-- Navigation menu -->
-                <ul class="space-y-4 md:sticky md:top-8">
-                    <!-- Menu items - each linking to a corresponding content section -->
+                <ul class="space-y-4 md:sticky md:top-8 text-sm md:text-base lg:text-lg">
                     <li>
-                        <a href="#outcome" class="text-lg font-bold text-gray-900 hover:text-gray-700">Outcome</a>
+                        <a href="#outcome" class="nav-link text-lg text-gray-500 hover:text-gray-700">Outcome</a>
                     </li>
                     <li>
-                        <a href="#persona" class="text-lg text-gray-500 hover:text-gray-700">Persona</a>
+                        <a href="#plan" class="nav-link text-lg text-gray-500 hover:text-gray-700">User Flow</a>
                     </li>
                     <li>
-                        <a href="#plan" class="text-lg text-gray-500 hover:text-gray-700">User Flow</a>
+                        <a href="#research" class="nav-link text-lg text-gray-500 hover:text-gray-700">Style Guide</a>
                     </li>
                     <li>
-                        <a href="#research" class="text-lg text-gray-500 hover:text-gray-700">Style Guide</a>
+                        <a href="#insights" class="nav-link text-lg text-gray-500 hover:text-gray-700">User
+                            Test-Maze</a>
                     </li>
                     <li>
-                        <a href="#insights" class="text-lg text-gray-500 hover:text-gray-700">User Test-Maze</a>
+                        <a href="#next-steps" class="nav-link text-lg text-gray-500 hover:text-gray-700">Next Steps</a>
                     </li>
                     <li>
-                        <a href="#next-steps" class="text-lg text-gray-500 hover:text-gray-700">Next Steps</a>
-                    </li>
-                    <li>
-                        <a href="#learnings" class="text-lg text-gray-500 hover:text-gray-700">Takeaway</a>
+                        <a href="#learnings" class="nav-link text-lg text-gray-500 hover:text-gray-700">Takeaway</a>
                     </li>
                 </ul>
             </nav>
@@ -230,13 +231,6 @@
                         three issues, and made improvements.</p>
                 </div>
 
-                <!-- persona section -->
-                <div id="persona" class="mb-16">
-                    <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">Persona</h1>
-                    <p class="text-sm md:text-base lg:text-lg">
-                        <img src="../image/Persona.jpg" alt="persona">
-                    </p>
-                </div>
 
                 <!-- UserFlow section -->
                 <div id="plan" class="mb-16">
@@ -245,24 +239,18 @@
                     <p class="text-sm md:text-base lg:text-lg">The user flow focuses on the event joining function, from
                         home page to checkout. I've made it direct and clean, allowing
                         users to <span class="text-primary"> input essential information </span>like<span
-                            class="text-primary"> contact details and
+                            class="text-primary"> contact
+                            details and
                             members</span>. This design enables
                         users to efficiently
                         complete event registration while providing all necessary details with minimal friction. </p>
                 </div>
                 <div id="research" class="mb-16">
                     <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">Style Guide</h1>
-                    <img src="../image/Style Guide.jpg" alt="Style Guide" class="mb-4 cursor-pointer"
-                        id="zoomableStyleGuideImage">
+                    <img src="../image/Style Guide.jpg" alt="Style Guide" class="mb-4 cursor-pointer">
                 </div>
 
-                <!-- 模态框 -->
-                <div id="styleGuideImageModal"
-                    class="fixed inset-0 bg-black bg-opacity-80 items-center justify-center z-[9999] hidden"
-                    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8);">
-                    <img id="styleGuideModalImage" class="max-w-[90%] max-h-[90%] object-contain"
-                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                </div>
+
                 <!-- User Test section -->
                 <div id="insights" class="mb-16">
                     <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">User Test-Maze</h1>
@@ -276,14 +264,14 @@
 
                     </p>
 
-                    <img src="../image/issue1.jpg" alt="issue1" class="mb-4">
+                    <img src="../image/issue1.jpg" alt="issue1" class="mb-4 zoomable">
                     <p class="text-sm md:text-base lg:text-lg mb-4">Through the heatmap, we can see people find it
                         hard
                         to find the sports events at the beginning. But they learn how to
                         get it for another try.The <span class="text-primary">misclick rate</span> is <span
                             class="text-primary">64%-27%-18%</span>.
                     </p>
-                    <img src="../image/solution1.jpg" alt="soliution1" class="mb-4">
+                    <img src="../image/solution1.jpg" alt="soliution1" class="mb-4 zoomable">
                     <p class="text-sm md:text-base lg:text-lg mb-4">From the heatmap, I found that users tend to click
                         the most obvious place, which previously contained the competition
                         function. So I <span class="text-primary">replaced this most prominent area with the sports
@@ -294,7 +282,7 @@
                         announce their sport as a
                         competition.
                     </p>
-                    <img src="../image/issue2.jpg" alt="issue2" class="mb-4">
+                    <img src="../image/issue2.jpg" alt="issue2" class="mb-4 zoomable">
                     <p class="text-sm md:text-base lg:text-lg mb-4">This task is to let people join the
                         basketball
                         events
@@ -312,21 +300,21 @@
                     </p>
                     <p class="text-sm md:text-base lg:text-lg mb-4">Since <span class="text-primary">people mistaking to
                             join the events
-                            through category is acceptable</span>, I don’t need to change anything.
+                            through category is acceptable</span>, I don't need to change anything.
                     </p>
 
-                    <img src="../image/issue3.jpg" alt="issue3" class="mb-4">
+                    <img src="../image/issue3.jpg" alt="issue3" class="mb-4 zoomable">
                     <p class="text-sm md:text-base lg:text-lg mb-4">When users are asked to join the basketball
                         through the basketball category,<span class="text-primary"> 36% </span>users do not directly
                         choose the
                         category.The category is not obvious enough.
                     </p>
                     <p class="text-sm md:text-base lg:text-lg mb-4">Besides,there is one suggestion for the category
-                        order. It’s much more logical to make it in <span class="text-primary">alphabetical
+                        order. It's much more logical to make it in <span class="text-primary">alphabetical
                             order</span>.
 
                     </p>
-                    <img src="../image/soliution3.jpg" alt="soliution3" class="mb-4">
+                    <img src="../image/soliution3.jpg" alt="soliution3" class="mb-4 zoomable">
                     <p class="text-sm md:text-base lg:text-lg mb-4">I made a slight change. <span class="text-primary">
                             Cut half of the sports icon</span>, make it more
                         obvious for users to slide the
@@ -374,7 +362,8 @@
                             reinforced the value of testing in
                             creating better, more user-friendly designs.</li>
                         <li>2. Utilizing components simplifies work, but requires time to learn. <span
-                                class="text-primary">Mastering components and
+                                class="text-primary">Mastering
+                                components and
                                 autolayout</span> is worth the
                             effort, as it makes design work more efficient <span class="text-primary">in the long
                                 run.</span></li>
@@ -384,6 +373,10 @@
             </div>
         </div>
     </section>
+
+    <div id="zoomOverlay">
+        <img src="" alt="Zoomed Image" id="zoomedImage">
+    </div>
 
 
 
@@ -424,48 +417,11 @@
 
 
     <script src="../js/toogle.js"></script>
-    <script src="../js/onboardingNaillabo.js"></script>
+    <script src="../js/onboarding.js"></script>
+    <script src="../js/zoomable.js"></script>
+    <script src="../js/scroll-nav.js"></script>
 
-    <script>
-        (function () {
-            const styleGuideImg = document.getElementById('zoomableStyleGuideImage');
-            const styleGuideModal = document.getElementById('styleGuideImageModal');
-            const styleGuideModalImg = document.getElementById('styleGuideModalImage');
-            const closeModalBtn = document.getElementById('closeModal');
 
-            function openModal() {
-                styleGuideModal.classList.remove('hidden');
-                styleGuideModal.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
-            }
-
-            function closeModal() {
-                styleGuideModal.classList.add('hidden');
-                styleGuideModal.style.display = 'none';
-                document.body.style.overflow = '';
-            }
-
-            if (styleGuideImg && styleGuideModal && styleGuideModalImg) {
-                styleGuideImg.addEventListener('click', function () {
-                    styleGuideModalImg.src = this.src;
-                    openModal();
-                });
-
-                styleGuideModalImg.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    closeModal();
-                });
-
-                styleGuideModal.addEventListener('click', function (e) {
-                    if (e.target === this) {
-                        closeModal();
-                    }
-                });
-            } else {
-                console.log("有些元素没有找到");
-            }
-        })();
-    </script>
 </body>
 
 </html>
