@@ -46,6 +46,43 @@
         .animate-sway {
             animation: sway 3s ease-in-out infinite;
         }
+
+        /* Container for hover image */
+        #durian-image-container {
+            position: absolute;
+            display: none;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+
+        /* Adjust the image size */
+        .hover-image {
+            width: auto;
+            height: 300px;
+            max-width: 90vw;
+            max-height: 90vh;
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+        }
+
+        /* Highlighted text style */
+        .highlight {
+            color: #406EE3;
+            cursor: pointer;
+            position: relative;
+            text-decoration: underline;
+            text-decoration-color: #406EE3;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 2px;
+        }
+
+        /* Optional: Add an underline or other style on hover */
+        .highlight:hover {
+            text-decoration-thickness: 3px;
+        }
     </style>
 
 
@@ -136,10 +173,15 @@
                         field of digital design.
                     </p>
 
+
                     <p class="text-sm md:text-base lg:text-lg font-medium mb-2 sm:mb-6 leading-relaxed">
                         During my spare time, I like eating delicious food, doing sports and watching TV shows. My
-                        favorite fruit is durian. I also enjoy cooking.
+                        favorite fruit is <span class="highlight image-hover-container">durian</span>. I also enjoy
+                        cooking.
                     </p>
+
+
+
 
                     <p class="text-sm md:text-base lg:text-lg font-medium mb-2 sm:mb-6 leading-relaxed">
                         Want to know me more? Please contact me.
@@ -186,6 +228,12 @@
                 </div>
             </div>
         </main>
+
+        <div id="durian-image-container">
+            <img src="../image/durian.png" alt="Durian" class="hover-image" id="durianImage">
+        </div>
+
+
         <section class="container mx-auto p-8">
             <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-4 text-primary">Let's play a game! Guess what do I
                 like?
@@ -347,6 +395,18 @@
         <script src="../js/pagination.js"></script>
         <script src="../js/guessGame.js"></script>
         <script src="../js/mousedraw.js"></script>
+        <script>
+            const durianText = document.querySelector('.highlight');
+            const durianImageContainer = document.getElementById('durian-image-container');
+
+            durianText.addEventListener('mouseover', () => {
+                durianImageContainer.style.display = 'block';
+            });
+
+            durianText.addEventListener('mouseout', () => {
+                durianImageContainer.style.display = 'none';
+            });
+        </script>
 
 
 
