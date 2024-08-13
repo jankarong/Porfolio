@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <meta name="description"
+        content="Explore the Bozcaada Wedding Winery project: a comprehensive UX/UI and branding case study. Featuring website design, print media, and social marketing by designer Jing Rong.">
+    <title>Bozcaada Wedding Winery: UX/UI & Brand Design Case Study | Jing Rong Portfolio</title>
 
     <!-- css link -->
     <link href="../css/style.css" rel="stylesheet">
@@ -28,10 +30,6 @@
 
     <!-- cursortrail css link -->
     <link rel="stylesheet" href="../css/cursortrail.css">
-
-
-
-
 
 
 </head>
@@ -94,21 +92,22 @@
 
             <div class="flex flex-col md:flex-row items-center mb-32 ">
                 <div class="md:w-1/2 mb-6 md:mb-0" data-aos="fade-right">
-                    <img src="/image/gallery/Color.png" alt="Placeholder 1" class="rounded-lg  ">
+                    <img src="/image/gallery/Color.png" alt="Color" class="rounded-lg  ">
                 </div>
                 <div class="md:w-1/2 md:pl-8" data-aos="fade-left">
 
-                    <img src="/image/gallery/typography.png" alt="Placeholder 1" class="rounded-lg ">
+                    <img src="/image/gallery/typography.png" alt="typography" class="rounded-lg ">
                 </div>
             </div>
 
             <div class="flex flex-col md:flex-row items-center mb-32 ">
                 <div class="md:w-1/2 mb-6 md:mb-0" data-aos="fade-right">
-                    <img src="/image/gallery/event page.png" alt="Placeholder 1" class="rounded-lg  zoomable">
+                    <img src="/image/gallery/event page.png" alt="event page" class="rounded-lg  zoomable">
                 </div>
                 <div class="md:w-1/2 md:pl-8" data-aos="fade-left">
 
-                    <img src="/image/gallery/pinterest bozcaada.png" alt="Placeholder 1" class="rounded-lg  zoomable">
+                    <img src="/image/gallery/pinterest bozcaada.png" alt="pinterest bozcaada"
+                        class="rounded-lg  zoomable">
                 </div>
             </div>
 
@@ -116,7 +115,7 @@
 
             <div class="flex flex-col md:flex-row items-center mb-32 ">
                 <div class="md:w-1/2 mb-6 md:mb-0" data-aos="fade-right">
-                    <img src="/image/gallery/bookandtahankyou.png" alt="Placeholder 1" class="rounded-lg  zoomable">
+                    <img src="/image/gallery/bookandtahankyou.png" alt="bookandtahankyou" class="rounded-lg  zoomable">
                 </div>
                 <div class="md:w-1/2 md:pl-8" data-aos="fade-left">
                     <h1 class="mb-3 text-primary">
@@ -233,67 +232,7 @@
     <script src="../js/cursortrail.js"></script>
     <script src="../js/scroll-nav.js"></script>
 
-    <script>
 
-        const images = [
-            { src: '../image/gallery/project1.png', title: 'BCB', width: 1, height: 1 },
-            { src: '../image/gallery/project2.png', title: 'Mirrors', width: 2, height: 1, span: 2 },
-            { src: 'path/to/image3.jpg', title: 'Stained Glass', width: 3, height: 2, span: 3 },
-            { src: 'path/to/image4.jpg', title: 'Construction', width: 1, height: 1 },
-            // 添加更多图片...
-        ];
-
-        function createGallery() {
-            const gallery = document.getElementById('imageGallery');
-
-            images.forEach((image, index) => {
-                const imgContainer = document.createElement('div');
-                imgContainer.className = 'image-container';
-                imgContainer.style.gridColumn = image.span ? `span ${image.span}` : 'auto';
-                imgContainer.style.aspectRatio = `${image.width} / ${image.height}`;
-
-                const img = document.createElement('img');
-                img.dataset.src = image.src;
-                img.alt = image.title;
-                img.className = 'gallery-image';
-
-                const title = document.createElement('div');
-                title.className = 'image-title';
-                title.textContent = image.title;
-
-                imgContainer.appendChild(img);
-                imgContainer.appendChild(title);
-                gallery.appendChild(imgContainer);
-            });
-
-            lazyLoadImages();
-        }
-
-        function lazyLoadImages() {
-            const images = document.querySelectorAll('.gallery-image');
-            const options = {
-                root: null,
-                rootMargin: '200px', // 增加这个值可以提前开始加载
-                threshold: 0.1
-            };
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.src = img.dataset.src;
-                        img.onload = () => {
-                            img.style.opacity = 1;
-                        };
-                        observer.unobserve(img);
-                    }
-                });
-            }, options);
-
-            images.forEach(img => observer.observe(img));
-        }
-
-        document.addEventListener('DOMContentLoaded', createGallery);</script>
 
 
 
