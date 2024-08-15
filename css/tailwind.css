@@ -25,7 +25,7 @@
     }
 
     ul {
-        @apply text-sm md:text-base lg:text-lg;
+        @apply text-base md:text-lg lg:text-xl font-medium;
     }
 }
 
