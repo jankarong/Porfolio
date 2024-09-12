@@ -36,8 +36,7 @@
 
     <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
 
-    <!-- cursortrail css link -->
-    <link rel="stylesheet" href="./css/cursortrail.css">
+
 
     <style>
         .group {
@@ -60,13 +59,104 @@
         .effect-pulse:hover svg {
             animation: svgPulse 1s ease-in-out infinite;
         }
+
+        .whiteboard {
+            background-color: #f0f0f0;
+            border: 2px solid #ddd;
+            overflow: hidden;
+            min-height: 300px;
+            position: relative;
+        }
+
+        .sticky-notes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 100%;
+        }
+
+        .sticky-note {
+            padding: 12px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            user-select: none;
+        }
+
+        .sticky-note:hover {
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+            transform: scale(1.02);
+        }
+
+        /* Colorful sticky notes */
+        .sticky-note.yellow {
+            background-color: #feff9c;
+        }
+
+        .sticky-note.blue {
+            background-color: #7afcff;
+        }
+
+        .sticky-note.green {
+            background-color: #a5ffa5;
+        }
+
+        .sticky-note.pink {
+            background-color: #ffb5e8;
+        }
+
+        /* Adjust text color for better readability */
+        .sticky-note.blue,
+        .sticky-note.green {
+            color: #333;
+        }
+
+        .sticky-note.yellow,
+        .sticky-note.pink {
+            color: #444;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 392px) {
+            .sticky-notes-container {
+                gap: 12px;
+            }
+
+            .sticky-note {
+                padding: 14px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .sticky-notes-container {
+                position: relative;
+                height: 500px;
+            }
+
+            .sticky-note {
+                position: absolute;
+                width: 200px;
+                cursor: move;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .sticky-notes-container {
+                height: 600px;
+            }
+
+            .sticky-note {
+                width: 300px;
+                /* 正确地应用于便利贴 */
+            }
+        }
     </style>
 
 
 
 
 </head>
-<canvas id="cursor-trail"></canvas>
+
 
 <body>
     <div class="bg-tri-color-gradient min-h-screen ">
@@ -278,6 +368,40 @@
                 </div>
             </div>
         </main>
+
+        <section id="testimonials" class="container mx-auto px-4 md:px-8 lg:px-16">
+            <h1 class="mb-8 text-primary">What Others Say</h1>
+            <div class="whiteboard bg-white p-3 sm:p-4 md:p-6 lg:p-8 rounded-lg shadow-lg">
+                <div class="sticky-notes-container">
+
+                    <div class="sticky-note yellow" style="top: 10%; left: 5%;">
+                        <p>"Janka is a very enthusiastic person who always comes up with unique and innovative design
+                            ideas! I loved having her on
+                            my team because you can always feel her passion for UX and she shows you how efficient she
+                            is in creating beautiful and
+                            user friendly designs（:"</p>
+                        <span class="text-primary">Jas - UX，UI Designer
+                            <a href="https://www.linkedin.com/in/jasnoordhanoa-bcit/" target="_blank"
+                                rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="sticky-note blue" style="top: 30%; left: 50%;">
+                        <p>"Excellent attention to detail in UI/UX."</p>
+                        <span>- Sarah M.</span>
+                    </div>
+                    <div class="sticky-note green" style="top: 60%; left: 20%;">
+                        <p>"Jing brought our vision to life beautifully."</p>
+                        <span>- Alex K.</span>
+                    </div>
+                    <div class="sticky-note pink" style="top: 40%; left: 70%;">
+                        <p>"Creative solutions to complex problems!"</p>
+                        <span>- Emily R.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="codepen-slider" class="my-12">
             <div class="container mx-auto px-4 md:px-8 lg:px-16">
                 <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">Side Projects</h1>
@@ -372,6 +496,85 @@
         <script src="./js/videoPlay.js"></script>
 
         <script src="./js/mousedraw.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const stickyNotes = document.querySelectorAll('.sticky-note');
+                const container = document.querySelector('.sticky-notes-container');
+
+                let isDragging = false;
+                let currentNote = null;
+                let startX, startY;
+
+                function enableDragging() {
+                    if (window.innerWidth >= 768) {
+                        stickyNotes.forEach(note => {
+                            note.addEventListener('mousedown', startDragging);
+                            note.addEventListener('touchstart', startDragging, { passive: false });
+                        });
+                    } else {
+                        stickyNotes.forEach(note => {
+                            note.removeEventListener('mousedown', startDragging);
+                            note.removeEventListener('touchstart', startDragging);
+                            note.style.position = 'static';
+                        });
+                    }
+                }
+
+                window.addEventListener('resize', enableDragging);
+                enableDragging();
+
+                document.addEventListener('mousemove', drag);
+                document.addEventListener('touchmove', drag, { passive: false });
+                document.addEventListener('mouseup', stopDragging);
+                document.addEventListener('touchend', stopDragging);
+
+                function startDragging(e) {
+                    if (window.innerWidth < 768) return;
+                    isDragging = true;
+                    currentNote = e.target.closest('.sticky-note');
+                    const touch = e.type === 'touchstart' ? e.touches[0] : e;
+                    const noteRect = currentNote.getBoundingClientRect();
+                    const containerRect = container.getBoundingClientRect();
+                    startX = touch.clientX - noteRect.left + containerRect.left;
+                    startY = touch.clientY - noteRect.top + containerRect.top;
+                    currentNote.style.zIndex = 1000;
+                    e.preventDefault();
+                }
+
+                function drag(e) {
+                    if (!isDragging || window.innerWidth < 768) return;
+                    e.preventDefault();
+
+                    const touch = e.type === 'touchmove' ? e.touches[0] : e;
+                    const containerRect = container.getBoundingClientRect();
+                    const noteRect = currentNote.getBoundingClientRect();
+
+                    let newX = touch.clientX - startX;
+                    let newY = touch.clientY - startY;
+
+                    newX = Math.max(0, Math.min(newX, containerRect.width - noteRect.width));
+                    newY = Math.max(0, Math.min(newY, containerRect.height - noteRect.height));
+
+                    currentNote.style.left = newX + 'px';
+                    currentNote.style.top = newY + 'px';
+                }
+
+                function stopDragging() {
+                    isDragging = false;
+                    if (currentNote) {
+                        currentNote.style.zIndex = 'auto';
+                        currentNote = null;
+                    }
+                }
+
+                document.ondragstart = function () {
+                    return false;
+                };
+            });
+
+        </script>
+
+
 
 
 
