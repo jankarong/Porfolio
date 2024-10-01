@@ -28,6 +28,195 @@
     <!-- zoomable link -->
     <link rel="stylesheet" href="../css/zoomable.css">
 
+    <style>
+        /* Common styles for both mockups */
+        .desktop-mockup-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .desktop-container {
+            width: 100%;
+            max-width: 1280px;
+            aspect-ratio: 16 / 10;
+        }
+
+        .desktop {
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .screen {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .screen img,
+        .screen iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: none;
+        }
+
+        /* Website mockup specific styles */
+        .website-mockup .desktop-container {
+            aspect-ratio: 16 / 10;
+        }
+
+        /* Appointment mockup specific styles */
+        .appointment-mockup .desktop-container {
+            aspect-ratio: 16 / 10;
+        }
+
+        /* Responsive styles */
+        @media (min-width: 769px) {
+            .desktop-mockup-container {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .desktop-mockup-container {
+                padding: 10px;
+            }
+
+            .desktop {
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .desktop-mockup-container {
+                padding: 5px;
+            }
+
+            /* Website mockup mobile styles */
+            .website-mockup .desktop-container {
+                aspect-ratio: 9 / 16;
+                max-width: 360px;
+            }
+
+            .website-mockup .desktop {
+                padding: 8px;
+                border-radius: 20px;
+            }
+
+            .website-mockup .screen {
+                border-radius: 16px;
+            }
+
+            /* Appointment mockup mobile styles */
+            .appointment-mockup .desktop-container {
+                max-width: 100%;
+            }
+
+            .appointment-mockup .desktop {
+                padding: 4px;
+                border-radius: 8px;
+            }
+
+            .appointment-mockup .screen {
+                border-radius: 4px;
+            }
+        }
+
+        /* New vertical ai robot mockup styles */
+        .vertical-mockup-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .vertical-container {
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 9 / 16;
+        }
+
+        .vertical-device {
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            border-radius: 40px;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .vertical-screen {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        .vertical-screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .vertical-notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 30px;
+            background-color: #333;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        /* Responsive styles for vertical mockup */
+        @media (max-width: 768px) {
+            .vertical-mockup-container {
+                padding: 10px;
+            }
+
+            .vertical-device {
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .vertical-mockup-container {
+                padding: 5px;
+            }
+
+            .vertical-device {
+                padding: 8px;
+                border-radius: 30px;
+            }
+
+            .vertical-screen {
+                border-radius: 24px;
+            }
+
+            .vertical-notch {
+                height: 20px;
+            }
+        }
+    </style>
+
 
 </head>
 
@@ -80,22 +269,28 @@
                 </div>
             </nav>
         </header>
+        <div class="desktop-mockup-container website-mockup">
+            <div class="desktop-container">
+                <div class="desktop">
+                    <div class="screen">
+                        <iframe src="https://www.naillabosalon.com" title="NailLabo Salon website"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section id="project-details" class="max-w-[1440px] mx-auto py-16 px-4 sm:px-6 md:px-8 lg:px-12">
             <div class="flex flex-col items-center gap-8 md:gap-12 lg:gap-16">
                 <!-- Top - Prototype Image and Link -->
-                <div class="w-full mb-8 flex flex-col items-center" data-aos="fade-up">
-                    <img src="../image/naillabo.gif" alt="NailLabo Website Prototype" class="w-full h-auto mb-4">
-                    <div class="mt-4 text-center">
-                        <h4 class="text-gray-800">
-                            www.naillabosalon.com
-                            <a href="https://www.naillabosalon.com" target="_blank" rel="noopener noreferrer"
-                                class="text-primary hover:text-primary-dark ml-2">
-                                <i class="fa-solid fa-link"></i>
-                            </a>
-                        </h4>
-                    </div>
-                </div>
+                <!-- <div class=" text-center">
+                    <h4 class="text-gray-800">
+                        www.naillabosalon.com
+                        <a href="https://www.naillabosalon.com" target="_blank" rel="noopener noreferrer"
+                            class="text-primary hover:text-primary-dark ml-2">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </h4>
+                </div> -->
 
                 <!-- Bottom - Project Details -->
                 <div class="w-full flex flex-col space-y-8">
@@ -162,7 +357,17 @@
 
                 <div class="flex flex-col md:flex-row items-center mb-24">
                     <div class="md:w-1/2 mb-6 md:mb-0" data-aos="fade-right">
-                        <img src="/image/booking.gif" alt="booking" class="rounded-lg  zoomable">
+                        <!-- <img src="/image/booking.gif" alt="booking" class="rounded-lg  zoomable"> -->
+
+                        <div class="desktop-mockup-container appointment-mockup">
+                            <div class="desktop-container">
+                                <div class="desktop">
+                                    <div class="screen">
+                                        <img src="/image/booking.gif" alt="booking">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="md:w-1/2 md:pl-8" data-aos="fade-left">
                         <h2 class="mb-3 text-primary">
@@ -195,8 +400,18 @@
 
                 <div class="flex flex-col md:flex-row-reverse items-center mb-24">
                     <div class="md:w-1/2 mb-6 md:mb-0 flex justify-center" data-aos="fade-right">
-                        <img src="../image/appointment.gif" alt="appointment"
-                            class="rounded-lg shadow-md w-1/2 max-w-[400px]">
+                        <!-- <img src="../image/appointment.gif" alt="ai robot"
+                            class="rounded-lg shadow-md w-1/2 max-w-[400px]"> -->
+                        <div class="vertical-mockup-container">
+                            <div class="vertical-container">
+                                <div class="vertical-device">
+                                    <div class="vertical-notch"></div>
+                                    <div class="vertical-screen">
+                                        <img src="../image/appointment.gif" alt="AI robot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="md:w-1/2 md:pl-8" data-aos="fade-left">
                         <h2 class="mb-3 text-primary">AI Robot Customer Service</h2>
@@ -321,41 +536,41 @@
                     <div id=" SEO-Optimized" class="mb-16">
                         <h2 class="mb-2 text-primary">SEO-optimized</h2>
                         <img src="../image/hpkeyword.png" alt="high potential Keyword" class="mb-4 zoomable">
-                        <ul>
-                            <h3 class="mb-2">1.Location-Focused Keywords Boost Salon Visibility</h3>
-                            <p class="mb-2">
-                                I focused the SEO strategy on local searches to attract nearby customers more likely to
-                                book
-                                with Naillabo Salon. This
-                                involved combining nail salon services with <span class="text-primary">"near me"
-                                    keywords
-                                    and using location-specific
-                                    terms like "Richmond" and
-                                    "Vancouver". </span> The approach positioned Naillabo Salon in searches from people
-                                nearby looking
-                                for specific services,
-                                increasing booking chances.
-                            </p>
-                            <h3 class="mb-2">2.Long-Tail Keywords for Targeted Traffic</h3>
-                            <p class="mb-2">
-                                I also selected long-tail keywords related to specific salon services. These had<span
-                                    class="text-primary"> lower
-                                    search volumes but were highly
-                                    targeted</span> and easier to optimize for.
-                            </p>
-                            <img src="../image/seostrategy.png" alt="seostrategy" class="mb-4 zoomable">
-                            <h3 class="mb-2">3.Service-Specific Keywords</h3>
-                            <p class="mb-2">
-                                I optimized the website's SEO by strategically placing keywords and <span
-                                    class="text-primary">creating separate
-                                    sections for each main service</span>.
-                                Using professional SEO tools like Semrush, I improved the overall SEO performance while
-                                maintaining readability,
-                                originality, and an appropriate tone of voice. These enhancements aim to boost our
-                                search
-                                engine rankings and attract
-                                more potential clients searching for nail and lash services in our area.
-                            </p>
+
+                        <h3 class="mb-2">1.Location-Focused Keywords Boost Salon Visibility</h3>
+                        <p class="mb-2">
+                            I focused the SEO strategy on local searches to attract nearby customers more likely to
+                            book
+                            with Naillabo Salon. This
+                            involved combining nail salon services with <span class="text-primary">"near me"
+                                keywords
+                                and using location-specific
+                                terms like "Richmond" and
+                                "Vancouver". </span> The approach positioned Naillabo Salon in searches from people
+                            nearby looking
+                            for specific services,
+                            increasing booking chances.
+                        </p>
+                        <h3 class="mb-2">2.Long-Tail Keywords for Targeted Traffic</h3>
+                        <p class="mb-2">
+                            I also selected long-tail keywords related to specific salon services. These had<span
+                                class="text-primary"> lower
+                                search volumes but were highly
+                                targeted</span> and easier to optimize for.
+                        </p>
+                        <img src="../image/seostrategy.png" alt="seostrategy" class="mb-4 zoomable">
+                        <h3 class="mb-2">3.Service-Specific Keywords</h3>
+                        <p class="mb-2">
+                            I optimized the website's SEO by strategically placing keywords and <span
+                                class="text-primary">creating separate
+                                sections for each main service</span>.
+                            Using professional SEO tools like Semrush, I improved the overall SEO performance while
+                            maintaining readability,
+                            originality, and an appropriate tone of voice. These enhancements aim to boost our
+                            search
+                            engine rankings and attract
+                            more potential clients searching for nail and lash services in our area.
+                        </p>
                     </div>
                     <div id="challenging" class="mb-16">
                         <h2 class=" mb-2 ">Challenging</h2>
@@ -376,7 +591,7 @@
                         <h2 class="mb-2 ">Next Steps</h2>
 
 
-                        <h3>Expand Website with Nail Care Product Pages</h3>
+                        <h3>1.Expand Website with Nail Care Product Pages</h3>
                         <p class=" mb-4">Create <span class=" text-primary">product sales pages </span> for the
                             client. These
                             pages should feature items related
@@ -384,7 +599,7 @@
                             and various nail accessories. This addition will expand the range of products available
                             for purchase on the website.
                         </p>
-                        <h3>Continue to optimize SEO efforts</h3>
+                        <h3>2.Continue to optimize SEO efforts</h3>
                         <p class=" mb-4"> This involves refining existing content
                             and
                             analyzing keywords with high click-through rates. Incorporate the most effective
@@ -404,7 +619,7 @@
 
                         <p class="mb-4">
 
-                            1.Research extensively and utilize <span class=" text-primary">
+                            1. Research extensively and utilize <span class=" text-primary">
                                 well-developed tools </span>to enhance website
                             functionality and decrease development
                             complexity.</li>
