@@ -47,7 +47,7 @@
 
     em,
     strong {
-        @apply italic text-base md: text-lg lg:text-lg leading-relaxed mb-4 text-primary;
+        @apply italic text-base md:text-lg lg:text-lg leading-relaxed mb-4 text-primary;
     }
 }
 
