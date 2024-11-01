@@ -1,24 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll("nav ul li a");
-    const highlightColor = '#406EE3'; // 蓝色，您可以更改为其他颜色
-    const defaultColor = ''; // 默认颜色（空字符串表示使用默认样式）
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav ul li a');
 
+    // 移除所有链接的点击事件默认行为
     navLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            // 重置所有链接的颜色
-            navLinks.forEach(l => l.style.color = defaultColor);
-
-            // 设置被点击链接的颜色
-            this.style.color = highlightColor;
+        link.addEventListener('click', (e) => {
+            // 移除所有链接的active类
+            navLinks.forEach(link => link.classList.remove('text-primary'));
         });
     });
 
-    // 初始化：高亮当前页面对应的导航项（如果有的话）
-    const currentPath = window.location.hash;
-    if (currentPath) {
-        const activeLink = document.querySelector(`nav ul li a[href="${currentPath}"]`);
-        if (activeLink) {
-            activeLink.style.color = highlightColor;
-        }
-    }
+    // 滚动监听
+    window.addEventListener('scroll', () => {
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= (sectionTop - sectionHeight / 3)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        // 更新导航链接状态
+        navLinks.forEach(link => {
+            link.classList.remove('text-primary');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('text-primary');
+            }
+        });
+    });
 });

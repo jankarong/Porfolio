@@ -98,7 +98,7 @@
                     <!-- Main Content - 4/5 width -->
                     <div class="md:w-4/5 md:pr-8">
                         <!-- Overview Section -->
-                        <section id="overview" class="mb-12">
+                        <section id="overview" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                             <h2>Overview</h2>
 
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -164,7 +164,7 @@
                         </section>
 
                         <!-- Hypotheses Section -->
-                        <section id="hypotheses" class="mb-12">
+                        <section id="hypotheses" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                             <h2>Hypotheses</h2>
                             <div class="flex flex-col md:flex-row gap-8">
                                 <!-- Hypothesis 1 -->
@@ -214,7 +214,7 @@
                         </section>
 
                         <!-- Screener Questions Section -->
-                        <section id="screener-questions" class="mb-12">
+                        <section id="screener-questions" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                             <h2>Screener Questions</h2>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <!-- Left Column - Text Content -->
@@ -243,7 +243,7 @@
                         </section>
 
                         <!-- Meet Our Testers Section -->
-                        <section id="meet-our-testers" class="mb-12">
+                        <section id="meet-our-testers" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                             <h2>Meet Our Testers</h2>
                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                                 <div class="rounded-lg p-6 flex items-start space-x-4">
@@ -319,7 +319,7 @@
 
 
                         <!-- Test Results Section -->
-                        <section id="results" class="mb-12">
+                        <section id="results" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                             <h2 class="flex items-center gap-2">
                                 Test Card & Observations
                             </h2>
@@ -395,7 +395,7 @@
                         </section>
 
                         <!-- Rainbow Sheets Section -->
-                        <section id="RainbowSheetss" class="mb-12">
+                        <section id="RainbowSheetss" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                             <h2>Rainbow Sheets</h2>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <!-- Problem Card 1 -->
@@ -456,7 +456,7 @@
                         </section>
 
                         <!-- SUS Calculation Section -->
-                        <section id="sus-calculation" class="mb-12">
+                        <section id="sus-calculation" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                             <h2>SUS Calculation</h2>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                                 <!-- Left Column - Text Content -->
@@ -578,7 +578,7 @@
                         </section>
 
                         <!-- Recommendations Section -->
-                        <section id="recommendations" class="mb-12">
+                        <section id="recommendations" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                             <h2>Recommendations</h2>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <!-- UI Elements Column -->
@@ -605,7 +605,7 @@
                         </section>
 
                         <!-- Prototype Section -->
-                        <section id="prototype" class="mb-12">
+                        <section id="prototype" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                             <h2>Prototype</h2>
                             <div class="p-6">
                                 <div class="aspect-w-16 aspect-h-9">
@@ -618,7 +618,7 @@
                         </section>
 
                         <!-- Next Steps Section -->
-                        <section id="next-steps" class="mb-12">
+                        <section id="next-steps" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                             <h2>Next Steps</h2>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <!-- Step 1 -->
@@ -717,6 +717,16 @@
     <script src="../js/zoomable.js"></script>
     <script src="../js/cursortrail.js"></script>
     <script src="../js/scroll-nav.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,    // 动画持续时间
+            once: true,        // 动画是否只播放一次
+            offset: 200,       // 触发动画的位置（距离）
+            easing: 'ease-in-out-cubic'  // 动画效果
+        });
+    </script>
+
 
 
 </body>
