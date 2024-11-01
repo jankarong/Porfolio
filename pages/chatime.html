@@ -458,36 +458,121 @@
                         <!-- SUS Calculation Section -->
                         <section id="sus-calculation" class="mb-12">
                             <h2>SUS Calculation</h2>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                                 <!-- Left Column - Text Content -->
                                 <div class="space-y-6">
-                                    <div class="bg-white bg-opacity-30 rounded-lg p-6">
-                                        <h3 class="mb-4">SUS Score Analysis</h3>
-                                        <p class="mb-4">Our System Usability Scale (SUS) evaluation revealed:</p>
-                                        <ul class="list-disc pl-5 space-y-2">
-                                            <li>Overall SUS Score: <span class="font-medium">68%</span></li>
-                                            <li>High Score Range: <span class="font-medium">72.5%</span></li>
-                                            <li>Average Score Range: <span class="font-medium">61%</span></li>
-                                            <li>Low Score Range: <span class="font-medium">47.5%</span></li>
-                                        </ul>
+                                    <div class="rounded-lg p-6">
+                                        <h3>We created the SUS questionnaire in Google Sheets.</h3>
                                     </div>
 
-                                    <div class="bg-white bg-opacity-30 rounded-lg p-6">
-                                        <h3 class="mb-4">Key Findings</h3>
-                                        <ul class="list-disc pl-5 space-y-2">
-                                            <li>The website scored slightly above the global average of 68%</li>
-                                            <li>Users found the basic functionality acceptable but indicated room for
-                                                improvement</li>
-                                            <li>Navigation and layout issues were the main factors affecting the score
-                                            </li>
-                                        </ul>
+                                    <div class="rounded-lg p-6">
+                                        <img src="../image/susrate.jpg" alt="Key Findings" class="w-full h-auto">
+                                    </div>
+
+                                    <div class="rounded-lg p-6">
+                                        <p>Chatime's website scored 61 on the SUS scale, below the 68-point average.
+                                            With scores ranging from 47.5 to 72.5, this indicates clear usability issues
+                                            in navigation and feature discovery that need improvement.</p>
                                     </div>
                                 </div>
 
-                                <!-- Right Column - Image -->
-                                <div class="bg-white bg-opacity-30 rounded-lg p-6">
-                                    <img src="../image/sus.jpg" alt="SUS Calculation Results"
-                                        class="w-full h-auto rounded-lg">
+                                <!-- Right Column - Table (spans 2 columns) -->
+                                <div class="md:col-span-2 rounded-lg p-6">
+                                    <div class="overflow-x-auto">
+                                        <table class="min-w-full border-collapse">
+                                            <thead>
+                                                <tr class="bg-primary bg-opacity-10">
+                                                    <th class="border p-2 text-left">System Usability Scale</th>
+                                                    <th class="border p-2">Chiaoli</th>
+                                                    <th class="border p-2">Carmen</th>
+                                                    <th class="border p-2">Emma</th>
+                                                    <th class="border p-2">Jayden</th>
+                                                    <th class="border p-2">Ron Mark</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="bg-green-50 bg-opacity-90">
+                                                    <td class="border p-2">I would like to use this website frequently.
+                                                    </td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">2</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                </tr>
+                                                <tr class="bg-red-50 bg-opacity-90">
+                                                    <td class="border p-2">I found the website unnecessary complex.</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                    <td class="border p-2 text-center">1</td>
+                                                    <td class="border p-2 text-center">2</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">2</td>
+                                                </tr>
+                                                <tr class="bg-green-50 bg-opacity-90">
+                                                    <td class="border p-2">I felt very confident using the website</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                    <td class="border p-2 text-center">2</td>
+                                                    <td class="border p-2 text-center">2</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">5</td>
+                                                </tr>
+                                                <tr class="bg-red-50 bg-opacity-90">
+                                                    <td class="border p-2">I kept getting lost when using the website.
+                                                    </td>
+                                                    <td class="border p-2 text-center">1</td>
+                                                    <td class="border p-2 text-center">2</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">2</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                </tr>
+                                                <tr class="bg-green-50 bg-opacity-90">
+                                                    <td class="border p-2">I think all the features are well integrated
+                                                        and function smoothly.</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                    <td class="border p-2 text-center">2</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                </tr>
+                                                <tr class="bg-red-50 bg-opacity-90">
+                                                    <td class="border p-2">I need technical support to use this website.
+                                                    </td>
+                                                    <td class="border p-2 text-center">1</td>
+                                                    <td class="border p-2 text-center">1</td>
+                                                    <td class="border p-2 text-center">2</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                    <td class="border p-2 text-center">2</td>
+                                                </tr>
+                                                <tr class="bg-green-50 bg-opacity-90">
+                                                    <td class="border p-2">I think other people can navigate the website
+                                                        easily without guidance.</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                </tr>
+                                                <tr class="bg-red-50 bg-opacity-90">
+                                                    <td class="border p-2">I think there are things that need to be
+                                                        learned to use the website.</td>
+                                                    <td class="border p-2 text-center">1</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                    <td class="border p-2 text-center">1</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                </tr>
+                                                <tr class="bg-green-50 bg-opacity-90">
+                                                    <td class="border p-2">I find this website not to be time-consuming
+                                                    </td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">3</td>
+                                                    <td class="border p-2 text-center">4</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </section>

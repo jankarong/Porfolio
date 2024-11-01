@@ -49,6 +49,18 @@
     strong {
         @apply italic text-base md:text-lg lg:text-lg leading-relaxed mb-4 text-primary;
     }
+
+    table {
+        @apply w-full text-sm md:text-base lg:text-base mb-4 text-gray-700;
+    }
+
+    th {
+        @apply px-4 py-2 text-left bg-gray-100 font-semibold border-b text-sm md:text-base lg:text-base;
+    }
+
+    td {
+        @apply px-4 py-2 border-b border-gray-200 text-sm md:text-base lg:text-base;
+    }
 }
 
 @layer base {
