@@ -25,8 +25,8 @@
     <!-- zoomable link -->
     <link rel="stylesheet" href="../css/zoomable.css">
 
-
-
+    <!-- Add these links before your other CSS links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -118,13 +118,12 @@
 
                                         <div>
                                             <h3>Team(Other Researchers)</h3>
-
-                                            <p>
+                                            <ul class="list-disc pl-6">
                                                 <li>Masha Supikhanova</li>
                                                 <li>Christian Yip</li>
                                                 <li>Ronalene Daniel</li>
                                                 <li>Brandon Quintal</li>
-                                            </p>
+                                            </ul>
                                         </div>
 
                                         <div>
@@ -144,19 +143,21 @@
                                         <p>
                                             "Chatime's website catches the eye, but its user experience needs
                                             improvement. Our focus areas:
-
+                                        </p>
+                                        <ul class="list-disc pl-6">
                                             <li>Increasing app downloads</li>
                                             <li>Boosting promotional drink sales</li>
                                             <li>Enhancing user experience</li>
+                                        </ul>
 
-                                        </p>
                                         <p>
                                             Through user behavior analysis and testing, we recommend:
-
+                                        </p>
+                                        <ul class="list-disc pl-6">
                                             <li>Optimizing promotional banners</li>
                                             <li>Streamlining the ordering process</li>
                                             <li>Redesigning the drink menu layout</li>
-                                        </p>
+                                        </ul>
                                 </div>
                             </div>
                         </section>
@@ -219,11 +220,11 @@
                                 <div class="flex items-center">
                                     <div>
                                         <p>Our screening process focused on three key areas:</p>
-                                        <p>
+                                        <ul class="list-disc pl-6">
                                             <li>Drink preferences</li>
                                             <li>Online ordering habits</li>
                                             <li>Promotional engagement</li>
-                                        </p>
+                                        </ul>
                                         <p>
                                             This targeted approach helped us find users who best represent Chatime's
                                             core
@@ -587,10 +588,11 @@
                             <div class="p-6">
                                 <div class="relative w-full overflow-hidden" style="padding-top: 56.25%;">
                                     <!-- 16:9 aspect ratio wrapper -->
-                                    <iframe 
-                                        loading="lazy" 
-                                        style="border: 1px solid rgba(0, 0, 0, 0.1); position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                    <iframe loading="lazy"
+                                        style="border: 1px solid rgba(0, 0, 0, 0.1); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
                                         src="https://embed.figma.com/design/4Pqz3IdD238zQCKgyy4rHR/UI-project?node-id=980-392&embed-host=share"
+                                        title="Chatime Website Redesign Prototype - Interactive design showcasing improved user interface and navigation"
+                                        aria-label="Interactive prototype of Chatime's website redesign featuring enhanced user experience and streamlined ordering process"
                                         allowfullscreen>
                                     </iframe>
                                 </div>
@@ -697,16 +699,8 @@
     <script src="../js/cursortrail.js"></script>
     <script src="../js/scroll-nav.js"></script>
 
-    <script>
-        AOS.init({
-            duration: 1000,    // 动画持续时间
-            once: true,        // 动画是否只播放一次
-            offset: 200,       // 触发动画的位置（距离）
-            easing: 'ease-in-out-cubic'  // 动画效果
-        });
-    </script>
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/animation-settings.js"></script>
 
 </body>
 
