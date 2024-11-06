@@ -1,0 +1,20 @@
+  .group {
+      position: relative;
+      overflow: hidden;
+  }
+
+  @keyframes svgPulse {
+
+      0%,
+      100% {
+          transform: scale(1);
+      }
+
+      50% {
+          transform: scale(0.9);
+      }
+  }
+
+  .effect-pulse:hover svg {
+      animation: svgPulse 1s ease-in-out infinite;
+  }

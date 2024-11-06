@@ -1,0 +1,102 @@
+.whiteboard {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    overflow: hidden;
+    min-height: 300px;
+    position: relative;
+}
+
+.sticky-notes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.sticky-note {
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    user-select: none;
+}
+
+.sticky-note:hover {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* Colorful sticky notes */
+.sticky-note.yellow {
+    background-color: #feff9c;
+}
+
+.sticky-note.blue {
+    background-color: #7afcff;
+}
+
+.sticky-note.green {
+    background-color: #a5ffa5;
+}
+
+.sticky-note.pink {
+    background-color: #ffb5e8;
+}
+
+.sticky-note.purple {
+    background-color: #e0b0ff;
+}
+
+.sticky-note.orange {
+    background-color: #ffd580;
+}
+
+.sticky-note.teal {
+    background-color: #80ffd4;
+}
+
+/* Adjust text color for better readability */
+.sticky-note.blue,
+.sticky-note.green {
+    color: #333;
+}
+
+.sticky-note.yellow,
+.sticky-note.pink {
+    color: #444;
+}
+
+/* Responsive adjustments */
+@media (min-width: 392px) {
+    .sticky-notes-container {
+        gap: 12px;
+    }
+
+    .sticky-note {
+        padding: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sticky-notes-container {
+        position: relative;
+        height: 700px;
+    }
+
+    .sticky-note {
+        position: absolute;
+        width: 300px;
+        cursor: move;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sticky-notes-container {
+        height: 1000px;
+    }
+
+    .sticky-note {
+        width: 350px;
+
+    }
+}

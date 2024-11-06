@@ -16,6 +16,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sliderstyle.css" media="print" onload="this.media='all'">
+    <!--Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css" media="print"
+        onload="this.media='all'">
+    <!--SVG Animation CSS -->
+    <link rel="stylesheet" href="../css/svgAnimation.css">
+
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,138 +37,10 @@
         onload="this.media='all'">
 
     <!-- favicon link -->
-
     <link rel="icon" href="./image/RJlogo.png" type="image/x-icon">
 
-    <!--Swiper CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css" media="print"
-        onload="this.media='all'">
-
-    <style>
-        .group {
-            position: relative;
-            overflow: hidden;
-        }
-
-        @keyframes svgPulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(0.9);
-            }
-        }
-
-        .effect-pulse:hover svg {
-            animation: svgPulse 1s ease-in-out infinite;
-        }
-
-        .whiteboard {
-            background-color: #f0f0f0;
-            border: 2px solid #ddd;
-            overflow: hidden;
-            min-height: 300px;
-            position: relative;
-        }
-
-        .sticky-notes-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            height: 100%;
-        }
-
-        .sticky-note {
-            padding: 12px;
-            border-radius: 5px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease, transform 0.3s ease;
-            user-select: none;
-        }
-
-        .sticky-note:hover {
-            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
-            transform: scale(1.02);
-        }
-
-        /* Colorful sticky notes */
-        .sticky-note.yellow {
-            background-color: #feff9c;
-        }
-
-        .sticky-note.blue {
-            background-color: #7afcff;
-        }
-
-        .sticky-note.green {
-            background-color: #a5ffa5;
-        }
-
-        .sticky-note.pink {
-            background-color: #ffb5e8;
-        }
-
-        .sticky-note.purple {
-            background-color: #e0b0ff;
-        }
-
-        .sticky-note.orange {
-            background-color: #ffd580;
-        }
-
-        .sticky-note.teal {
-            background-color: #80ffd4;
-        }
-
-        /* Adjust text color for better readability */
-        .sticky-note.blue,
-        .sticky-note.green {
-            color: #333;
-        }
-
-        .sticky-note.yellow,
-        .sticky-note.pink {
-            color: #444;
-        }
-
-        /* Responsive adjustments */
-        @media (min-width: 392px) {
-            .sticky-notes-container {
-                gap: 12px;
-            }
-
-            .sticky-note {
-                padding: 14px;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .sticky-notes-container {
-                position: relative;
-                height: 700px;
-            }
-
-            .sticky-note {
-                position: absolute;
-                width: 300px;
-                cursor: move;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .sticky-notes-container {
-                height: 1000px;
-            }
-
-            .sticky-note {
-                width: 350px;
-
-            }
-        }
-    </style>
+    <!-- CSS for sticky notes -->
+    <link rel="stylesheet" href="./css/stickynote.css">
 
 
 
@@ -289,7 +167,7 @@
                             <div
                                 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 overflow-hidden">
                                 <a href="./pages/Aiinlink.html" target="_blank" rel="noopener noreferrer"><img
-                                        src="./image/aiinlink.png" alt="AI Inlink website" loading="lazy"
+                                        src="./image/aiinlink.png" alt="AI Inlink website"
                                         class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110"></a>
                             </div>
                         </div>
@@ -486,9 +364,11 @@
                 </div>
             </div>
         </section>
+
+        <!--Video-->
         <section id="codepen-slider" class="my-12">
             <div class="container mx-auto px-4 md:px-8 lg:px-16">
-                <h1 class="mb-2">Side Projects</h1>
+                <h1 class="mb-2">Video Creation</h1>
                 <h4 class=" mb-2">Just for fun</h4>
                 <div class="codepen-slider-container">
                     <div class="swiper-container">
@@ -541,6 +421,9 @@
                 </div>
             </div>
         </section>
+
+
+
         <footer class="bg-transparent py-24 pb-4 relative">
             <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-primary italic text-center mb-24">
@@ -578,7 +461,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js" defer></script>
         <script src="./js/slider.js" defer></script>
 
-        <script src="./js/videoPlay.js" defer></script>
+
 
         <script src="./js/mousedraw.js" defer></script>
 
@@ -659,6 +542,7 @@
             });
 
         </script>
+
 
 
 
