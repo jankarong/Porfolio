@@ -8,24 +8,26 @@
         content="Explore Jing Rong's diverse portfolio of UI/UX designs, web development projects, and creative side projects. Interactive showcase featuring filterable categories and detailed project descriptions.">
     <title>Projects | Jing Rong's UI/UX & Web Development Portfolio</title>
 
-    <!-- css link -->
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../css/style.css" as="style">
+    <link rel="preload" href="../css/svgAnimation.css" as="style">
 
+    <!-- Load non-critical CSS asynchronously -->
     <link href="../css/style.css" rel="stylesheet">
-
-    <!--SVG Animation CSS -->
     <link rel="stylesheet" href="../css/svgAnimation.css">
 
+    <!-- Move Flowbite script to bottom and add defer -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
-    <!-- google font link -->
+    <!-- Load Font Awesome asynchronously -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" media="print"
+        onload="this.media='all'">
 
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-    <!-- flowbite css link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-
-    <!-- font awesome link -->
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <!-- Optimize Google Fonts loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
 
     <!-- favicon link -->
 
@@ -391,7 +393,7 @@
         <script src="../js/toogle.js"></script>
         <script src="../js/fliter.js"></script>
         <script src="../js/pagination.js"></script>
-        <script src="../js/mousedraw.js"></script>
+
 
 
 </body>
