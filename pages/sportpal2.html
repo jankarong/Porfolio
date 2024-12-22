@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the UX/UI design process of SportPal, an app connecting users to local sports events. Learn about user flow, style guide, and usability testing insights for this innovative sports community platform.">
+    <title>SportPal: UX/UI Case Study | Local Sports Event App Design | Jing Rong</title>
+    <!-- css link -->
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- google font link -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- flowbite css link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+    <!-- font awesome link -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+
+    <!-- favicon link -->
+
+    <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
+
+    <!-- zoomable css link -->
+
+    <link rel="stylesheet" href="../css/zoomable.css">
+
+    <!--scroll animation CSS links -->
+
+    <link rel="stylesheet" href="../css/scroll-indicator.css">
+
+
+
+</head>
+
+
+
+<body>
+    <div class="bg-tri-color-gradient min-h-screen ">
+        <header>
+            <nav class="bg-white bg-opacity-30 border-gray-200">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="../image/RJlogo.png" class="h-8" alt="RJ portfolio logo" />
+                    </a>
+                    <button data-collapse-toggle="navbar-default" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                        <ul
+                            class="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:translate-y-2">
+                            <a href="../index.html" class="block py-2 pl-3 pr-4 md:p-0 hover:text-primary"
+                                aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="./projects.html"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">Projects</a>
+                            </li>
+                            <li>
+                                <a href="./about.html"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">About</a>
+                            </li>
+                            <li>
+                                <a href="mailto:jankarong@gmail.com"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- gif section -->
+        <div class="relative w-full mb-24">
+            <img src="../image/Sportpalprototype.gif" alt="Naillabo Salon Showcase" class="w-full object-contain"
+                loading="lazy">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center opacity-0 transition-opacity duration-500"
+                id="scrollIndicator">
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                    <div class="scroll-arrows">
+                        <span class="arrow"></span>
+                        <span class="arrow"></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="max-w-[1440px] mx-auto py-24 px-4 sm:px-6 md:px-8 lg:px-12">
+
+
+        <div class="flex flex-col md:flex-row">
+            <!-- Main Content - 4/5 width -->
+            <div class="md:w-4/5 md:pr-8">
+                <!-- Overview Section -->
+                <section id="overview" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>Overview</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <!-- Left Column - Project Info -->
+                        <div class="space-y-6">
+
+
+                            <!-- Project Info List -->
+                            <div class="space-y-4">
+                                <h3>Project</h3>
+                                <ul class="list-disc pl-6">
+                                    <li>Sportpal - Sport & Lifestyle Project</li>
+
+
+                                </ul>
+
+                                <h3>Outcome</h3>
+                                <ul class="list-disc pl-6">
+                                    <li>Completed first Stage of the Sportpal app.</li>
+                                    <li>A satisfactory score of 94 was achieved, along with a 100% success rate in user
+                                        testing tasks.</li>
+
+                                </ul>
+
+
+
+                            </div>
+                            <h3>Introduction</h4>
+
+                                <!-- Context Description -->
+                                <p>
+                                    Sportpal is a platform that fosters local sports communities by connecting people
+                                    through events and court bookings.
+                                </p>
+
+                                <h3>Business Goals</h4>
+
+                                    <!-- Context Description -->
+                                    <p>
+                                        Attract more sports enthusiasts and keep them engaged, encouraging them to
+                                        consistently book sports activities on the platform.
+                                    </p>
+                        </div>
+
+
+
+                        <!-- Right Column - Context -->
+                        <div>
+
+
+                            <!-- Logo -->
+                            <img src="../image/sportpallogo.png" alt="Sportpal Logo"
+                                class="h-8 md:h-10 lg:h-12 w-auto object-contain">
+
+                            <div>
+
+
+
+                                <div>
+                                    <h3>My Roles</h3>
+                                    <p>Product Design</p>
+                                </div>
+
+                                <div>
+                                    <h3>Personal Deliverable</h3>
+                                    <ul class="list-disc pl-6">
+
+                                        <li>Led sportpal whole process included user research, competitive-analysis,
+                                            wireframing, design&user testing</li>
+                                        <li>Set up Material 3 design system for high-fidelity prototyping and React
+                                            Native development</li>
+                                        <li>Conducted user testing and system usability assessment to gather feedback
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h3>Team</h3>
+                                    <ul class="list-disc pl-6">
+                                        <li>Design: Chiaoli/Annie</li>
+
+                                        <li>Development& QA:Sule/Ronalene/Heesoo/Jasnoor</li>
+
+                                    </ul>
+                                </div>
+
+
+                                <div>
+                                    <h3>Links</h3>
+                                    <a href="https://webscripting.jankarong.com/labfile/" target="_blank"
+                                        class="text-primary">
+                                        <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>
+                                        Sportpal Prototype
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                </section>
+
+
+
+
+
+
+                <!-- tarket audience -->
+                <section id="tarket-audience" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">Target Audience</h2>
+                    <div>
+                        <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 18 14">
+                            <path
+                                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                        </svg>
+                        <blockquote class="italic flex items-start gap-4">
+                            <h3>We have two types of users: one is participant and the other is organizer</h3>
+                        </blockquote>
+                    </div>
+                    <!-- Two-column grid for user types -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                        <!-- Participants Column -->
+                        <div class="p-6">
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <img src="../image/Participants.png" alt="Participants"
+                                    class="w-full h-64 object-cover rounded-lg ">
+                            </div>
+
+                        </div>
+
+                        <!-- Organizers Column -->
+                        <div class="p-6">
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <img src="../image/Organizers.png" alt="Organizers"
+                                    class="w-full h-64 object-cover rounded-lg">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="competitive-analysis" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">Competitive Analysis</h2>
+
+                    <div class="mb-8">
+                        <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 18 14">
+                            <path
+                                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                        </svg>
+                        <blockquote class="italic flex items-start gap-4">
+                            <h3>I developed a competitive analysis of Meetup, local platforms, Facebook Events,
+                                Eventbrite, and private groups for SportPal. Here are some of the key findings:</h3>
+                        </blockquote>
+                    </div>
+                    <div class="bg-white bg-opacity-30 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20 ">
+                        <div class="flex flex-col md:flex-row items-center gap-8">
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-primary  mb-4">Lack of Sports-Specific & Discovery Features</h3>
+                                <ul class="list-disc space-y-4">
+                                    <li>
+                                        <div class="flex items-center gap-1 cursor-pointer hover:text-primary transition-all duration-200"
+                                            onclick="toggleDescription(this)">
+                                            <span>Lack of Sports-Specific Focus (5/5)</span>
+                                            <svg class="w-4 h-4 transform transition-all duration-200" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="hidden mt-2 pl-6 transition-all duration-300">General platforms like
+                                            Meetup and Eventbrite don't focus on sports, making it challenging to locate
+                                            relevant events.</p>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center gap-1 cursor-pointer hover:text-primary transition-all duration-200"
+                                            onclick="toggleDescription(this)">
+                                            <span>Ineffective Event Discovery (3/5)</span>
+                                            <svg class="w-4 h-4 transform transition-all duration-200" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="hidden mt-2 pl-6 transition-all duration-300">Platforms like Facebook
+                                            and local sites provide limited search and filtering tools, making it harder
+                                            to find specific sports events.</p>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center gap-1 cursor-pointer hover:text-primary transition-all duration-200"
+                                            onclick="toggleDescription(this)">
+                                            <span>No Court Booking Feature (4/5)</span>
+                                            <svg class="w-4 h-4 transform transition-all duration-200" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="hidden mt-2 pl-6 transition-all duration-300">These platforms lack
+                                            options for users to directly book courts, failing to meet the needs of
+                                            sports enthusiasts who want quick and easy court reservations.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <img src="../image/Competitor-EMF.gif" alt="Sports Discovery Features"
+                                    class="w-full h-auto zoomable">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-30 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20">
+                        <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-primary  mb-4">Inefficient Event Management</h3>
+                                <ul class="list-disc space-y-4">
+                                    <li>
+                                        <div class="flex items-center gap-1 cursor-pointer hover:text-primary transition-all duration-200"
+                                            onclick="toggleDescription(this)">
+                                            <span>No Save Feature (1/5)</span>
+                                            <svg class="w-4 h-4 transform transition-all duration-200" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="hidden mt-2 pl-6 transition-all duration-300">Users cannot save sports
+                                            events or activities they're interested in private groups or local
+                                            platforms, making it inconvenient to revisit and manage preferences.</p>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center gap-1 cursor-pointer hover:text-primary transition-all duration-200"
+                                            onclick="toggleDescription(this)">
+                                            <span>Lack of Unified Event Creation and Payment Support (3/5)</span>
+                                            <svg class="w-4 h-4 transform transition-all duration-200" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="hidden mt-2 pl-6 transition-all duration-300">Event organizers often
+                                            rely on scattered methods like posts or private groups. This makes editing
+                                            events tedious, can lead to missing details, and forces payments to be
+                                            handled offline.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <img src="../image/privategroupchat.gif" alt="Event Management"
+                                    class="w-[300px] h-auto mx-auto">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-30 backdrop-blur-sm p-8 rounded-lg border">
+                        <div class="flex flex-col md:flex-row items-center gap-8">
+                            <div class="w-full md:w-1/2">
+                                <h3 class="text-primary  mb-4">Insufficient Social Features</h3>
+                                <ul class="list-disc space-y-4">
+                                    <li>
+                                        <div class="flex items-center gap-1 cursor-pointer hover:text-primary transition-all duration-200"
+                                            onclick="toggleDescription(this)">
+                                            <span>Limited Social Features (2/5)</span>
+                                            <svg class="w-4 h-4 transform transition-all duration-200" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="hidden mt-2 pl-6 transition-all duration-300">Platforms like
+                                            Eventbrite or local communities don't allow direct interaction or chat,
+                                            restricting users from building connections within the community.</p>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center gap-1 cursor-pointer hover:text-primary transition-all duration-200"
+                                            onclick="toggleDescription(this)">
+                                            <span>No Share Functionality (2/5)</span>
+                                            <svg class="w-4 h-4 transform transition-all duration-200" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </div>
+                                        <p class="hidden mt-2 pl-6 transition-all duration-300">Sharing sports events or
+                                            activities to other platforms, such as private or local platforms, is
+                                            unsupported, limiting the ability to invite friends or promote events
+                                            effectively.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <img src="../image/LocalplaformVideo.gif" alt="Social Features" class="w-full h-auto">
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--Product Goals Section -->
+                <section id="product-goals" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>Product Goals</h2>
+
+                    <blockquote class="italic flex items-start gap-4 mb-8">
+                        <div>
+                            <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 18 14">
+                                <path
+                                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                            </svg>
+                            <h3 class="mb-8">Based on user needs and competitive analysis, I plan to design SportPal in
+                                three phases:
+                            </h3>
+                        </div>
+                    </blockquote>
+
+                    <!-- First Stage Section -->
+                    <section id="first-stage" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+
+                        <div class="grid grid-cols-1 gap-4">
+                            <!-- Collapsible Main Section -->
+                            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 shadow-lg">
+                                <button onclick="toggleStage('first-stage-content')"
+                                    class="w-full flex justify-between items-center text-xl">
+                                    <span>First Stage</span>
+                                    <svg class="w-4 h-4 transform transition-transform duration-200"
+                                        id="first-stage-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <div id="first-stage-content" class="hidden mt-4">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                                        <!-- Column 1 -->
+                                        <div class="bg-white/5 p-4 rounded-lg">
+                                            <div class="flex items-center justify-between cursor-pointer"
+                                                onclick="toggleDescription(this)">
+                                                <h3 class="text-lg">Build Easy Event Exploration & Joining</h3>
+                                                <svg class="w-4 h-4 transform transition-transform duration-200"
+                                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="hidden mt-2">
+                                                <ul class="list-disc pl-6 space-y-2">
+                                                    <li>Quick and intuitive event discovery</li>
+                                                    <li>Detailed event information at a glance</li>
+                                                    <li>One-click event joining process</li>
+                                                    <li>Real-time availability updates</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- Column 2 -->
+                                        <div class="bg-white/5 p-4 rounded-lg">
+                                            <div class="flex items-center justify-between cursor-pointer"
+                                                onclick="toggleDescription(this)">
+                                                <h3 class="text-lg">Enhance User Profile Management</h3>
+                                                <svg class="w-4 h-4 transform transition-transform duration-200"
+                                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="hidden mt-2">
+                                                <ul class="list-disc pl-6 space-y-2">
+                                                    <li>Customizable user preferences</li>
+                                                    <li>Sports interests and skill levels</li>
+                                                    <li>Activity history tracking</li>
+                                                    <li>Achievement badges system</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- Column 3 -->
+                                        <div class="bg-white/5 p-4 rounded-lg">
+                                            <div class="flex items-center justify-between cursor-pointer"
+                                                onclick="toggleDescription(this)">
+                                                <h3 class="text-lg">Implement Social Features</h3>
+                                                <svg class="w-4 h-4 transform transition-transform duration-200"
+                                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="hidden mt-2">
+                                                <ul class="list-disc pl-6 space-y-2">
+                                                    <li>Friend connections</li>
+                                                    <li>Team formation tools</li>
+                                                    <li>In-app messaging system</li>
+                                                    <li>Activity sharing features</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- Column 4 -->
+                                        <div class="bg-white/5 p-4 rounded-lg">
+                                            <div class="flex items-center justify-between cursor-pointer"
+                                                onclick="toggleDescription(this)">
+                                                <h3 class="text-lg">Optimize Event Management</h3>
+                                                <svg class="w-4 h-4 transform transition-transform duration-200"
+                                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="hidden mt-2">
+                                                <ul class="list-disc pl-6 space-y-2">
+                                                    <li>Advanced scheduling tools</li>
+                                                    <li>Automated notifications</li>
+                                                    <li>Participant management</li>
+                                                    <li>Event analytics dashboard</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Second Stage -->
+                        <div>
+                            <button onclick="toggleStage('stage2')"
+                                class="w-full bg-white bg-opacity-30 backdrop-blur-sm p-4 rounded-lg border border-white/20 flex items-center justify-between">
+                                <h3 class="text-primary">Second Stage</h3>
+                                <svg class="w-4 h-4 transform transition-transform duration-200" id="arrow2" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                            <div id="stage2" class="hidden mt-2 p-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg">
+                                <ul class="space-y-1 list-disc pl-6">
+                                    <li>Strengthen Social Interactions</li>
+                                    <li>Beginner-Friendly Activities</li>
+                                    <li>Advanced Event Management Tools</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Third Stage -->
+                        <div>
+                            <button onclick="toggleStage('stage3')"
+                                class="w-full bg-white bg-opacity-30 backdrop-blur-sm p-4 rounded-lg border border-white/20 flex items-center justify-between">
+                                <h3 class="text-primary">Third Stage</h3>
+                                <svg class="w-4 h-4 transform transition-transform duration-200" id="arrow3" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                            <div id="stage3" class="hidden mt-2 p-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg">
+                                <ul class="space-y-1 list-disc pl-6">
+                                    <li>Personalized User Experience</li>
+                                    <li>Gamification Features</li>
+                                    <li>Loyalty Programs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Challenge Section -->
+                <section id="challenge" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">Challenge</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Challenge 1 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20 shadow-lg">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-users text-primary text-xl"></i>
+                                </div>
+                                <h3>User Balance</h3>
+                            </div>
+                            <p>Balancing user needs between participants and organizers while maintaining a seamless
+                                experience</p>
+                        </div>
+
+                        <!-- Challenge 2 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20 shadow-lg">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-compass text-primary text-xl"></i>
+                                </div>
+                                <h3>Event Discovery</h3>
+                            </div>
+                            <p>Creating an intuitive event discovery system that effectively matches users with relevant
+                                sports activities</p>
+                        </div>
+
+                        <!-- Challenge 3 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20 shadow-lg">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-calendar-check text-primary text-xl"></i>
+                                </div>
+                                <h3>Booking System</h3>
+                            </div>
+                            <p>Designing a flexible booking system that accommodates various sports and venue types</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Highlight Section -->
+                <section id="highlight" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">Highlight</h2>
+                    <img src="../image/Hightlight.jpg" alt="highlight" class="rounded-lg zoomable">
+                </section>
+
+                <!-- Iteration Section -->
+                <section id="iteration" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">Iteration</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 rounded-lg border border-gray-200">
+                        <div class="space-y-4">
+                            <blockquote class="italic flex items-start gap-4 mb-8">
+                                <div>
+                                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                        <path
+                                            d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                    </svg>
+                                    <h3 class="mb-8">The revised version shows prices more clearly and adds icons to
+                                        highlight the key info,it can help participants better understand sports
+                                        information and assist them in quickly joining activities.
+                                    </h3>
+                                </div>
+                            </blockquote>
+
+                        </div>
+                        <div>
+                            <img src="../image/Homepageiteration.png" alt="Homapage iteration" class="w-full zoomable">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 rounded-lg border border-gray-200">
+                        <div class="space-y-4">
+                            <blockquote class="italic flex items-start gap-4 mb-8">
+                                <div>
+                                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                        <path
+                                            d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                    </svg>
+                                    <h3 class="mb-8">I
+                                        Added level categories so users can choose activities based on theirskill
+                                        level,such as beginner or intermediate,which can enhance their activity
+                                        participation experience.
+                                    </h3>
+                                </div>
+                            </blockquote>
+
+                        </div>
+                        <div>
+                            <img src="../image/EventPageIteration.png" alt="Homapage iteration" class="w-full zoomable">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 rounded-lg border border-gray-200">
+                        <div class="space-y-4">
+                            <blockquote class="italic flex items-start gap-4 mb-8">
+                                <div>
+                                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                        <path
+                                            d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                    </svg>
+                                    <h3 class="mb-8">Fixed a bug for organizers when creating events. Now, they can set
+                                        visibility to public or private, choose the capacity
+                                        for the number of participants, and add a level option to better match with
+                                        suitable participants.
+                                    </h3>
+                                </div>
+                            </blockquote>
+
+                        </div>
+                        <div>
+                            <img src="../image/CreateEventIteration.png" alt="Homapage iteration"
+                                class="w-full zoomable">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 rounded-lg border border-gray-200">
+                        <div class="space-y-4">
+                            <blockquote class="italic flex items-start gap-4 mb-8">
+                                <div>
+                                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                        <path
+                                            d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                    </svg>
+                                    <h3 class="mb-8">In the attend section of the event details page, I added clear
+                                        pricing and participant numbers, making the price
+                                        information less confusing for users and displaying information more clearly.
+                                    </h3>
+                                </div>
+                            </blockquote>
+
+                        </div>
+                        <div>
+                            <img src="../image/EventDetailIteration.png" alt="Homapage iteration"
+                                class="w-full zoomable">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- User Testing Section -->
+                <section id="user-testing" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">User Testing</h2>
+
+                    <!-- Testing Overview -->
+                    <div class="bg-white bg-opacity-30 backdrop-blur-sm p-8 rounded-lg mb-8 border border-white/20">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                <i class="fa-solid fa-clipboard-list text-primary text-xl"></i>
+                            </div>
+                            <h3>Testing Methodology</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <p>
+                                We iuse Maze to test three main user flows: joining an activity, booking a venue, and
+                                creating an event. Additionally,
+                                we want to ensure the sports categories and filters are functioning correctly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Key Metrics -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                        <!-- Metric 1 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                            <div class="text-center">
+                                <h3 class="text-primary text-4xl font-bold mb-2">100%</h3>
+                                <p class="text-gray-700">Task Success Rate</p>
+                            </div>
+                        </div>
+                        <!-- Metric 2 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                            <div class="text-center">
+                                <h3 class="text-primary text-4xl font-bold mb-2">9.2/10</h3>
+                                <p class="text-gray-700">User Satisfaction Score</p>
+                            </div>
+                        </div>
+                        <!-- Metric 3 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                            <div class="text-center">
+                                <h3 class="text-primary text-4xl font-bold mb-2">10</h3>
+                                <p class="text-gray-700">Positive User Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Findings -->
+                    <div class="bg-white bg-opacity-30 backdrop-blur-sm p-8 rounded-lg mb-8 border border-white/20">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                <i class="fa-solid fa-lightbulb text-primary text-xl"></i>
+                            </div>
+                            <h3>Key Findings</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Finding 1 -->
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-primary"></i>
+                                    <h4>Positive Feedback</h4>
+                                </div>
+                                <p>Overall, the app comes across as user-friendly and intuitive. Participants generally
+                                    found the navigation and interface
+                                    design to be clear and easy to use. The icons and content were well-received, with
+                                    one person stating they "really
+                                    enjoyed using the app."</p>
+                            </div>
+                            <!-- Finding 2 -->
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-primary"></i>
+                                    <h4>Constructive Feedback</h4>
+                                </div>
+                                <p>However, a couple minor issues were noted. Some users felt slightly confused by
+                                    certain navigation features, like the
+                                    3/6 tags, when first starting to use the app. Additionally, one participant was
+                                    frustrated that the price wasn't
+                                    visible until the final checkout stage,</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Feedback -->
+                    <div class="bg-white bg-opacity-30 backdrop-blur-sm p-8 rounded-lg border border-white/20">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                <i class="fa-solid fa-comments text-primary text-xl"></i>
+                            </div>
+                            <h3>User Feedback</h3>
+                        </div>
+
+                        <img src="../image/userFeedback.jpg" alt="user Feedback">
+
+                </section>
+
+                <!-- Design System Section -->
+                <section id="design-system" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">Design System</h2>
+                    <div class="bg-white bg-opacity-30 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20">
+                        <ul class="list-disc space-y-4 pl-6">
+                            <li>Implemented Material Design 3 principles for consistent user experience</li>
+                            <li>Created a comprehensive component library for React Native development</li>
+                            <li>Established color system and typography hierarchy for better accessibility</li>
+                            <li>Developed responsive design patterns for cross-device compatibility</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Next Steps Section -->
+                <section id="next-steps" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="flex items-center gap-2">
+                        Next Steps
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Step 1 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20 shadow-lg">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-magnifying-glass text-primary text-xl"></i>
+                                </div>
+                                <h3>More AI tools &simple tutorials</h3>
+                            </div>
+                            <p>I will continue to select more AI tools and create simple tutorials for
+                                other AI tools.</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20 shadow-lg">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-share-nodes text-primary text-xl"></i>
+                                </div>
+                                <h3>SEO Optimization</h3>
+                            </div>
+                            <p>Find the low competitive and easy-to-optimize keywords and optimize the website
+                                for
+                                SEO.</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20 shadow-lg">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-mobile-screen-button text-primary text-xl"></i>
+                                </div>
+                                <h3>Design Optimization</h3>
+                            </div>
+                            <p>Prioritize design goals based on urgency and importance, then iteratively
+                                optimize the design to enhance user
+                                experience.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Takeaways Section -->
+                <section id="takeaways" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>Takeaways</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Takeaway 1 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20 shadow-lg">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-heading text-primary text-xl"></i>
+                                </div>
+                                <h3>Competitor Analysis</h3>
+                            </div>
+                            <p>Studying other AI tool platforms revealed opportunities to add valuable features
+                                like save and ranking functions,
+                                ensuring keep learning other website's advantage.
+                            </p>
+                        </div>
+
+                        <!-- Takeaway 2 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20 shadow-lg">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-universal-access text-primary text-xl"></i>
+                                </div>
+                                <h3>MVP Strategy</h3>
+                            </div>
+                            <p>Starting with core features proved more effective than building everything at
+                                once, allowing for faster launches and
+                                user feedback collection.
+                            </p>
+                        </div>
+
+                        <!-- Takeaway 3 -->
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg mb-12 border border-white/20 shadow-lg">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-mobile-screen text-primary text-xl"></i>
+                                </div>
+                                <h3>Resource Utilization</h3>
+                            </div>
+                            <p>Resource Utilization: Leveraging online tutorials and resources helped
+                                solve technical challenges efficiently
+                                and expand site capabilities.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <nav
+                class="md:w-1/5 mb-8 md:mb-0 md:pl-24 fixed bottom-0 left-0 right-0 md:relative bg-white md:bg-transparent z-50 md:z-auto">
+                <div class="md:sticky md:top-24 md:mr-[-2rem]">
+                    <ul
+                        class="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-visible p-4 md:p-0 whitespace-nowrap">
+                        <li><a href="#overview" class="text-gray-900 hover:text-primary">Overview</a></li>
+                        <li><a href="#tarket-audience" class="text-gray-900 hover:text-primary">Tarket Audience</a>
+                        <li><a href="#competitive-analysis" class="text-gray-900 hover:text-primary">Competitive
+                                Analysis</a>
+                        </li>
+                        <li><a href="#product-goals" class="text-gray-900 hover:text-primary">Product Goals</a></li>
+                        <li><a href="#challenge" class="text-gray-900 hover:text-primary">Challenge</a>
+                        </li>
+                        <li><a href="#highlight" class="text-gray-900 hover:text-primary">Highlight</a>
+                        </li>
+                        <li><a href="#iteration" class="text-gray-900 hover:text-primary">Iteration</a>
+                        <li><a href="#user-testing" class="text-gray-900 hover:text-primary">User Testing</a>
+                        </li>
+                        <li><a href="#design-system" class="text-gray-900 hover:text-primary">Design System</a>
+                        </li>
+                        </li>
+                        <li><a href="#next-steps" class="text-gray-900 hover:text-primary">Next Steps</a>
+                        </li>
+                        <li><a href="#takeaways" class="text-gray-900 hover:text-primary">Takeaways</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    </main>
+    <div id="zoomOverlay">
+        <img src="" alt="Zoomed Image" id="zoomedImage">
+    </div>
+    <div id="custom-cursor"
+        class="fixed w-24 h-24 pointer-events-none hidden items-center justify-center text-gray-700 text-base bg-white/10 backdrop-blur-md border border-primary rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50 shadow-lg hover:scale-105">
+        View More
+    </div>
+
+    <div id="default-cursor"
+        class="fixed w-8 h-8 pointer-events-none hidden items-center justify-center rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50">
+        <div class="w-full h-full rounded-full border border-primary p-[1px] animate-spin-slow">
+            <div class="w-full h-full rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+            </div>
+        </div>
+    </div>
+    <style>
+        @keyframes spin-slow {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .animate-spin-slow {
+            animation: spin-slow 8s linear infinite;
+        }
+    </style>
+    <script src="../js/mousecursor.js"></script>
+    <script>
+        function toggleDescription(element) {
+            const description = element.nextElementSibling;
+            const arrow = element.querySelector('svg');
+
+            if (description.classList.contains('hidden')) {
+                description.classList.remove('hidden');
+                arrow.classList.add('rotate-90');
+            } else {
+                description.classList.add('hidden');
+                arrow.classList.remove('rotate-90');
+            }
+        }
+    </script>
+    <script>
+        function toggleStage(stageId) {
+            const stage = document.getElementById(stageId);
+            const arrow = document.getElementById(`arrow${stageId.charAt(stageId.length - 1)}`);
+
+            if (stage.classList.contains('hidden')) {
+                stage.classList.remove('hidden');
+                arrow.classList.add('rotate-90');
+            } else {
+                stage.classList.add('hidden');
+                arrow.classList.remove('rotate-90');
+            }
+        }
+    </script>
+    <script>
+        function toggleSection(element) {
+            const content = element.nextElementSibling;
+            const isExpanded = content.style.display !== 'none';
+            content.style.display = isExpanded ? 'none' : 'block';
+            const arrow = element.querySelector('.arrow');
+            arrow.textContent = isExpanded ? '▼' : '▲';
+        }
+    </script>
+
+    <footer class="bg-transparent py-24 pb-4 relative">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="italic text-center mb-24">
+                I am looking for an internship opportunity and would love to connect with you.
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+                <a href="mailto:jankarong@gmail.com"
+                    class="text-gray-900 hover:text-primary transition-colors duration-300 ml-2">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+            </h2>
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+
+                <p class="text-gray-900 order-1 md:order-1">
+                    2024 Janka Rong |
+                    Illustrations from Storyset.
+                </p>
+                <div class="flex space-x-4 order-2 md:order-2">
+                    <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
+                        class="text-gray-900 hover:text-primary transition-colors duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="mailto:jankarong@gmail.com"
+                        class="text-gray-900 hover:text-primary transition-colors duration-300">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-gray-900 order-3 md:order-3">
+                    jankarong@gmail.com
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/toogle.js"></script>
+    <script src="../js/onboarding.js"></script>
+    <script src="../js/zoomable.js"></script>
+    <script src="../js/scroll-nav.js"></script>
+    <script src="../js/scroll.js"></script>
+
+
+</body>
+
+</html>
+
+</html>

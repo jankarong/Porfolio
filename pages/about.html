@@ -28,6 +28,10 @@
     <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
 
 
+   <!-- css for back to top button -->
+   <link rel="stylesheet" href="../css/backToTop.css">
+
+
 
 
     <style>
@@ -97,54 +101,53 @@
 
 
     <div class="bg-tri-color-gradient min-h-screen ">
-        <header>
-            <nav class="bg-white bg-opacity-30 border-gray-200">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
-                    <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="../image/RJlogo.png" class="h-8" alt="RJ portfolio logo">
-                    </a>
-                    <button data-collapse-toggle="navbar-default" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-                        aria-controls="navbar-default" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
-                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                        <ul
-                            class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
-                            <li>
-                                <a href="../index.html" class="block py-2 pl-3 pr-4 md:p-0 text-primary"
-                                    aria-current="page">Home</a>
-                            </li>
-                            <li>
-                                <a href="./projects.html"
-                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">Projects</a>
-                            </li>
-                            <li>
-                                <a href="../pages/about.html"
-                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">About</a>
-                            </li>
-                            <li>
-                                <a href="mailto:jankarong@gmail.com"
-                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">
-                                    <i class="fa-regular fa-envelope"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
-                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="bg-white bg-opacity-30 border-gray-200">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+                <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="../image/RJlogo.png" class="h-8" alt="RJ portfolio logo">
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:translate-y-2">
+                        <li>
+                            <a href="../index.html" class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary"
+                                >Home</a>
+                        </li>
+                        <li>
+                            <a href="./projects.html"
+                                class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">Projects</a>
+                        </li>
+                        <li>
+                            <a href="../pages/about.html"
+                                class="block py-2 pl-3 pr-4 md:p-0 text-primary">About</a>
+                        </li>
+                        <li>
+                            <a href="mailto:jankarong@gmail.com"
+                                class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
+                                class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
         <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24">
 
@@ -358,10 +361,19 @@
             </div>
         </section>
 
+        <div class="flex justify-end mx-4 sm:mx-6 lg:mx-16 mb-12 mt-20">
+            <div id="backToTopContainer" class="flex flex-col items-center gap-2">
+                <i class="fas fa-arrow-up text-lg text-primary transition-transform duration-300"></i>
+                <button id="backToTop" class="group bg-white/10 backdrop-blur-sm border-[0.5px] border-primary/50 hover:border-primary hover:bg-white/15 text-primary/80 hover:text-primary px-5 py-1.5 rounded-full shadow-md cursor-pointer transition-all duration-300 ease-in-out">
+                    <span class="text-sm font-medium tracking-wider transition-transform duration-300">Back to Top</span>
+                </button>
+            </div>
+        </div>
+
         <footer class="bg-transparent py-24 pb-4 relative">
             <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <p class="text-xl italic font-medium text-primary md:text-2xl text-center mb-24">
-                    I am available for any opportunities and would love to cooperate with you.
+                    I am available for any opportunities and would love to connect with you.
                     <i class="fa-solid fa-arrow-right ml-2"></i>
                     <a href="mailto:jankarong@gmail.com"
                         class="text-gray-900 hover:text-primary transition-colors duration-300 ml-2">
@@ -371,7 +383,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
 
                     <p class="text-gray-900 order-1 md:order-1">
-                        © 2024 Janka Rong. All rights reserved.
+                        2024 Janka Rong. All rights reserved.
                     </p>
                     <div class="flex space-x-4 order-2 md:order-2">
                         <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
@@ -391,12 +403,38 @@
         </footer>
 
     </div>
+    <div id="custom-cursor" class="fixed w-24 h-24 pointer-events-none hidden items-center justify-center text-gray-700 text-base bg-white/10 backdrop-blur-md border border-primary rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50 shadow-lg hover:scale-105">
+        View More
+    </div>
+
+    <div id="default-cursor" class="fixed w-8 h-8 pointer-events-none hidden items-center justify-center rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50">
+        <div class="w-full h-full rounded-full border border-primary p-[1px] animate-spin-slow">
+            <div class="w-full h-full rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+            </div>
+        </div>
+    </div>
+    <style>
+        @keyframes spin-slow {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 8s linear infinite;
+        }
+    </style>
+   <script src="../js/mousecursor.js"></script>
 
     <script src="../js/toogle.js"></script>
     <script src="../js/fliter.js"></script>
     <script src="../js/pagination.js"></script>
     <script src="../js/guessGame.js"></script>
     <script src="../js/mousedraw.js"></script>
+    <script src="../js/backToTop.js"></script>
     <script>
         const durianText = document.querySelector('.highlight');
         const durianImageContainer = document.getElementById('durian-image-container');

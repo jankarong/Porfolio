@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the UX/UI design process of SportPal, an app connecting users to local sports events. Learn about user flow, style guide, and usability testing insights for this innovative sports community platform.">
+    <title>SportPal: UX/UI Case Study | Local Sports Event App Design | Jing Rong</title>
+    <!-- css link -->
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- google font link -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- flowbite css link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+    <!-- font awesome link -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+
+    <!-- favicon link -->
+
+    <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
+
+    <!-- zoomable css link -->
+
+    <link rel="stylesheet" href="../css/zoomable.css">
+
+
+
+
+</head>
+
+
+
+<body>
+    <div class="bg-tri-color-gradient min-h-screen ">
+        <header>
+            <nav class="bg-white bg-opacity-30 border-gray-200">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="../image/RJlogo.png" class="h-8" alt="RJ portfolio logo" />
+                    </a>
+                    <button data-collapse-toggle="navbar-default" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                        <ul
+                            class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+                            <li>
+                                <a href="../index.html" class="block py-2 pl-3 pr-4 md:p-0 text-primary"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="./projects.html"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">Projects</a>
+                            </li>
+                            <li>
+                                <a href="./about.html"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">About</a>
+                            </li>
+                            <li>
+                                <a href="mailto:jankarong@gmail.com"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="mx-4 sm:mx-8 md:mx-16 lg:mx-24">
+            <img src="../image/sportpaltop.gif" alt="">
+            <!-- Onboarding section -->
+            <div id="sportpal-onboarding"
+                class="max-w-6xl mx-auto py-16 px-0 sm:px-1 md:px-2 lg:px-3 flex flex-col md:flex-row items-center justify-center min-h-screen">
+                <!-- Left side - Image -->
+                <div class="w-full md:w-1/2 p-4 flex justify-center">
+                    <div class="w-full max-w-md lg:max-w-lg xl:max-w-xl">
+                        <img id="sportpal-tutorial-image" src="../image/sportpal1.png" alt="Tutorial step"
+                            class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+                <!-- Right side - Text and navigation -->
+                <div class="w-full md:w-1/2 p-4 flex flex-col items-center">
+                    <div id="sportpal-tutorial-text" class="text-center mb-8">
+                        <h1 class="text-lg md:text-xl lg:text-2xl font-medium">Have you ever want
+                            to join a sport event near your places?</h1>
+                    </div>
+
+                    <!-- Navigation dots with arrows -->
+                    <div class=" flex items-center space-x-2 mb-8">
+                        <button id="sportpal-prev-arrow" class="text-blue-500 focus:outline-none">&#9664;</button>
+                        <div id="sportpal-nav-dots" class="flex space-x-4">
+                            <button class="w-4 h-4 rounded-full bg-blue-500 transition-colors duration-200"></button>
+                            <button class="w-4 h-4 rounded-full bg-gray-300 transition-colors duration-200"></button>
+                            <button class="w-4 h-4 rounded-full bg-gray-300 transition-colors duration-200"></button>
+                            <button class="w-4 h-4 rounded-full bg-gray-300 transition-colors duration-200"></button>
+                            <button class="w-4 h-4 rounded-full bg-gray-300 transition-colors duration-200"></button>
+                        </div>
+                        <button id="sportpal-next-arrow" class="text-blue-500 focus:outline-none">&#9654;</button>
+                    </div>
+
+                    <!-- Buttons container -->
+                    <div class="flex space-x-4">
+                        <!-- Next button -->
+                        <button id="sportpal-next-button"
+                            class="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-200">Next</button>
+
+                        <!-- Skip button -->
+                        <button id="sportpal-skip-button"
+                            class="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-200">Skip
+                            ↓</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project details section -->
+
+            <section id="project-details" class="max-w-[1440px] mx-auto py-16 px-4 sm:px-6 md:px-8 lg:px-12">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <!-- Left side - Prototype Image -->
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0 flex items-center justify-center">
+                        <img src="../image/gif sportpal.gif" alt="SportPal App Prototype"
+                            class="w-48 sm:w-56 md:w-60 lg:w-64 xl:w-72 h-auto rounded-[45px]">
+                    </div>
+
+                    <!-- Right side - Project Details -->
+                    <div class="w-full md:w-1/2 space-y-8 p-4 md:p-6 lg:p-8">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="mb-4">
+                                <h2 class=" mb-2">Time Line</h2>
+
+                                <p>2024 March - May
+                                </p>
+                            </div>
+                            <div class="mb-4">
+                                <h2 class="mb-2">Role</h2>
+                                <p>UI/UX Designer
+                                </p>
+                            </div>
+                            <div class="mb-4">
+                                <h2 class="mb-2">Personal Deliverable
+                                </h2>
+                                <p>1. I designed the entire registration process for a sport event, including a
+                                    prototype.
+                                    <br>
+                                    2. I created a logo and a small design system.
+                                    <br>
+                                    3. After conducting user testing with Maze, I made some iterations based on the test
+                                    results.
+                                </p>
+                            </div>
+                            <div class="mb-4">
+                                <h2 class="mb-2">Image</h2>
+                                <p>
+                                    Figma/Illustrator/User
+                                    Test
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h2 class="mb-2">Introduction</h2>
+                            <p>
+                                SportPal is an app for sports lovers to easily find and join local sports
+                                activities. It <span class="text-primary">simplifies organizing sports events</span>
+                                and builds a <span class="text-primary">supportive community</span> for
+                                enjoying sports anytime, anywhere.
+                            </p>
+                        </div>
+                        <div class="mb-4">
+                            <h1 class="mb-2">Link</h1>
+                            <p>
+                                <a href="https://www.figma.com/proto/hJBMRkP5ttwot8BbeRnY6x/Term-Project---Phase-3?page-id=2261%3A986&node-id=2261-987&viewport=-6%2C141%2C0.46&t=HnGxCQsAUiKxGSVH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2261%3A987"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="text-primary hover:text-primary-dark">
+                                    Figma prototype <i class="fa-solid fa-link ml-2"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+
+    <!-- Main section containing both navigation and content -->
+    <section class="max-w-[1440px] mx-auto py-16 px-4 sm:px-6 md:px-8 lg:px-12">
+        <div class="flex flex-col md:flex-row">
+            <!-- Sidebar navigation -->
+            <nav class="w-full md:w-64 mb-8 md:mb-0">
+                <ul class="space-y-4 md:sticky md:top-8 text-sm md:text-base lg:text-lg">
+                    <li>
+                        <a href="#outcome" class="nav-link text-lg text-gray-500 hover:text-gray-700">Outcome</a>
+                    </li>
+                    <li>
+                        <a href="#plan" class="nav-link text-lg text-gray-500 hover:text-gray-700">User Flow</a>
+                    </li>
+                    <li>
+                        <a href="#research" class="nav-link text-lg text-gray-500 hover:text-gray-700">Style Guide</a>
+                    </li>
+                    <li>
+                        <a href="#insights" class="nav-link text-lg text-gray-500 hover:text-gray-700">User
+                            Test-Maze</a>
+                    </li>
+                    <li>
+                        <a href="#next-steps" class="nav-link text-lg text-gray-500 hover:text-gray-700">Next Steps</a>
+                    </li>
+                    <li>
+                        <a href="#learnings" class="nav-link text-lg text-gray-500 hover:text-gray-700">Takeaway</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Main content area -->
+            <div class="flex-1 md:ml-8">
+                <!-- Overview section -->
+                <div id="outcome" class="mb-16">
+                    <h2 class="mb-2">Outcome</h2>
+                    <p>I completed a user flow for joining an event
+                        through sportpal, analyzed the entire process for potential users, and
+                        standardized the app's style guide. Finally, I created a prototype and test on the Maze
+                        platform, identified
+                        three issues, and made improvements.</p>
+                </div>
+
+
+                <!-- UserFlow section -->
+                <div id="plan" class="mb-16">
+                    <h2 class="mb-2">User Flow</h2>
+                    <img src="../image/userflow.jpg" alt="userflow" class="mb-4 zoomable">
+                    <p>The user flow focuses on the event joining function,
+                        from
+                        home page to checkout. I've made it direct and clean, allowing
+                        users to <span class="text-primary"> input essential information </span>like<span
+                            class="text-primary"> contact
+                            details and
+                            members</span>. This design enables
+                        users to efficiently
+                        complete event registration while providing all necessary details with minimal friction. </p>
+                </div>
+                <div id="research" class="mb-16">
+                    <h2 class="mb-2">Style Guide</h2>
+                    <img src="../image/Style Guide.jpg" alt="Style Guide" class="mb-4 cursor-pointer zoomable">
+                </div>
+
+
+                <!-- User Test section -->
+                <div id="insights" class="mb-16">
+                    <h2 class="mb-2">User Test-Maze</h2>
+                    <p>The purpose of this test is to find out
+                        what problem
+                        they will meet when going through the app to join a sports event.
+                    </p>
+                    <p class="mb-4">Basically, it is easy for them to go
+                        through the
+                        mission but there are also some areas for improvement.
+
+                    </p>
+
+                    <img src="../image/issue1.jpg" alt="issue1" class="mb-4 zoomable">
+                    <h3 class="mb-2">User Adaptation to Sports Events Navigation</h3>
+                    <p class="mb-4">Through the heatmap, we can see people find it
+                        hard
+                        to find the sports events at the beginning. But they learn how to
+                        get it for another try.The <span class="text-primary">misclick rate</span> is <span
+                            class="text-primary">64%-27%-18%</span>.
+                    </p>
+                    <img src="../image/solution1.jpg" alt="soliution1" class="mb-4 zoomable">
+                    <h3 class="mb-2">Strategic UI Redesign Prioritizes Sports Events Access</h3>
+                    <p class=" mb-4">From the heatmap, I found that users tend to click
+                        the most obvious place, which previously contained the competition
+                        function. So I <span class="text-primary">replaced this most prominent area with the sports
+                            events page</span>, as that is my main
+                        function. For the
+                        competition feature, I simply <span class="text-primary">added an icon </span>on the sport
+                        selection page for users who want to
+                        announce their sport as a
+                        competition.
+                    </p>
+                    <img src="../image/issue2.jpg" alt="issue2" class="mb-4 zoomable">
+                    <h3 class="mb-2">Multiple Paths to Basketball Events: Flexibility in User Navigation</h3>
+                    <p class="mb-4">This task is to let people join the
+                        basketball
+                        events
+                        from the beginning to the end.Users join the events through
+                        different flows. So it shows 3 people navigating outside the expected path.
+                    </p>
+                    <p class="mb-4">However,there are <span class="text-primary"> two
+                            ways to go to join the
+                            basketball event</span>. One is to join basketball
+                        events through the overall
+                        sport page. The other is to select the basketball category page to join the basketball
+                        event. Two options are both to
+                        get to the final page. So people mistaking to join the events through category is
+                        acceptable.
+                    </p>
+                    <p class="mb-4">Since <span class="text-primary">people mistaking
+                            to
+                            join the events
+                            through category is acceptable</span>, I don't need to change anything.
+                    </p>
+
+                    <img src="../image/issue3.jpg" alt="issue3" class="mb-4 zoomable">
+                    <h3 class="mb-2">Category Design Needs Clarity and Logical Order</h3>
+                    <p class="mb-4">When users are asked to join the basketball
+                        through the basketball category,<span class="text-primary"> 36% </span>users do not directly
+                        choose the
+                        category.The category is not obvious enough.
+                    </p>
+                    <p class="mb-4">Besides,there is one suggestion for the category
+                        order. It's much more logical to make it in <span class="text-primary">alphabetical
+                            order</span>.
+
+                    </p>
+                    <img src="../image/soliution3.jpg" alt="soliution3" class="mb-4 zoomable">
+
+
+                    <p class="mb-4">I made a slight change. <span class="text-primary">
+                            Cut half of the sports icon</span>, make it more
+                        obvious for users to slide the
+                        icon to choose the
+                        category.
+                    </p>
+
+
+
+
+                </div>
+
+                <!-- Next Steps section -->
+                <div id="next-steps" class="mb-16">
+                    <h2 class="mb-2">Next Steps</h2>
+
+                    <p>
+
+                        1. Create a page for publishing sports events. Users can
+                        <span class="text-primary">click a '+' button to organize
+                            their
+                            own events</span>, increasing page
+                        content diversity.
+                        <br>
+                        2. Add a <span class="text-primary">search function </span>for sports events. This allows
+                        users to find relevant information
+                        and customize more precise
+                        searches.</li>
+
+                    </p>
+
+                    <div class="p-6">
+                        <div class="relative w-full overflow-hidden" style="padding-top: 56.25%;">
+                            <!-- 16:9 aspect ratio wrapper -->
+                            <iframe loading="lazy"
+                                style="border: 1px solid rgba(0, 0, 0, 0.1); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://embed.figma.com/board/zuGTInZZ6dfwVcvNhC7hck/Sportpal?embed-host=share"
+                                title="SportPal App Design - Interactive prototype showcasing sports event platform"
+                                aria-label="Interactive prototype of SportPal app featuring sports event discovery and registration process"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Learnings section -->
+                <div id="learnings" class="mb-16">
+                    <h2 class="mb-2">Takeaway</h2>
+
+                    <p>
+
+                        1.<span class="text-primary"> Conducting user tests revealed problems
+                            I hadn't
+                            noticed before</span>, which helped
+                        improve my
+                        design. This process showed me
+                        how real users interact with the interface, highlighting areas for improvement. It
+                        reinforced the value of testing in
+                        creating better, more user-friendly designs.
+                        <br>
+                        2. Utilizing components simplifies work, but requires time to learn. <span
+                            class="text-primary">Mastering
+                            components and
+                            autolayout</span> is worth the
+                        effort, as it makes design work more efficient <span class="text-primary">in the long
+                            run.</span></li>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="zoomOverlay">
+        <img src="" alt="Zoomed Image" id="zoomedImage">
+    </div>
+    <div id="custom-cursor" class="fixed w-24 h-24 pointer-events-none hidden items-center justify-center text-gray-700 text-base bg-white/10 backdrop-blur-md border border-primary rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50 shadow-lg hover:scale-105">
+        View More
+    </div>
+
+    <div id="default-cursor" class="fixed w-8 h-8 pointer-events-none hidden items-center justify-center rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50">
+        <div class="w-full h-full rounded-full border border-primary p-[1px] animate-spin-slow">
+            <div class="w-full h-full rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+            </div>
+        </div>
+    </div>
+    <style>
+        @keyframes spin-slow {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 8s linear infinite;
+        }
+    </style>
+   <script src="../js/mousecursor.js"></script>
+
+
+<!-- Project Navigation -->
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="flex justify-between items-center gap-8">
+        <a href="uiproject.html" class="group flex items-center gap-3 transition-all duration-300">
+            <div class="relative">
+                <div class="w-10 h-10 flex items-center justify-center rounded-full border border-primary group-hover:border-primary transition-all duration-300">
+                    <svg class="w-5 h-5 text-primary group-hover:text-primary transform group-hover:-translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-sm text-gray-600">Previous Project</span>
+                <span class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">More UI</span>
+            </div>
+        </a>
+
+        <div class="h-[0.5px] flex-1 max-w-[200px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+
+        <a href="Aiinlink.html" class="group flex items-center gap-3 transition-all duration-300">
+            <div class="flex flex-col items-end">
+                <span class="text-sm text-gray-600">Next Project</span>
+                <span class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">AI Inlink</span>
+            </div>
+            <div class="relative">
+                <div class="w-10 h-10 flex items-center justify-center rounded-full border border-primary group-hover:border-primary transition-all duration-300">
+                    <svg class="w-5 h-5 text-primary group-hover:text-primary transform group-hover:translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+    <footer class="bg-transparent py-24 pb-4 relative">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="italic text-center mb-24">
+                I am available for any opportunities and would love to connect with you.
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+                <a href="mailto:jankarong@gmail.com"
+                    class="text-gray-900 hover:text-primary transition-colors duration-300 ml-2">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+            </h2>
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+
+                <p class="text-gray-900 order-1 md:order-1">
+                    © 2024 Janka Rong |
+                    Illustrations from Storyset.
+                </p>
+                <div class="flex space-x-4 order-2 md:order-2">
+                    <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
+                        class="text-gray-900 hover:text-primary transition-colors duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="mailto:jankarong@gmail.com"
+                        class="text-gray-900 hover:text-primary transition-colors duration-300">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-gray-900 order-3 md:order-3">
+                    jankarong@gmail.com
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/toogle.js"></script>
+    <script src="../js/onboarding.js"></script>
+    <script src="../js/zoomable.js"></script>
+    <script src="../js/scroll-nav.js"></script>
+
+
+</body>
+
+</html>

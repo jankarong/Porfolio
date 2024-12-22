@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sliderstyle.css" media="print" onload="this.media='all'">
     <!--Swiper CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css" media="print"
-        onload="this.media='all'">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css" media="print"
+        onload="this.media='all'"> -->
     <!--SVG Animation CSS -->
     <link rel="stylesheet" href="../css/svgAnimation.css">
 
@@ -56,6 +56,9 @@
     <!-- CSS for sticky notes -->
     <link rel="stylesheet" href="./css/stickynote.css">
 
+    <!-- css for back to top button -->
+    <link rel="stylesheet" href="../css/backToTop.css">
+
 
 
 
@@ -82,7 +85,7 @@
                     </button>
                     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                         <ul
-                            class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+                            class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:translate-y-2">
                             <li>
                                 <a href="./index.html" class="block py-2 pl-3 pr-4 md:p-0 text-primary"
                                     aria-current="page">Home</a>
@@ -114,17 +117,16 @@
         </header>
 
         <section id="introduction" class="intro-section my-12 mx-4 md:mx-8 lg:mx-16">
-            <h2 class="mb-4 italic leading-tight tracking-tight text-gray-900  text-center">
+            <h1 class="mb-4 italic leading-tight tracking-tight text-gray-900  text-center">
                 Hello, I am Janka Rong.
-            </h2>
+            </h1>
             <figure class="max-w-screen-md mx-auto text-center mb-10">
                 👋👋😊
                 <blockquote>
                     <h3 class="italic text-gray-900 text-center mb-8">
-                        "Because I felt it hard to use some apps and website and
-                        <span class="text-primary">strong curiosity of new tech</span>,
-                        I decide to become a <span class="text-primary">product designer</span>.
-                        The best way to predict the future is to create it."
+                        "I am a UX-focused product designer skilled in creating <span class="text-primary">practical
+                            product solutions </span> based on user needs and market research, while leveraging <span
+                            class="text-primary">AI tools </span> to enhance workflow efficiency."
                     </h3>
                 </blockquote>
             </figure>
@@ -134,168 +136,171 @@
         <main class="my-8 md:my-12 lg:my-16">
             <div class="container mx-auto px-4 md:px-8 lg:px-16">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 md:gap-16 lg:gap-20">
-                    <!-- Naillabo Salon -->
-                    <div class="group effect-pulse">
-                        <div class="relative" style="padding-bottom: 75%;">
-                            <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M465.999 43.4994C405.749 54.2525 169.093 44.9084 109.499 4.49923C69.2233 -22.8102 -8.0336 96.5102 1.49838 164.999C14.9984 261.999 121.913 348.356 163.499 309.999C205.084 271.642 281.881 271.643 362.432 294.919C442.983 318.196 551.211 303.747 569.999 216.499C585.389 145.03 541.311 30.058 465.999 43.4994Z"
-                                    fill="#C3D4FF" />
-                            </svg>
-                            <div
-                                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 overflow-hidden">
-                                <a href="./pages/Naillabo.html" target="_blank" rel="noopener noreferrer"><img
-                                        src="./image/naillabosalon.png" alt="Naillabo Salon app" loading="lazy"
-                                        class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110"></a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h1>
-                                <a href="./pages/Naillabo.html" target="_blank" rel="noopener noreferrer">Naillabo Salon
-                                    Website</a>
-                            </h1>
-
-                            <p class="mb-2">Naillabo
-                                Salon's
-                                website
-                                project integrates online booking, customer reviews, and a nail art gallery. With
-                                responsive
-                                design, AI chatbot, and SEO optimization, it enhances user experience and online
-                                visibility.
-                            </p>
-                            <div class="flex gap-2 flex-wrap">
-                                <span class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">
-                                    Iteration</span>
-                                <span
-                                    class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">HTML&CSS</span>
-                                </span>
-
-                                <span
-                                    class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">SEO</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- AI Inlink -->
-                    <div class="group effect-pulse">
-                        <div class="relative" style="padding-bottom: 75%;">
-                            <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M465.999 43.4994C405.749 54.2525 169.093 44.9084 109.499 4.49923C69.2233 -22.8102 -8.0336 96.5102 1.49838 164.999C14.9984 261.999 121.913 348.356 163.499 309.999C205.084 271.642 281.881 271.643 362.432 294.919C442.983 318.196 551.211 303.747 569.999 216.499C585.389 145.03 541.311 30.058 465.999 43.4994Z"
-                                    fill="#FEC64F" />
-                            </svg>
-                            <div
-                                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 overflow-hidden">
-                                <a href="./pages/Aiinlink.html" target="_blank" rel="noopener noreferrer"><img
-                                        src="./image/AiinlinkMockup.png" alt="AI Inlink website"
-                                        class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110"></a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h1>
-                                <a href="./pages/Aiinlink.html" target="_blank" rel="noopener noreferrer">
-                                    AI Inlink</a>
-
-                            </h1>
-                            <p class="mb-2 ">AI Inlink is an
-                                innovative online community platform concept.It
-                                aims to create a
-                                user-friendly hub where people from all walks of life can discover, learn about, and
-                                share experiences with various AI
-                                tools.
-                            </p>
-                            <div class="flex gap-2 flex-wrap">
-                                <span
-                                    class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">WordPress</span>
-                                <span class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">AI
-                                    Tool</span>
-
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- Sportpal -->
-                    <div class="group effect-pulse">
-                        <div class="relative" style="padding-bottom: 75%;">
-                            <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M465.999 43.4994C405.749 54.2525 169.093 44.9084 109.499 4.49923C69.2233 -22.8102 -8.0336 96.5102 1.49838 164.999C14.9984 261.999 121.913 348.356 163.499 309.999C205.084 271.642 281.881 271.643 362.432 294.919C442.983 318.196 551.211 303.747 569.999 216.499C585.389 145.03 541.311 30.058 465.999 43.4994Z"
-                                    fill="#FEC64F" />
-                            </svg>
-                            <div
-                                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 overflow-hidden">
-                                <a href="./pages/sportpal.html" target="_blank" rel="noopener noreferrer"><img
-                                        src="./image/sportpalmockup.png" alt="Sportpal app" loading="lazy"
-                                        class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110"></a>
+                    <a href="./pages/sportpal.html" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="group effect-pulse">
+                            <div class="relative" style="padding-bottom: 75%;">
+                                <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M465.999 43.4994C405.749 54.2525 169.093 44.9084 109.499 4.49923C69.2233 -22.8102 -8.0336 96.5102 1.49838 164.999C14.9984 261.999 121.913 348.356 163.499 309.999C205.084 271.642 281.881 271.643 362.432 294.919C442.983 318.196 551.211 303.747 569.999 216.499C585.389 145.03 541.311 30.058 465.999 43.4994Z"
+                                        fill="#FEC64F" />
+                                </svg>
+                                <div
+                                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8/12 h-8/12 overflow-hidden">
+                                    <img src="./image/sportpalmockup.png" alt="Sportpal app" loading="lazy"
+                                        class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110">
+                                </div>
                             </div>
-                        </div>
-                        <div class="p-4">
-                            <h1>
-                                <a href="./pages/sportpal.html" target="_blank" rel="noopener noreferrer">Sportpal</a>
+                            <div class="p-4">
+                                <h1>Sportpal</h1>
+                                <p class="mb-2">SportPal is an
+                                    app
+                                    connecting users to local sports activities. The project includes user research,
+                                    design,
+                                    and
+                                    prototyping, with usability testing to optimize the user experience and create an
+                                    accessible
+                                    sports community.</p>
+                                <div class="flex gap-2 flex-wrap">
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">Design
+                                        System</span>
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">User
+                                        Research &Testing</span>
 
-                            </h1>
-                            <p class="mb-2">SportPal is an
-                                app
-                                connecting users to local sports activities. The project includes user research, design,
-                                and
-                                prototyping, with usability testing to optimize the user experience and create an
-                                accessible
-                                sports community.</p>
-                            <div class="flex gap-2 flex-wrap">
-                                <span
-                                    class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">Design
-                                    System</span>
-                                <span class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">User
-                                    Testing</span>
-                                <span
-                                    class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">Teamwork</span>
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">Competitive
+                                        Analysis</span>
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">Teamwork</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
+
+                    <!-- AI Inlink -->
+                    <a href="./pages/Aiinlink.html" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="group effect-pulse">
+                            <div class="relative" style="padding-bottom: 75%;">
+                                <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M465.999 43.4994C405.749 54.2525 169.093 44.9084 109.499 4.49923C69.2233 -22.8102 -8.0336 96.5102 1.49838 164.999C14.9984 261.999 121.913 348.356 163.499 309.999C205.084 271.642 281.881 271.643 362.432 294.919C442.983 318.196 551.211 303.747 569.999 216.499C585.389 145.03 541.311 30.058 465.999 43.4994Z"
+                                        fill="#C3D4FF" />
+                                </svg>
+                                <div
+                                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 overflow-hidden">
+                                    <img src="./image/AiinlinkMockup.png" alt="AI Inlink website"
+                                        class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110">
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h1>AI Inlink</h1>
+                                <p class="mb-2 ">AI Inlink is an
+                                    innovative online community platform concept.It
+                                    aims to create a
+                                    user-friendly hub where people from all walks of life can discover, learn about, and
+                                    share experiences with various AI
+                                    tools.
+                                </p>
+                                <div class="flex gap-2 flex-wrap">
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">WordPress</span>
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">AI
+                                        Tool</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Naillabo Salon -->
+                    <a href="./pages/Naillabo.html" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="group effect-pulse">
+                            <div class="relative" style="padding-bottom: 75%;">
+                                <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M465.999 43.4994C405.749 54.2525 169.093 44.9084 109.499 4.49923C69.2233 -22.8102 -8.0336 96.5102 1.49838 164.999C14.9984 261.999 121.913 348.356 163.499 309.999C205.084 271.642 281.881 271.643 362.432 294.919C442.983 318.196 551.211 303.747 569.999 216.499C585.389 145.03 541.311 30.058 465.999 43.4994Z"
+                                        fill="#C3D4FF" />
+                                </svg>
+                                <div
+                                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 overflow-hidden">
+                                    <img src="./image/naillabosalon.png" alt="Naillabo Salon app" loading="lazy"
+                                        class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110">
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h1>Naillabo Salon Website</h1>
+
+                                <p class="mb-2">Naillabo
+                                    Salon's
+                                    website
+                                    project integrates online booking, customer reviews, and a nail art gallery. With
+                                    responsive
+                                    design, AI chatbot, and SEO optimization, it enhances user experience and online
+                                    visibility.
+                                </p>
+                                <div class="flex gap-2 flex-wrap">
+                                    <span class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">
+                                        Iteration</span>
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">HTML&CSS</span>
+                                    </span>
+
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">SEO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
 
 
 
                     <!--chatime-->
-                    <div class="group effect-pulse">
-                        <div class="relative" style="padding-bottom: 75%;">
-                            <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M465.999 43.4994C405.749 54.2525 169.093 44.9084 109.499 4.49923C69.2233 -22.8102 -8.0336 96.5102 1.49838 164.999C14.9984 261.999 121.913 348.356 163.499 309.999C205.084 271.642 281.881 271.643 362.432 294.919C442.983 318.196 551.211 303.747 569.999 216.499C585.389 145.03 541.311 30.058 465.999 43.4994Z"
-                                    fill="#C3D4FF" />
-                            </svg>
-                            <div
-                                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 overflow-hidden">
-                                <a href="./pages/chatime.html" target="_blank" rel="noopener noreferrer"> <img
-                                        src="./image/chatimeMockup.png" alt="Bogcaada Wedding Winery website"
+                    <a href="./pages/chatime.html" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="group effect-pulse">
+                            <div class="relative" style="padding-bottom: 75%;">
+                                <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 574 320" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M465.999 43.4994C405.749 54.2525 169.093 44.9084 109.499 4.49923C69.2233 -22.8102 -8.0336 96.5102 1.49838 164.999C14.9984 261.999 121.913 348.356 163.499 309.999C205.084 271.642 281.881 271.643 362.432 294.919C442.983 318.196 551.211 303.747 569.999 216.499C585.389 145.03 541.311 30.058 465.999 43.4994Z"
+                                        fill="#FEC64F" />
+                                </svg>
+                                <div
+                                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 overflow-hidden">
+                                    <img src="./image/chatimeMockup.png" alt="Bogcaada Wedding Winery website"
                                         loading="lazy"
-                                        class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110"></a>
+                                        class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110">
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h1>Chatime Redesign</h1>
+                                <p class="mb-2">We employed a Lean UX process to assess and improve the Chatime website.
+                                    Our
+                                    approach included developing hypotheses, conducting user testing, and analyzing
+                                    results
+                                    using the System
+                                    Usability Scale and rainbow sheets.
+                                </p>
+                                <div class="flex gap-2 flex-wrap">
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">User
+                                        Research</span>
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">User
+                                        Testing</span>
+                                    <span
+                                        class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">Teamwork</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="p-4">
-                            <h1>
-                                <a href="./pages/chatime.html" target="_blank" rel="noopener noreferrer">Chatime
-                                    Redesign</a>
-                            </h1>
-                            <p class="mb-2">We employed a Lean UX process to assess and improve the Chatime website. Our
-                                approach included developing hypotheses, conducting user testing, and analyzing results
-                                using the System
-                                Usability Scale and rainbow sheets.
-                            </p>
-                            <div class="flex gap-2 flex-wrap">
-                                <span class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">User
-                                    Research</span>
-                                <span class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">User
-                                    Testing</span>
-                                <span
-                                    class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">Teamwork</span>
-                            </div>
-                        </div>
-                    </div>
-
+                    </a>
 
                 </div>
             </div>
@@ -407,69 +412,38 @@
             </div>
         </section>
 
-        <!--Video-->
-        <section id="codepen-slider" class="my-12">
-            <div class="container mx-auto px-4 md:px-8 lg:px-16">
-                <h1 class="mb-2">Video Creation</h1>
-                <h4 class=" mb-2">Just for fun</h4>
-                <div class="codepen-slider-container">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <div class="shape">
-                                    <iframe title="vimeo-player" loading="lazy"
-                                        src="https://player.vimeo.com/video/1020679422?h=81238160bd&byline=0&title=0&portrait=0&transparent=0&loop=1"
-                                        width="450" height="253" allowfullscreen style="border: none;">
-                                    </iframe>
-                                </div>
-                            </div>
-
-
-                            <div class="swiper-slide">
-                                <div class="shape">
-                                    <iframe title="vimeo-player" loading="lazy"
-                                        src="https://player.vimeo.com/video/989965440?h=81238160bd&byline=0&title=0&portrait=0&transparent=0&loop=1"
-                                        width="450" height="253" allowfullscreen style="border: none;">
-                                    </iframe>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="shape">
-                                    <iframe title="vimeo-player" loading="lazy"
-                                        src="https://player.vimeo.com/video/989967383?h=81238160bd&byline=0&title=0&portrait=0&transparent=0&loop=1"
-                                        width="450" height="253" allowfullscreen style="border: none;">
-                                    </iframe>
-                                </div>
-                            </div>
-
-
-                            <div class="swiper-slide">
-                                <div class="shape">
-                                    <iframe title="vimeo-player" loading="lazy"
-                                        src="https://player.vimeo.com/video/989356710?h=81238160bd&byline=0&title=0&portrait=0&transparent=0&loop=1"
-                                        width="450" height="253" allowfullscreen style="border: none;"> </iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Custom navigation buttons -->
-                        <div class="custom-prev">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </div>
-                        <div class="custom-next">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </div>
-                    </div>
+        <div id="custom-cursor"
+            class="fixed w-24 h-24 pointer-events-none hidden items-center justify-center text-gray-700 text-base bg-white/10 backdrop-blur-md border border-primary rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50 shadow-lg hover:scale-105">
+            View More
+        </div>
+        <div id="default-cursor"
+            class="fixed w-8 h-8 pointer-events-none hidden items-center justify-center rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50">
+            <div class="w-full h-full rounded-full border border-primary p-[1px] animate-spin-slow">
+                <div class="w-full h-full rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center">
+                    <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div class="flex justify-end mx-4 sm:mx-6 lg:mx-16 mb-12 mt-20">
+            <div id="backToTopContainer" class="flex flex-col items-center gap-2">
+                <i class="fas fa-arrow-up text-lg text-primary transition-transform duration-300"></i>
+                <button id="backToTop"
+                    class="group bg-white/10 backdrop-blur-sm border-[0.5px] border-primary/50 hover:border-primary hover:bg-white/15 text-primary/80 hover:text-primary px-5 py-1.5 rounded-full shadow-md cursor-pointer transition-all duration-300 ease-in-out">
+                    <span class="text-sm font-medium tracking-wider transition-transform duration-300">Back to
+                        Top</span>
+                </button>
+            </div>
+        </div>
+
+        <script src="../js/backToTop.js"></script>
 
 
 
         <footer class="bg-transparent py-24 pb-4 relative">
             <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-primary italic text-center mb-24">
-                    I am looking for intership opportunity and would love to cooperate with you.
+                    I am looking for intership opportunity and would love to connect with you.
                     <i class="fa-solid fa-arrow-right ml-2"></i>
                     <a href="mailto:jankarong@gmail.com"
                         class="text-gray-900 hover:text-primary transition-colors duration-300 ml-2">
@@ -479,7 +453,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
 
                     <p class="text-gray-900 order-1 md:order-1">
-                        © 2024 Janka Rong. All rights reserved.
+                        2024 Janka Rong. All rights reserved.
                     </p>
                     <div class="flex space-x-4 order-2 md:order-2">
                         <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
@@ -498,10 +472,13 @@
             </div>
         </footer>
 
+        <script src="./js/mousecursor.js"></script>
 
         <script src="./js/toogle.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js" defer></script>
         <script src="./js/slider.js" defer></script>
+
+        <!-- Sticky Notes -->
         <script>
             document.addEventListener('DOMContentLoaded', (event) => {
                 const stickyNotes = document.querySelectorAll('.sticky-note');
@@ -579,6 +556,56 @@
             });
 
         </script>
+        <script>document.addEventListener('DOMContentLoaded', (event) => {
+                const cursor = document.getElementById('custom-cursor');
+                const projectCards = document.querySelectorAll('.effect-pulse');
+
+                document.addEventListener('mousemove', (e) => {
+                    requestAnimationFrame(() => {
+                        cursor.style.left = e.clientX + 'px';
+                        cursor.style.top = e.clientY + 'px';
+                    });
+                });
+
+                projectCards.forEach(card => {
+                    card.addEventListener('mouseenter', () => {
+                        cursor.classList.remove('hidden');
+                        cursor.classList.add('flex');
+                        card.classList.add('cursor-none');
+                    });
+
+                    card.addEventListener('mouseleave', () => {
+                        cursor.classList.add('hidden');
+                        cursor.classList.remove('flex');
+                        card.classList.remove('cursor-none');
+                    });
+                });
+            });</script>
+        <script>document.addEventListener('DOMContentLoaded', (event) => {
+                const cursor = document.getElementById('custom-cursor');
+                const projectCards = document.querySelectorAll('.effect-pulse');
+
+                document.addEventListener('mousemove', (e) => {
+                    requestAnimationFrame(() => {
+                        cursor.style.left = e.clientX + 'px';
+                        cursor.style.top = e.clientY + 'px';
+                    });
+                });
+
+                projectCards.forEach(card => {
+                    card.addEventListener('mouseenter', () => {
+                        cursor.classList.remove('hidden');
+                        cursor.classList.add('flex');
+                        card.classList.add('cursor-none');
+                    });
+
+                    card.addEventListener('mouseleave', () => {
+                        cursor.classList.add('hidden');
+                        cursor.classList.remove('flex');
+                        card.classList.remove('cursor-none');
+                    });
+                });
+            });</script>
 
     </div>
 </body>
