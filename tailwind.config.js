@@ -5,10 +5,12 @@ module.exports = {
     "./pages/**/*.html",
   ],
   theme: {
+    fontFamily: {
+      'highlight': ['Spectral', 'serif'],
+      'sans': ['Arial', 'sans-serif'],
+      'body': ['Arial', 'sans-serif'],
+    },
     extend: {
-      fontFamily: {
-        'sans': ['Urbanist', 'sans-serif'],
-      },
       colors: {
         'custom-hover': '#406EE3',
         primary: '#406EE3',

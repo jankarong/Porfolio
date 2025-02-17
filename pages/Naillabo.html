@@ -6,19 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Explore NailLabo Salon's web design case study: Online booking system, AI chatbot, and SEO optimization resulting in 7.65k impressions, 212 clicks, and 15 customers. Learn how we boosted digital presence.">
-    <title>NailLabo Salon: Web Design & SEO Case Study | 15 Bookings, AI Chat, 7k+ Impressions</title>
+    <title>Nail Labo: UX/UI Case Study | Jing Rong</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFHGTL0SV1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NFHGTL0SV1');
+    </script>
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "pi37bmi9li");
+    </script>
     <!-- css link -->
     <link href="/css/style.css" rel="stylesheet">
 
     <!-- google font link -->
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- flowbite css link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-
     <!-- font awesome link -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- zoomable link -->
     <link rel="stylesheet" href="../css/zoomable.css">
@@ -40,7 +56,7 @@
                     <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src="../image/RJlogo.png" class="h-8" alt="RJ portfolio logo">
                     </a>
-                    <button data-collapse-toggle="navbar-default" type="button"
+                    <button id="navbar-toggle" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                         aria-controls="navbar-default" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -50,7 +66,7 @@
                                 d="M1 1h15M1 7h15M1 13h15" />
                         </svg>
                     </button>
-                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
                         <ul
                             class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:translate-y-2">
                             <li>
@@ -84,16 +100,8 @@
             <div class="relative w-full mb-24">
                 <img src="../image/naillabomockup.gif" alt="Naillabo Salon Showcase" class="w-full object-contain"
                     loading="lazy">
-                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center opacity-0 transition-opacity duration-500"
-                    id="scrollIndicator">
-                    <div class="scroll-indicator">
-                        <div class="scroll-dot"></div>
-                        <div class="scroll-arrows">
-                            <span class="arrow"></span>
-                            <span class="arrow"></span>
-
-                        </div>
-                    </div>
+                <div class="absolute bottom-64 left-1/2 -translate-x-1/2 z-20">
+                    <i class="fa-solid fa-chevron-down text-2xl text-gray-600 animate-bounce"></i>
                 </div>
             </div>
     </div>
@@ -107,309 +115,530 @@
                 <section id="overview" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Overview</h2>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        <!-- Left Column - Project Info -->
-                        <div class="space-y-6">
-
-
-                            <!-- Project Info List -->
-                            <div class="space-y-4">
-
-                                <h3>Outcome</h3>
-                                <ul class="list-disc pl-6">
-                                    <li>Launch a website <span class="text-primary">from 0 to 1.</span></li>
-                                    <li>Get <span class="text-primary">15 new customers</span>, driving<span
-                                            class="text-primary"> 7.65K impressions
-                                        </span>and <span class="text-primary">212 clicks</span> through organic
-                                        search.
-                                    </li>
-                                </ul>
-
-
-
+                    <!-- Main Content -->
+                    <div class="challenge-opportunity">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <h3>Problem</h3>
+                                <p class="text-highlight">Local nail salon lacks online booking or a website to showcase
+                                    their image. The owner wants a low-maintenance site to boost bookings and improve
+                                    online visibility.</p>
                             </div>
-                            <h3>Introduction</h4>
 
-                                <!-- Context Description -->
-                                <p>
-                                    I helped a local business, Naillabo salon, to design and develop a
-                                    website
-                                    that
-                                    features <span class="text-primary">online booking, service showcases,
-                                        an AI
-                                        chatbot and SEO-Optimized</span>.
-                                </p>
-                                <h3>Links</h3>
-                                <a href="https://Naillabosalon.com/" target="_blank" class="text-primary">
-                                    <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>
-                                    Naillabo Salon Website
-                                </a>
+                            <div>
+                                <h3>Introduction</h3>
+                                <p class="text-highlight">I helped Naillabo Salon design and develop a professional
+                                    website from 0 to 1, enabling online bookings and providing data-driven strategies.
+                                    Additionally, I improved work efficiency by integrating an AI chatbot and leveraging
+                                    the Instagram API.</p>
+                            </div>
                         </div>
 
+                        <div class="mb-8">
+                            <h3>Outcome:</h3>
+
+                            <div class="flex items-center gap-8">
+                                <!-- Naillabo Logo -->
+                                <div class="hidden md:block">
+                                    <img src="../image/naillaboicon.PNG" alt="Naillabo Logo"
+                                        class="w-16 h-16 object-contain">
+                                </div>
+
+                                <!-- Stats Grid -->
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4 w-8/12">
+                                    <!-- New Customers -->
+                                    <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg text-center">
+                                        <div class="text-primary text-highlight mb-2">35+</div>
+                                        <div class="text-sm">New Customers</div>
+                                    </div>
+                                    <!-- Impressions -->
+                                    <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg text-center">
+                                        <div class="text-primary text-highlight mb-2">20.2K</div>
+                                        <div class="text-sm">Impressions</div>
+                                    </div>
+                                    <!-- Clicks -->
+                                    <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg text-center">
+                                        <div class="text-primary text-highlight mb-2">520</div>
+                                        <div class="text-sm">Clicks</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="w-full h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent my-12">
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                                <div>
+                                    <h4>Timeline</h4>
+                                    <li>Three Months (2023)</li>
+                                </div>
+                                <div>
+                                    <h4>Key Contributions</h4>
+
+                                    <li>Competitor Analysis</li>
+                                    <li>User Research</li>
+                                    <li>Product Strategy</li>
+                                    <li>Style Guides</li>
+                                    <li>Visual Design</li>
 
 
-                        <!-- Right Column - Context -->
+                                </div>
+                                <div>
+                                    <h4>&nbsp;</h4>
+                                    <li>Frontend Development</li>
+                                    <li>SEO Analysis</li>
+                                    <li>Data Analysis</li>
+                                    <li>Instagram API Integration</li>
+                                    <li>AI Chatbot Deployment</li>
+                                </div>
+                                <div>
+                                    <h4>Links</h4>
+                                    <li><a href="https://www.naillabosalon.com" target="_blank"
+                                            class="hover:text-primary transition-colors">Live Website</a></li>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- First Version Section -->
+                <section id="first-version" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">First Version</h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="mb-4">Initial Design</h3>
+                                <p>The first version of the website was built with basic functionalities:</p>
+                                <ul class="list-disc pl-6">
+                                    <li>Landing page with service information</li>
+                                    <li>Basic contact form</li>
+                                    <li>Service gallery</li>
+                                    <li>Free booking system</li>
+                                    <li>AI chatbot Deployment</li>
+                                </ul>
+                                <p class="mt-4">This version created by <span class="text-primary">client's needs</span>
+                                    and served as a foundation for
+                                    further improvements based on
+                                    both <span class="text-primary">user</span> and <span class="text-primary">client
+                                        feedback and research.</span></p>
+                            </div>
+                        </div>
                         <div>
 
 
-                            <!-- Logo -->
-                            <img src="../image/naillaboicon.PNG" alt="naillabo Logo"
-                                class="h-8 md:h-10 lg:h-12 w-auto object-contain">
-
-                            <div>
-
-
-
-                                <div>
-                                    <h3>My Roles</h3>
-                                    <p>UX/UI Design, Frontend Development</p>
-                                </div>
-
-                                <div>
-                                    <h3>Personal Deliverable</h3>
-                                    <ul class="list-disc pl-6">
-                                        <li>Designed comprehensive website structure</li>
-                                        <li>Developed using HTML,
-                                            CSS, JavaScript, jQuery, AI
-                                        </li>
-                                        <li>Iterated based on client feedback and requirements</li>
-                                        <li>Implemented SEO optimization
-                                            strategies</li>
-                                    </ul>
-                                </div>
-
-                                <div>
-                                    <h3>Timeline</h3>
-                                    <p>2024 June - Now</p>
-                                </div>
-
-                            </div>
+                            <img src="../image/naillabo/firstVersion.gif" alt="First version of Naillabo website"
+                                class="w-full zoomable">
                         </div>
+                    </div>
                 </section>
 
-                <!-- Client's Needs Section -->
-                <section id="client-needs" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="mb-8">Client's Needs</h2>
-                    <main>
+                <!-- Challenge Section -->
+                <section id="challenge" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="flex items-center gap-2 mb-8">
+                        Challenge
+                    </h2>
 
-                        <blockquote class="italic flex items-start gap-4">
-                            <div class="flex flex-col items-center">
-                                <img src="../image/avatar.png" alt="Naillabo Salon Owner"
-                                    class="w-16 h-16 rounded-full object-cover flex-shrink-0">
-                                <span class="text-sm text-gray-600 mt-1">Naillabo Owner</span>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Communication Challenges -->
+                        <div class="bg-white bg-opacity-30 rounded-lg p-6">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-comments text-primary text-xl"></i>
+                                </div>
+                                <h3>Communication</h3>
                             </div>
-                            <div>
-                                <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor" viewBox="0 0 18 14">
-                                    <path
-                                        d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-                                </svg>
-                                <h3 class="text-gray-800 mb-8">I want to have a booking system, they can
-                                    easily
-                                    book the services they want, and their booking information will be sent
-                                    to
-                                    my email.</h3>
+                            <p>The owner's opinions kept changing, requiring constant adjustments based on her needs.
+                                During communication, it's
+                                important to <span class="text-primary">take notes</span> to facilitate
+                                confirmation with the owner.
+                            </p>
+                        </div>
+
+
+
+                        <!-- Analysis Challenges -->
+                        <div class="bg-white bg-opacity-30 rounded-lg p-6">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-magnifying-glass-chart text-primary text-xl"></i>
+                                </div>
+                                <h3>Analysis</h3>
                             </div>
-                        </blockquote>
+                            <p>Conducting competitor analysis, SEO, and on-page analysis is time-consuming, and
+                                developing <span class="text-primary">effective strategies</span> from
+                                these insights can be challenging.</p>
+                        </div>
+
+                        <!-- Technical Implementation -->
+                        <div class="bg-white bg-opacity-30 rounded-lg p-6">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                    <i class="fa-solid fa-gears text-primary text-xl"></i>
+                                </div>
+                                <h3>Implementation</h3>
+                            </div>
+                            <p>Technical requirements, such as a booking system, an AI chatbot, and the Instagram API,
+                                often require <span class="text-primary">online research</span> or
+                                learning through <span class="text-primary">YouTube tutorials</span> to be implemented
+                                effectively.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Competitor Analysis Section -->
+                <section id="competitor-analysis" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">Competitor Analysis</h2>
+
+                    <!-- Competitor Analysis Image -->
+                    <div class="mb-8">
+                        <div class="relative group">
+
+                            <blockquote class="flex items-start gap-4 mb-8">
+                                <div>
+                                    <svg class="w-8 h-8 text-gray-400" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                        <path
+                                            d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                    </svg>
+                                    <p class="mb-8">I analyzed 8 nearby nail salons from different perspectives to find
+                                        out what they <span class="text-primary">did well</span> and what they <span
+                                            class="text-primary">did poorly</span>, and
+                                        to identify some <span class="text-primary">opportunities</span> for us.
+                                    </p>
+                                </div>
+
+                            </blockquote>
+
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
+                        <!-- Analysis Content -->
+                        <div class="space-y-6">
+                            <div class="flex flex-col items-center gap-4">
+                                <div class="flex justify-center items-center">
+                                    <img src="../image/NailProsCons.png" alt="competitor analysis" class="w-full">
+                                </div>
+                                <a href="https://docs.google.com/spreadsheets/d/1e8XDcvgDI9XjKwTPjGqZmx1uupsJTMHKRuL9-EPik4g/edit?gid=1666014201#gid=1666014201"
+                                    target="_blank"
+                                    class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition-colors duration-300">
+                                    <i class="fa-solid fa-table"></i>
+                                    Competitor Analysis
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Analysis & Insights -->
+                        <div class="space-y-4">
+                            <h3 class="mb-4">Key Opportunities</h3>
+
+
+                            <h3 class="text-primary">Customer Engagement</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Improve Google Map ratings by using <span class="text-primary">QR codes</span> to
+                                    guide users to leave reviews
+                                </li>
+
+                                <li><span class="text-primary">Respond to negative reviews</span> professionally,
+                                    address
+                                    issues if valid
+                                </li>
+                                <li>Post regularly and take inspiration from posts by businesses with a larger
 
 
 
-                        <div class="flex flex-col md:flex-row items-center mb-24">
-                            <div class="md:w-1/2 mb-6 md:mb-0" data-aos="fade-right">
-                                <!-- <img src="/image/booking.gif" alt="booking" class="rounded-lg  zoomable"> -->
+                                    following
+                                </li>
+                            </ul>
 
-                                <div class="desktop-mockup-container appointment-mockup">
-                                    <div class="desktop-container">
-                                        <div class="desktop">
-                                            <div class="screen">
-                                                <img src="/image/bookingmockup.gif" alt="booking" class="zoomable">
-                                            </div>
-                                        </div>
-                                    </div>
+                            <h3 class="text-primary">Pricing and Information</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Provide clearer price displays to avoid
+                                    confusion</li>
+                                <li>Highlight <span class="text-primary">free parking</span> on Google Maps and
+                                    website</li>
+
+
+                            </ul>
+
+                            <h3 class="text-primary">Website Optimization</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li> Optimize the website to improve booking
+                                    conversion
+
+
+                                </li>
+                                <li>Improve local SEO and website SEO</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SEO Analysis Section -->
+                <section id="seo-analysis" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">SEO Strategy</h2>
+                    <blockquote class="flex items-start gap-4 mb-8">
+                        <div>
+                            <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 18 14">
+                                <path
+                                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                            </svg>
+                            <p class="mb-8">The website has relatively low traffic, so our first step is to aim for more
+                                visitors.I use <span class="text-primary">google search console</span> and <span
+                                    class="text-primary">semrush</span> to analyze the website's SEO
+                                performance, and get the following insights:
+                            </p>
+                        </div>
+                    </blockquote>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <!-- Strategy 1 -->
+                        <div class="flex flex-col items-center p-4 bg-white bg-opacity-30 rounded-lg shadow-md">
+                            <img src="../image/naillabo/Insight1.png" alt="SEO Strategy 1" class="zoomable">
+                            <h3 class="text-primary">Focus on Local SEO</h3>
+                            <p class="text-center">Many high-search-volume keywords are associated with local
+                                businesses, making it worthwhile to focus on local SEO. Achieving higher rankings for
+                                local business terms can drive more customers to book through the website.</p>
+                        </div>
+                        <!-- Strategy 2 -->
+                        <div class="flex flex-col items-center p-4 bg-white bg-opacity-30 rounded-lg shadow-md">
+                            <img src="../image/naillabo/Insight2.png" alt="SEO Strategy 2" class="zoomable">
+                            <h3 class="text-primary">Target Strategic Keywords</h3>
+                            <p class="text-center">Identify and optimize competitors' keywords as well as existing
+                                keywords with
+                                impressions that have <span class="text-primary">high search
+                                    volumes, low competition,</span> and no local business listings shown.</p>
+                        </div>
+                        <!-- Strategy 3 -->
+                        <div class="flex flex-col items-center p-4 bg-white bg-opacity-30 rounded-lg shadow-md">
+                            <img src="../image/naillabo/Insight3.png" alt="SEO Strategy 3" class="zoomable">
+                            <h3 class="text-primary">Expand Service Content</h3>
+                            <p class="text-center">Service-related keywords are not fully covered yet, so it's better to
+                                add more
+                                pages to target these keywords. Start
+                                by <span class="text-primary">displaying relevant content</span>, then focus on
+                                optimizing keyword rankings.</p>
+                        </div>
+                        <!-- Strategy 4 -->
+                        <div class="flex flex-col items-center p-4 bg-white bg-opacity-30 rounded-lg shadow-md">
+                            <img src="../image/naillabo/Insight4.png" alt="SEO Strategy 4" class="zoomable">
+                            <h3 class="text-primary">Link Building</h3>
+                            <p class="text-center">Find backlinks from other nail salon websites or places where we can
+                                submit our link. This will help build trust and authority in search results, improve our
+                                ranking, and attract more users to our site.</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- On-Page Analytics Section -->
+                <section id="onpage-analytics" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-8">On-Page Analytics</h2>
+                    <blockquote class="flex items-start gap-4 mb-8">
+                        <div>
+                            <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 18 14">
+                                <path
+                                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                            </svg>
+                            <p class="mb-8">After gaining enough traffic, I used Microsoft Clarity to analyze <span
+                                    class="text-primary">browsing paths</span> and <span class="text-primary">user
+                                    behaviors</span>, identifying UX
+                                issues and gaining valuable insights to iterate on the website.
+                            </p>
+
+                        </div>
+
+                    </blockquote>
+
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
+                        <!-- Analytics Content -->
+                        <div class="flex items-center space-y-6">
+                            <img src="../image/naillabo/googleAnalysis.png" alt="on-page analytics" class="w-full">
+
+                        </div>
+
+                        <!-- Analysis & Insights -->
+                        <div class="space-y-4">
+                            <h3 class="mb-4">Key Insights</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                                <div class="p-6 bg-white rounded-lg shadow-md">
+                                    <div class="text-4xl font-bold mb-2">76.79%</div>
+                                    <p class="text-gray-600">Mobile traffic</p>
+                                    <p class="text-sm mt-2">Focus on <span class="text-primary">mobile device</span>
+                                        optimization</p>
+                                </div>
+                                <div class="p-6 bg-white rounded-lg shadow-md">
+                                    <div class="text-4xl font-bold mb-2">49.65%</div>
+                                    <p class="text-gray-600">Scroll depth</p>
+                                    <p class="text-sm mt-2">Keep <span class="text-primary">content above the fold and
+                                            shorter</span></p>
+                                </div>
+                                <div class="p-6 bg-white rounded-lg shadow-md">
+                                    <div class="text-4xl font-bold mb-2">12.5%</div>
+                                    <p class="text-gray-600">Dead Clicks</p>
+                                    <p class="text-sm mt-2">Identify unresponsive click areas and fix button
+                                        functionality</p>
+                                </div>
+                                <div class="p-6 bg-white rounded-lg shadow-md">
+                                    <div class="text-4xl font-bold mb-2">28.57%</div>
+                                    <p class="text-gray-600">Quick Backs</p>
+                                    <p class="text-sm mt-2">Improve content relevance and navigation experience</p>
                                 </div>
                             </div>
-                            <div class="md:w-1/2 md:pl-8" data-aos="fade-left">
-                                <h2 class="mb-3 text-primary">
-                                    Get 15 New customers from Scratch
-                                </h2>
-                                <p>I set up an online booking system for the client using Tally Forms,
-                                    chosen for its<span class="text-primary"> free
-                                        unlimited forms, responses, data
-                                        security, and quick deployment</span>. The system allows customers
-                                    to select services
-                                    and
-                                    appointment times. Upon submission,
-                                    customers receive an <span class="text-primary"> email confirmation and
-                                        are directed to a
-                                        thank you page. </span>To date, the
-                                    system has successfully
-                                    facilitated 15 new customers.</p>
-
-                            </div>
                         </div>
-
-                        <blockquote class="italic flex items-start gap-4">
-                            <div class="flex flex-col items-center">
-                                <img src="../image/avatar.png" alt="Naillabo Salon Owner"
-                                    class="w-16 h-16 rounded-full object-cover flex-shrink-0">
-                                <span class="text-sm text-gray-600 mt-1">Naillabo Owner</span>
-                            </div>
-                            <div>
-                                <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor" viewBox="0 0 18 14">
-                                    <path
-                                        d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-                                </svg>
-                                <h2 class="mb-16 text-gray-800">I don't have so much time to take care of
-                                    the
-                                    website, could u help
-                                    me to build
-                                    an automated response robot?</h2>
-                            </div>
-                        </blockquote>
-
-                        <div class="flex flex-col md:flex-row-reverse items-center mb-24">
-                            <div class="md:w-1/2 mb-6 md:mb-0 flex justify-center" data-aos="fade-right">
-                                <!-- <img src="../image/appointment.gif" alt="ai robot"
-                                                class="rounded-lg shadow-md w-1/2 max-w-[400px]"> -->
-                                <div class="vertical-mockup-container">
-                                    <div class="vertical-container">
-                                        <div class="vertical-device">
-                                            <div class="vertical-notch"></div>
-                                            <div class="vertical-screen" style="max-width: 300px; margin: 0 auto;">
-                                                <img src="../image/airobotmockup.gif" alt="AI robot">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="md:w-1/2 md:pl-8" data-aos="fade-left">
-                                <h2 class="mb-3 text-primary">AI Robot Customer Service</h2>
-                                <p>Naillabo Salon's website features an AI chatbot that
-                                    assists customers
-                                    24/7. It answers questions, helps with bookings,
-                                    and suggests services anytime based on <span class="text-primary">given
-                                        material</span>.
-                                    This
-                                    convenient feature not only improves customer service
-                                    but also significantly <span class="text-primary">reduces the cost of
-                                        staff time spent
-                                    </span>on responding to routine
-                                    inquiries.</p>
-                            </div>
-                        </div>
-
-                        <blockquote class="italic flex items-start gap-4">
-                            <div class="flex flex-col items-center">
-                                <img src="../image/avatar.png" alt="Naillabo Salon Owner"
-                                    class="w-16 h-16 rounded-full object-cover flex-shrink-0">
-                                <span class="text-sm text-gray-600 mt-1">Naillabo Owner</span>
-                            </div>
-                            <div>
-                                <svg class="w-8 h-8 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor" viewBox="0 0 18 14">
-                                    <path
-                                        d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-                                </svg>
-                                <h2 class="mb-16 text-gray-800">I want when customers search the keyword, my
-                                    salon website shows at
-                                    the front
-                                    page.
-                                </h2>
-                            </div>
-                        </blockquote>
-
-                        <div class="flex flex-col md:flex-row items-center">
-                            <div class="md:w-1/2 mb-6 md:mb-0 md:pr-4 justify-center" data-aos="fade-left">
-                                <img src="../image/seodata.png" alt="SEO Data"
-                                    class="rounded-lg shadow-md max-w-full h-auto">
-                            </div>
-                            <div class="md:w-1/2 md:pl-4" data-aos="fade-right">
-                                <h2 class="mb-3 text-primary">SEO Optimization</h2>
-                                <p>After SEO optimization, Naillabo Salon's website
-                                    showed great results. It appeared<span class="text-primary"> 7.65k times
-                                        in search
-                                        results</span>, meaning 7.65k potential
-                                    customers saw the salon's information. Out of these,<span class="text-primary"> 212
-                                        people
-                                        clicked</span> on the website link
-                                    to learn more about the salon's services. The website's average position
-                                    in search results
-                                    was 18.4. This makes it easier for more people to find Naillabo Salon
-                                    online.</p>
-                            </div>
-                        </div>
-
-                    </main>
-
-
+                    </div>
                 </section>
 
                 <!-- Iteration Section -->
                 <section id="iteration" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2>Iteration</h2>
-
-                    <!-- Home Page Iteration -->
-                    <h2 class="text-primary mb-6 mt-12">Desktop Version</h2>
-                    <div
-                        class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
-                        <div class="space-y-4">
-                            <div>
-                                <h3 class="text-primary mb-4">Home Page Optimization</h3>
-
-                                <ul class="list-disc pl-6">
-                                    <li>Add review section to increase booking conversion rates</li>
-                                    <li>Add service section-SEO to improve website visibility</li>
-                                    <li>Add AI robot to increase interaction and answer questions</li>
-                                    <li>Add text hierarchy to improve readability</li>
-                                </ul>
-
-                            </div>
-                        </div>
-                        <div>
-                            <img src="../image/HomeNew.png" alt="booking page iteration" class="w-full zoomable">
-                        </div>
-                    </div>
-
-                    <!-- Add margin between sections -->
-                    <div class="my-8"></div>
-
-                    <!-- Booking Page Iteration -->
-                    <div
-                        class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
-                        <div class="space-y-4">
-                            <div>
-                                <h3 class="text-primary mb-4">Booking Page Optimization</h3>
-
-                                <ul class="list-disc pl-6">
-                                    <li>Optimize the reservation Form to give introduction to customers and
-                                        provide multiple selections to improve booking process</li>
-                                    <li>Appointment Confirmation to thank customers and encourage them to make
-                                        a phone call for emergency appointment</li>
-                                </ul>
-
-                            </div>
-
-                        </div>
-                        <div>
-                            <img src="../image/bookingpage.png" alt="booking page iteration" class="w-full zoomable">
-                        </div>
-                    </div>
-
-                    <!-- Mobile Version Iteration -->
-                    <h2 class="text-primary mb-6 mt-12">Mobile Version</h2>
-                    <div
-                        class="grid grid-cols-1 gap-8 mb-8 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
-                        <!-- Mobile Iteration 1 -->
+                    <h2 class="mb-8">Iteration</h2>
+                    <div class="grid grid-cols-1 gap-8 mb-8 p-8 rounded-lg border border-gray-200">
+                        <!-- Mobile Iteration 1: Image Left, Text Right -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                            <div class="flex items-center order-1">
-                                <div>
-                                    <h3 class="text-primary mb-4">Accessibility</h3>
-                                    <p>I change the color contrast of the website to improve the
-                                        accessibility
-                                        for
-                                        people with visual impairments.</p>
+                            <div class="p-6">
+                                <div class="vertical-mockup-container">
+                                    <div class="vertical-container">
+                                        <div class="vertical-device">
+                                            <div class="vertical-notch"></div>
+                                            <div class="vertical-screen">
+                                                <img src="../image/naillabo/HomaPageOpti.png" alt="Mobile Navigation"
+                                                    class="zoomable">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div>
+                                <h3 class="mb-4">Home Page & Header Optimization</h3>
+                                <blockquote class="flex items-start gap-4 mb-8">
+                                    <div>
+                                        <svg class="w-8 h-8 text-gray-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                            <path
+                                                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                        </svg>
+                                        <p class="mb-8">Many mobile users scrolled down, but only a small percentage
+                                            reached the bottom. I shorten the page length and turn the testimonials and
+                                            services
+                                            into a <span class="text-primary">carousel</span>. Additionally, making the
+                                            <span class="text-primary">header sticky</span> so users don't
+                                            have to scroll down and then back up again.
+                                        </p>
+                                    </div>
+
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Iteration 2: Text Left, Image Right -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                            <div>
+                                <h3 class="mb-4">Contact Page & Footer Optimization</h3>
+                                <blockquote class="flex items-start gap-4 mb-8">
+                                    <div>
+
+                                        <svg class="w-8 h-8 text-gray-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                            <path
+                                                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                        </svg>
+                                        <p class="mb-8">I <span class="text-primary">removed the 'contact
+                                                page'</span> and anchored the contact information in the footer
+                                            instead, along with adding our key advantage from research— <span
+                                                class="text-primary">'free parking available.'</span> This
+                                            simplifies the website structure while keeping essential details visible
+                                            on every page.</p>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="p-6">
+                                <div class="vertical-mockup-container">
+                                    <div class="vertical-container">
+                                        <div class="vertical-device">
+                                            <div class="vertical-notch"></div>
+                                            <div class="vertical-screen">
+                                                <img src="../image/naillabo/Contact_Optimize.png" alt="Contact Page"
+                                                    class="zoomable">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Iteration 3: Image Left, Text Right -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                            <div class="p-6">
+                                <div class="vertical-mockup-container">
+                                    <div class="vertical-container">
+                                        <div class="vertical-device">
+                                            <div class="vertical-notch"></div>
+                                            <div class="vertical-screen">
+                                                <img src="../image/naillabo/galleryPage.png" alt="Mobile Gallery Page"
+                                                    class="zoomable">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="mb-4">Gallery Page Optimization</h3>
+                                <blockquote class="flex items-start gap-4 mb-8">
+                                    <div>
+
+                                        <svg class="w-8 h-8 text-gray-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                            <path
+                                                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                        </svg>
+                                        <p class="mb-8">12.5% of people are more interested in the gallery's
+                                            categories, indicating a strong interest in images. Therefore, I
+                                            increased the <span class="text-primary">emphasis on image displays.</span>
+
+                                        <p>Additionally, 17.85% of users click the Instagram button instead
+                                            of viewing
+                                            the images directly. To address this, I
+                                            <span class="text-primary">integrated Instagram's API</span> to
+                                            automatically update images and videos, saving time on future maintenance.
+                                        </p>
+                                    </div>
+
+
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Iteration 4: Text Left, Image Right -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+                            <div>
+                                <h3 class="mb-4">Service Page Optimization</h3>
+                                <blockquote class="flex items-start gap-4 mb-8">
+                                    <div>
+
+                                        <svg class="w-8 h-8 text-gray-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                            <path
+                                                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                        </svg>
+                                        <p class="mb-2">
+                                            According to the SEO analysis, the main related service keywords, such as
+                                            'manicure,' 'pedicure,' and 'eyelash,' are
+                                            not covered. Instead of cramming all services onto the homepage, I created
+                                            <span class="text-primary">separate pages for each service</span> to
+                                            optimize
+                                            the service-focused keywords and improve the website's visibility.
+                                        </p>
+
+                                    </div>
+                                </blockquote>
                             </div>
                             <div class="p-6 order-2">
                                 <div class="vertical-mockup-container">
@@ -417,7 +646,7 @@
                                         <div class="vertical-device">
                                             <div class="vertical-notch"></div>
                                             <div class="vertical-screen">
-                                                <img src="../image/mobileNav.png" alt="Mobile Navigation"
+                                                <img src="../image/naillabo/servicePage.png" alt="service Page"
                                                     class="zoomable">
                                             </div>
                                         </div>
@@ -426,329 +655,104 @@
                             </div>
                         </div>
 
-                        <!-- Mobile Iteration 2 -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                            <div class="p-6 order-2 md:order-1">
+                        <!-- Mobile Iteration 5: Image Left, Text Right -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+                            <div class="p-6 order-1">
                                 <div class="vertical-mockup-container">
                                     <div class="vertical-container">
                                         <div class="vertical-device">
                                             <div class="vertical-notch"></div>
                                             <div class="vertical-screen">
-                                                <img src="../image/mobile-home.png" alt="Mobile Services Layout"
+                                                <img src="../image/naillabo/PricingPage.png" alt="Booking System"
                                                     class="zoomable">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex items-center order-1 md:order-2">
-                                <div>
-                                    <h3 class="text-primary mb-4">Touch target and
-                                        slider layout optimization</h3>
+                            <div class="order-2">
+                                <h3 class="mb-4">Pricing Page Added</h3>
+                                <blockquote class="flex items-start gap-4 mb-8">
+                                    <div>
+                                        <svg class="w-8 h-8 text-gray-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                            <path
+                                                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                                        </svg>
+                                        <p class="mb-2">
+                                            Based on negative reviews on Google Maps, many customers complained about
+                                            the <span class="text-primary">lack of price transparency</span>. To
+                                            address
+                                            this, I convinced the owner to introduce basic service prices and added a
+                                            <span class="text-primary">pricing page</span>, which was initially
+                                            resisted.
+                                        </p>
 
-                                    <ul class="list-disc pl-6">
-                                        <li>Sufficient spacing in navigation ensures comfortable finger
-                                            tapping and aligns with mobile design best practices</li>
-                                        <li>Changed from horizontal to vertical slider layout,
-                                            preventing
-                                            content overlap and providing cleaner separation between
-                                            images and text</li>
-                                    </ul>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Mobile Iteration 3 -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                            <div class="flex items-center order-1">
-                                <div>
-                                    <h3 class="text-primary mb-4">Gallery Layout & CTA Improvements</h3>
-                                    <ul class="list-disc pl-6">
-                                        <li>Transformed from a single-column layout into a slider
-                                            format,
-                                            creating a more dynamic and engaging way for users to
-                                            browse through beauty services</li>
-                                        <li>Users want to see more pictures, so I added clear "View More on
-                                            Instagram" CTAs within each
-                                            service
-                                            section, strengthening social media integration and
-                                            encouraging users to explore more content on the platform
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="p-6 order-2">
-                                <div class="vertical-mockup-container">
-                                    <div class="vertical-container">
-                                        <div class="vertical-device">
-                                            <div class="vertical-notch"></div>
-                                            <div class="vertical-screen">
-                                                <img src="../image/Mobile-gallery.png" alt="Mobile Booking Process"
-                                                    class="zoomable">
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>
+                                </blockquote>
                             </div>
                         </div>
-
-                        <!-- Mobile Iteration 4 -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                            <div class="p-6 order-2 md:order-1">
-                                <div class="vertical-mockup-container">
-                                    <div class="vertical-container">
-                                        <div class="vertical-device">
-                                            <div class="vertical-notch"></div>
-                                            <div class="vertical-screen">
-                                                <img src="../image/Mobile-contact.png" alt="Mobile Gallery View"
-                                                    class="zoomable">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex items-center order-1 md:order-2">
-                                <div>
-                                    <h3 class="text-primary mb-4">Contact Page Layout & Content Format
-                                        for
-                                        Mobile
-                                        Users
-                                    </h3>
-                                    <ul class="list-disc pl-6">
-                                        <li>The design changed from a text-heavy layout to a clean card
-                                            design,
-                                            making it easier for customers to scan and read the
-                                            information.</li>
-                                        <li>The contact process simplified from complex text
-                                            instructions to
-                                            clickable buttons and phone number, allowing customers to
-                                            make
-                                            appointments faster.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
 
                     </div>
                 </section>
 
-                <!-- SEO Strategy Section -->
-                <section id="SEO-strategy" class="mb-24" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="mb-8">SEO Strategy</h2>
-
-
-
-                    <!-- Point 1 -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-                        <div class="flex items-center order-1">
-                            <div>
-                                <h3 class="mb-6">
-                                    <i class="fa-solid fa-location-dot text-primary mr-2"></i>
-                                    Location-Focused Keywords Boost Salon Visibility
-                                </h3>
-                                <p class="mb-2">
-                                    I focused the SEO strategy on local searches to attract nearby customers
-                                    more likely to book with Naillabo Salon. This
-                                    involved combining nail salon services with <span class="text-primary">"near
-                                        me"
-                                        keywords and using location-specific
-                                        terms like "Richmond" and "Vancouver". </span> The approach
-                                    positioned
-                                    Naillabo Salon in searches
-                                    from people nearby looking for specific services,
-                                    increasing booking chances.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-6 order-2">
-                            <img src="../image/nailSEOStrategies.png" alt="SEO keyword"
-                                class="w-full h-auto rounded-lg">
-                        </div>
-                    </div>
-
-                    <!-- Point 2 -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-                        <div class="p-6 order-2 md:order-1">
-                            <img src="../image/nailSEOStrategies2.png" alt="SEO keyword"
-                                class="w-full h-auto rounded-lg">
-                        </div>
-                        <div class="flex items-center order-1 md:order-2">
-                            <div>
-                                <h3 class="mb-6">
-                                    <i class="fa-solid fa-magnifying-glass text-primary mr-2"></i>
-                                    Long-Tail Keywords for Targeted Traffic
-                                </h3>
-                                <p class="mb-2">
-                                    I also selected long-tail keywords related to specific salon services.
-                                    These
-                                    had<span class="text-primary"> lower search volumes but were highly
-                                        targeted</span> and easier to optimize for.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Point 3 (New) -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-                        <div class="flex items-center order-1">
-                            <div>
-                                <h3 class="mb-6">
-                                    <i class="fa-solid fa-list-check text-primary mr-2"></i>
-                                    Service-Specific Keywords
-                                </h3>
-                                <p>
-                                    I optimized the website's SEO by strategically placing keywords and
-                                    <span class="text-primary">creating separate
-                                        sections for each main service</span>.
-                                    Using professional SEO tools like Semrush, I improved the overall SEO
-                                    performance while
-                                    maintaining readability,
-                                    originality, and an appropriate tone of voice. These enhancements aim to
-                                    boost our
-                                    search
-                                    engine rankings and attract
-                                    more potential clients searching for nail and lash services in our area.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-6 order-2">
-                            <img src="../image/seoscore.png" alt="Content Optimization"
-                                class="w-1/2 h-auto rounded-lg zoomable mx-auto">
-                        </div>
-                    </div>
-
-                    <!-- Point 4 (New) -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-                        <div class="p-6 order-2 md:order-1">
-                            <img src="../image/backlink.png" alt="Technical SEO"
-                                class="w-full h-auto rounded-lg zoomable">
-                        </div>
-                        <div class="flex items-center order-1 md:order-2">
-                            <div>
-                                <h3 class="mb-6">
-                                    <i class="fa-solid fa-link text-primary mr-2"></i>
-                                    Backlink Acquisition
-                                </h3>
-                                <p class="mb-2">
-                                    I focused on acquiring backlinks from diverse channels to improve the
-                                    website's authority and search rankings.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Add new Point 5 -->
+                <!-- Style Guide Section -->
+                <section id="style-guide" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="mb-4">Style Guide</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="flex items-center order-1">
-                            <div>
-                                <h3 class="mb-6">
-                                    <i class="fa-solid fa-star text-primary mr-2"></i>
-                                    Google Maps Reviews
-                                </h3>
-                                <p class="mb-2">
-                                    I focused on acquiring Google Maps reviews to improve the website's
-                                    local search visibility and customer trust.
-                                </p>
-                            </div>
+                        <!-- Left Column -->
+                        <div>
+
+                            <img src="../image/naillabo/styleGuide.png" alt="styleguide">
                         </div>
-                        <div class="p-6 order-2">
-                            <img src="../image/googleReview.png" alt="Google Maps Reviews"
-                                class="w-1/2 h-auto rounded-lg zoomable mx-auto">
-                        </div>
-                    </div>
-
-
-
-                </section>
-
-                <!-- Next Steps Section -->
-                <section id="next-steps" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="flex items-center gap-2">
-                        Next Steps
-                    </h2>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <!-- Step 1 -->
-                        <div class="bg-white bg-opacity-30 rounded-lg p-6">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
-                                    <i class="fa-solid fa-magnifying-glass text-primary text-xl"></i>
-                                </div>
-                                <h3>Optimize other keywords</h3>
-                            </div>
-                            <p>Some Keywords like <span class="text-primary">"Nail salon near me" and
-                                    "nailsalon richmond" are in the front
-                                    page.</span> I need to design and develop new pages to optimize other
-                                service keywords like "eyelash richmond","manicure richmond" etc.</p>
-                        </div>
-
-                        <!-- Step 2 -->
-                        <div class="bg-white bg-opacity-30 rounded-lg p-6">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
-                                    <i class="fa-solid fa-share-nodes text-primary text-xl"></i>
-                                </div>
-                                <h3>Develop a post page</h3>
-                            </div>
-                            <p>Create a post page that automatically connects with <span class="text-primary">social
-                                    media posts and
-                                    google Map post </span>to enhance SEO ranking.</p>
-                        </div>
-
-                        <!-- Step 3 -->
-                        <div class="bg-white bg-opacity-30 rounded-lg p-6">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="bg-primary bg-opacity-20 rounded-full p-4">
-                                    <i class="fa-solid fa-mobile-screen-button text-primary text-xl"></i>
-                                </div>
-                                <h3>Mobile version usability testing</h3>
-                            </div>
-                            <p>The data shows most people use mobile devices to search for the website, so I
-                                will invite two potention customer to do the <span class="text-primary">user
-                                    interview</span> to validate the
-                                mobile
-                                version usability.
-                            </p>
+                        <!-- Right Column -->
+                        <div>
+                            <img src="../image/naillabo/Responsive.png" alt="styleguide">
                         </div>
                     </div>
                 </section>
+
 
                 <!-- Takeaways Section -->
                 <section id="takeaways" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2>Takeaways</h2>
+                    <h2 class="mb-4">Takeaways</h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <!-- Takeaway 1 -->
+
                         <div class="bg-white bg-opacity-30 rounded-lg p-6">
                             <div class="flex items-center gap-4 mb-4">
                                 <div class="bg-primary bg-opacity-20 rounded-full p-4">
-                                    <i class="fa-solid fa-heading text-primary text-xl"></i>
+                                    <i class="fa-solid fa-palette text-primary text-xl"></i>
                                 </div>
-                                <h3>H1 Tags</h3>
+                                <h3>Design Foundations</h3>
                             </div>
-                            <p>H1 tags are crucial for SEO as they help search engines understand the
-                                structure and content of your website.One page should only have one H1 tag.
-                                Don't
-                                try to cover everything in one page.
+                            <p>Define the <span class="text-primary">style guide</span>, <span
+                                    class="text-primary">responsive breakpoints</span>, and
+                                <span class="text-primary">reusable components</span>
+                                first, as they will help maintain
+                                consistency and improve efficiency when designing and building the website.
+
                             </p>
+
                         </div>
+
 
                         <!-- Takeaway 2 -->
                         <div class="bg-white bg-opacity-30 rounded-lg p-6">
                             <div class="flex items-center gap-4 mb-4">
                                 <div class="bg-primary bg-opacity-20 rounded-full p-4">
-                                    <i class="fa-solid fa-universal-access text-primary text-xl"></i>
+                                    <i class="fa-solid fa-puzzle-piece text-primary text-xl"></i>
                                 </div>
-                                <h3>Accessibility</h3>
+                                <h3>Problem Solving</h3>
                             </div>
-                            <p>Color contrast and button spacing are important for accessibility. I used <span
-                                    class="text-primary">color contrast checker</span> to ensure the website is
-                                accessible for people with visual impairments.
+                            <p>Some technical or complex requirements can be solved by online tutorials or some tools or
+                                with the help of AI, just <span class="text-primary">be patient</span> and
+                                you will find the solution.
                             </p>
+
                         </div>
+
+
 
                         <!-- Takeaway 3 -->
                         <div class="bg-white bg-opacity-30 rounded-lg p-6">
@@ -759,10 +763,13 @@
                                 <h3>Design Mobile First</h3>
                             </div>
                             <p>Mobile search for a local business is more likely than desktop search. So I would
-                                consider to design the website for the mobile version and expand to desktop
-                                version.
+                                consider to design the website for the <span class="text-primary">mobile</span>
+                                version
+                                and expand to desktop version.
                             </p>
                         </div>
+
+
                     </div>
                 </section>
             </div>
@@ -772,14 +779,15 @@
                     <ul
                         class="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-visible p-4 md:p-0 whitespace-nowrap">
                         <li><a href="#overview" class="text-gray-900 hover:text-primary">Overview</a></li>
-                        <li><a href="#client-needs" class="text-gray-900 hover:text-primary">Client's Needs</a>
+                        <li><a href="#first-version" class="text-gray-900 hover:text-primary">First Version</a></li>
+                        <li><a href="#challenge" class="text-gray-900 hover:text-primary">Challenge</a></li>
+                        <li><a href="#competitor-analysis" class="text-gray-900 hover:text-primary">Competitor
+                                Analysis</a></li>
+                        <li><a href="#seo-analysis" class="text-gray-900 hover:text-primary">SEO Analysis</a></li>
+                        <li><a href="#onpage-analytics" class="text-gray-900 hover:text-primary">On-Page Analytics</a>
                         </li>
                         <li><a href="#iteration" class="text-gray-900 hover:text-primary">Iteration</a></li>
-                        <li><a href="#SEO-strategy" class="text-gray-900 hover:text-primary">SEO
-                                Strategy</a>
-                        </li>
-                        <li><a href="#next-steps" class="text-gray-900 hover:text-primary">Next Steps</a>
-                        </li>
+                        <li><a href="#style-guide" class="text-gray-900 hover:text-primary">Style Guide</a></li>
                         <li><a href="#takeaways" class="text-gray-900 hover:text-primary">Takeaways</a></li>
                     </ul>
                 </div>
@@ -791,7 +799,7 @@
     <!-- Project Navigation -->
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="flex justify-between items-center gap-8">
-            <a href="Aiinlink.html" class="group flex items-center gap-3 transition-all duration-300">
+            <a href="sportpal.html" class="group flex items-center gap-3 transition-all duration-300">
                 <div class="relative">
                     <div
                         class="w-10 h-10 flex items-center justify-center rounded-full border border-primary group-hover:border-primary transition-all duration-300">
@@ -804,19 +812,19 @@
                 </div>
                 <div class="flex flex-col">
                     <span class="text-sm text-gray-600">Previous Project</span>
-                    <span class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">AI
-                        Inlink</span>
+                    <span
+                        class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">Sportpal</span>
                 </div>
             </a>
 
             <div class="h-[0.5px] flex-1 max-w-[200px] bg-gradient-to-r from-transparent via-gray-300 to-transparent">
             </div>
 
-            <a href="chatime.html" class="group flex items-center gap-3 transition-all duration-300">
+            <a href="Aiinlink.html" class="group flex items-center gap-3 transition-all duration-300">
                 <div class="flex flex-col items-end">
-                    <span class="text-sm text-gray-600">Previous Project</span>
-                    <span
-                        class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">Chatime</span>
+                    <span class="text-sm text-gray-600">Next Project</span>
+                    <span class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">AI
+                        Inlink</span>
                 </div>
                 <div class="relative">
                     <div
@@ -835,19 +843,17 @@
     <footer class="bg-transparent py-24 pb-4 relative">
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="italic text-center mb-24">
-                I am looking for an internship opportunity and would love to connect with you.
-                <i class="fa-solid fa-arrow-right ml-2"></i>
-                <a href="mailto:jankarong@gmail.com"
-                    class="text-gray-900 hover:text-primary transition-colors duration-300 ml-2">
-                    <i class="fas fa-envelope text-xl"></i>
-                </a>
+                I am looking for job opportunities and would love to connect with you.
+
+
             </h2>
             <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
                 <p class="text-gray-900 order-1 md:order-1">
-                    © 2024 Janka Rong. All rights reserved.
+                    2024 Janka Rong. All rights reserved.
                 </p>
                 <div class="flex space-x-4 order-2 md:order-2">
-                    <a href="#" class="text-gray-900 hover:text-primary transition-colors duration-300">
+                    <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
+                        class="text-gray-900 hover:text-primary transition-colors duration-300">
                         <i class="fab fa-linkedin text-xl"></i>
                     </a>
                     <a href="mailto:jankarong@gmail.com"
@@ -907,9 +913,38 @@
     <script src="../js/animation-settings.js"></script>
     <script src="../js/scroll.js"></script>
 
+    <script>
+        // Navigation toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarToggle = document.getElementById('navbar-toggle');
+            const navbarMenu = document.getElementById('navbar-menu');
 
+            navbarToggle.addEventListener('click', function () {
+                navbarMenu.classList.toggle('hidden');
+                const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
+                navbarToggle.setAttribute('aria-expanded', !isExpanded);
+            });
 
+            // Close menu when clicking outside
+            document.addEventListener('click', function (event) {
+                const isClickInside = navbarToggle.contains(event.target) || navbarMenu.contains(event.target);
+                if (!isClickInside && !navbarMenu.classList.contains('hidden') && window.innerWidth < 768) {
+                    navbarMenu.classList.add('hidden');
+                    navbarToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
 
+            // Handle window resize
+            window.addEventListener('resize', function () {
+                if (window.innerWidth >= 768) {
+                    navbarMenu.classList.remove('hidden');
+                } else {
+                    navbarMenu.classList.add('hidden');
+                    navbarToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

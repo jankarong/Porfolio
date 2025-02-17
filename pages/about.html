@@ -14,22 +14,22 @@
 
     <!-- google font link -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- flowbite css link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
     <!-- font awesome link -->
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- favicon link -->
 
     <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
 
 
-   <!-- css for back to top button -->
-   <link rel="stylesheet" href="../css/backToTop.css">
+    <!-- css for back to top button -->
+    <link rel="stylesheet" href="../css/backToTop.css">
 
 
 
@@ -106,7 +106,7 @@
                 <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="../image/RJlogo.png" class="h-8" alt="RJ portfolio logo">
                 </a>
-                <button data-collapse-toggle="navbar-default" type="button"
+                <button id="navbar-toggle" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                     aria-controls="navbar-default" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -116,20 +116,19 @@
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
                     <ul
                         class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:translate-y-2">
                         <li>
-                            <a href="../index.html" class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary"
-                                >Home</a>
+                            <a href="../index.html"
+                                class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">Home</a>
                         </li>
                         <li>
                             <a href="./projects.html"
                                 class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">Projects</a>
                         </li>
                         <li>
-                            <a href="../pages/about.html"
-                                class="block py-2 pl-3 pr-4 md:p-0 text-primary">About</a>
+                            <a href="../pages/about.html" class="block py-2 pl-3 pr-4 md:p-0 text-primary">About</a>
                         </li>
                         <li>
                             <a href="mailto:jankarong@gmail.com"
@@ -147,7 +146,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+        </header>
 
         <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24">
 
@@ -162,16 +161,16 @@
 
 
                 <div class="w-full md:w-1/2 ">
-                    <h1 class="text-sm md:text-base lg:text-lg font-medium mb-2 sm:mb-6">Hi, I am Janka Rong.</h1>
+                    <h1>Hi, I am Janka Rong.</h1>
 
-                    <p class="text-sm md:text-base lg:text-lg font-medium mb-2 sm:mb-6 leading-relaxed">
+                    <p>
                         I am from China. I am currently studying at BCIT in the
                         <span class="text-primary">Web Design and New Media program</span>.
                         I have experience working in various industries, including
                         <span class="text-primary">e-commerce and education</span>.
                     </p>
 
-                    <p class="text-sm md:text-base lg:text-lg font-medium mb-2 sm:mb-6 leading-relaxed">
+                    <p>
                         Product design is the next field I am eager to pursue. It's a <span class="text-primary">fun and
                             challenging</span> job that always satisfies my <span class="text-primary">curiosity</span>
                         and pushes me to learn and grow continuously in this ever-evolving
@@ -179,7 +178,7 @@
                     </p>
 
 
-                    <p class="text-sm md:text-base lg:text-lg font-medium mb-2 sm:mb-6 leading-relaxed">
+                    <p>
                         During my spare time, I like eating delicious food, doing sports and watching TV shows. My
                         favorite fruit is <span class="highlight image-hover-container">durian</span>. I also enjoy
                         cooking.
@@ -201,13 +200,13 @@
             <div class="flex flex-col lg:flex-row mt-12 md:mt-16">
                 <!-- Mission Section -->
                 <div class="w-full lg:w-1/2 pr-0 lg:pr-8 mb-8 lg:mb-0 ">
-                    <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">Mission</h1>
-                    <p class="text-sm md:text-base lg:text-lg mb-4 leading-relaxed">
+                    <h2>Mission</h2>
+                    <p>
                         As a <span class="text-primary">curious tech enthusiast</span>, I am driven to enhance user
                         experiences for websites and apps by
                         <span class="text-primary">utilizing user research and AI tools</span>.
                     </p>
-                    <p class="text-sm md:text-base lg:text-lg leading-relaxed">
+                    <p>
                         My goal is to <span class="text-primary">identify problems and integrate cutting-edge
                             technology</span> with intuitive design principles to create innovative applications
                         that improve user satisfaction.
@@ -216,22 +215,24 @@
 
                 <!-- Goal Section -->
                 <div class="w-full lg:w-1/2 lg:pl-8">
-                    <h1 class="text-lg md:text-xl lg:text-2xl font-medium mb-2 text-primary">Goal</h1>
-                    <p class="text-sm md:text-base lg:text-lg mb-4 leading-relaxed">
+                    <h2>Goal</h2>
+                    <p>
                         Short-term Goal:
-                        Over the next year, I aim to enhance my design skills by
-                        completing more UX design projects and gaining practical
-                        experience.
+                        Over the next year, I aim to strengthen my <span class="text-primary">foundational design
+                            skills</span> by completing more UX design projects and gaining hands-on experience.
+
+
                     </p>
                     <p class="text-sm md:text-base lg:text-lg leading-relaxed">
                         Long-term Goal:
-                        Within the next five years, I aspire to
-                        develop more creative apps and websites, <span class="text-primary">establish my own UX
-                            designer
-                            channel, and help more people understand the UX industry</span> with fewer detours.
+                        In five years, I aim to become a full-stack designer, creating user-centric, marketable
+                        products. I will learn effective SEO and app growth techniques, while sharing UX insights
+                        through my own
+                        channel to help others grow in the industry.
                     </p>
                 </div>
             </div>
+        </main>
         </main>
 
         <div id="durian-image-container">
@@ -240,7 +241,7 @@
 
 
         <section class="container mx-auto p-8">
-            <h2 class="text-lg md:text-xl lg:text-2xl font-medium mb-4 text-primary">Let's play a game! Guess what do I
+            <h2 class="text-highlight text-primary">Let's play a game! Guess what do I
                 like?
             </h2>
 
@@ -348,7 +349,7 @@
 
             <div class="flex justify-center mb-4">
                 <button id="submitBtn"
-                    class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-colors">Submit</button>
+                    class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-colors">GUESS</button>
             </div>
 
             <div id="result" class="mt-4 hidden">
@@ -361,27 +362,23 @@
             </div>
         </section>
 
-        <div class="flex justify-end mx-4 sm:mx-6 lg:mx-16 mb-12 mt-20">
+        <!-- <div class="flex justify-end mx-4 sm:mx-6 lg:mx-16 mb-12 mt-20">
             <div id="backToTopContainer" class="flex flex-col items-center gap-2">
                 <i class="fas fa-arrow-up text-lg text-primary transition-transform duration-300"></i>
-                <button id="backToTop" class="group bg-white/10 backdrop-blur-sm border-[0.5px] border-primary/50 hover:border-primary hover:bg-white/15 text-primary/80 hover:text-primary px-5 py-1.5 rounded-full shadow-md cursor-pointer transition-all duration-300 ease-in-out">
-                    <span class="text-sm font-medium tracking-wider transition-transform duration-300">Back to Top</span>
+                <button id="backToTop"
+                    class="group bg-white/10 backdrop-blur-sm border-[0.5px] border-primary/50 hover:border-primary hover:bg-white/15 text-primary/80 hover:text-primary px-5 py-1.5 rounded-full shadow-md cursor-pointer transition-all duration-300 ease-in-out">
+                    <span class="text-sm font-medium tracking-wider transition-transform duration-300">Back to
+                        Top</span>
                 </button>
             </div>
-        </div>
+        </div> -->
 
         <footer class="bg-transparent py-24 pb-4 relative">
             <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="text-xl italic font-medium text-primary md:text-2xl text-center mb-24">
-                    I am available for any opportunities and would love to connect with you.
-                    <i class="fa-solid fa-arrow-right ml-2"></i>
-                    <a href="mailto:jankarong@gmail.com"
-                        class="text-gray-900 hover:text-primary transition-colors duration-300 ml-2">
-                        <i class="fas fa-envelope text-xl"></i>
-                    </a>
-                </p>
+                <h2 class="italic text-center mb-24">
+                    I am looking for job opportunities and would love to connect with you.
+                </h2>
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
-
                     <p class="text-gray-900 order-1 md:order-1">
                         2024 Janka Rong. All rights reserved.
                     </p>
@@ -403,11 +400,13 @@
         </footer>
 
     </div>
-    <div id="custom-cursor" class="fixed w-24 h-24 pointer-events-none hidden items-center justify-center text-gray-700 text-base bg-white/10 backdrop-blur-md border border-primary rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50 shadow-lg hover:scale-105">
+    <div id="custom-cursor"
+        class="fixed w-24 h-24 pointer-events-none hidden items-center justify-center text-gray-700 text-base bg-white/10 backdrop-blur-md border border-primary rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50 shadow-lg hover:scale-105">
         View More
     </div>
 
-    <div id="default-cursor" class="fixed w-8 h-8 pointer-events-none hidden items-center justify-center rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50">
+    <div id="default-cursor"
+        class="fixed w-8 h-8 pointer-events-none hidden items-center justify-center rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50">
         <div class="w-full h-full rounded-full border border-primary p-[1px] animate-spin-slow">
             <div class="w-full h-full rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center">
                 <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
@@ -419,22 +418,24 @@
             from {
                 transform: rotate(0deg);
             }
+
             to {
                 transform: rotate(360deg);
             }
         }
+
         .animate-spin-slow {
             animation: spin-slow 8s linear infinite;
         }
     </style>
-   <script src="../js/mousecursor.js"></script>
+    <script src="../js/mousecursor.js"></script>
 
     <script src="../js/toogle.js"></script>
     <script src="../js/fliter.js"></script>
     <script src="../js/pagination.js"></script>
     <script src="../js/guessGame.js"></script>
     <script src="../js/mousedraw.js"></script>
-    <script src="../js/backToTop.js"></script>
+    <!-- <script src="../js/backToTop.js"></script> -->
     <script>
         const durianText = document.querySelector('.highlight');
         const durianImageContainer = document.getElementById('durian-image-container');
@@ -448,6 +449,38 @@
         });
     </script>
 
+    <script>
+        // Navigation toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarToggle = document.getElementById('navbar-toggle');
+            const navbarMenu = document.getElementById('navbar-menu');
+
+            navbarToggle.addEventListener('click', function () {
+                navbarMenu.classList.toggle('hidden');
+                const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
+                navbarToggle.setAttribute('aria-expanded', !isExpanded);
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function (event) {
+                const isClickInside = navbarToggle.contains(event.target) || navbarMenu.contains(event.target);
+                if (!isClickInside && !navbarMenu.classList.contains('hidden') && window.innerWidth < 768) {
+                    navbarMenu.classList.add('hidden');
+                    navbarToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', function () {
+                if (window.innerWidth >= 768) {
+                    navbarMenu.classList.remove('hidden');
+                } else {
+                    navbarMenu.classList.add('hidden');
+                    navbarToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

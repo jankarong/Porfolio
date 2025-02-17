@@ -6,19 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Discover how Chatime bubble tea experience through in-depth user research, customer journey mapping, and data-driven insights. Explore our comprehensive UX case study.">
-    <title>Chatime User Research Case Study | Customer Experience Insights | </title>
+    <title>Chatime: UX/UI Case Study | Mobile App Design | Jing Rong</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFHGTL0SV1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NFHGTL0SV1');
+    </script>
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "pi37bmi9li");
+    </script>
     <!-- css link -->
     <link href="/css/style.css" rel="stylesheet">
 
     <!-- google font link -->
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- flowbite css link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-
     <!-- font awesome link -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- zoomable link -->
     <link rel="stylesheet" href="../css/zoomable.css">
@@ -37,7 +53,7 @@
                     <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src="../image/RJlogo.png" class="h-8" alt="RJ portfolio logo">
                     </a>
-                    <button data-collapse-toggle="navbar-default" type="button"
+                    <button id="navbar-toggle" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                         aria-controls="navbar-default" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -47,8 +63,9 @@
                                 d="M1 1h15M1 7h15M1 13h15" />
                         </svg>
                     </button>
-                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:translate-y-2">
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
+                        <ul
+                            class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:translate-y-2">
                             <li>
                                 <a href="../index.html" class="block py-2 pl-3 pr-4 md:p-0 text-primary"
                                     aria-current="page">Home</a>
@@ -277,8 +294,8 @@
                                     <img src="../image/Emma.png" alt="Emma" class="w-16 h-auto rounded-lg">
                                     <div>
                                         <h3>Emma</h3>
-                                        <p>Emma’s habit of browsing online stores, joining loyalty programs, and seeking
-                                            discounts makes her and excellent candidate for testing Chatime’s promotions
+                                        <p>Emma's habit of browsing online stores, joining loyalty programs, and seeking
+                                            discounts makes her and excellent candidate for testing Chatime's promotions
                                             and rewards
                                         </p>
                                     </div>
@@ -289,8 +306,8 @@
                                     <img src="../image/Ron.png" alt="Ron" class="w-16 h-auto rounded-lg">
                                     <div>
                                         <h3>Ron</h3>
-                                        <p>Ron’s strong interest in discounts and loyalty programs makes him
-                                            invaluable for testing chatime’s limited-time offers.</p>
+                                        <p>Ron's strong interest in discounts and loyalty programs makes him
+                                            invaluable for testing chatime's limited-time offers.</p>
                                     </div>
                                 </div>
 
@@ -299,8 +316,8 @@
                                     <img src="../image/Lily.png" alt="Lily" class="w-16 h-auto rounded-lg">
                                     <div>
                                         <h3>Lily</h3>
-                                        <p>Lily’s extensive experience with online drink ordering and her preference
-                                            for customization make her a valuable tester for chatime’s ordering flow.
+                                        <p>Lily's extensive experience with online drink ordering and her preference
+                                            for customization make her a valuable tester for chatime's ordering flow.
                                         </p>
                                     </div>
                                 </div>
@@ -310,9 +327,9 @@
                                     <img src="../image/Jayden.png" alt="Jayden" class="w-16 h-auto rounded-lg">
                                     <div>
                                         <h3>Jayden</h3>
-                                        <p>Jayden’s experience with online shopping, discovering new stores through
+                                        <p>Jayden's experience with online shopping, discovering new stores through
                                             reviews, and joining loyalty programs makes him ideal for evaluating
-                                            Chatime’s website and promotions.</p>
+                                            Chatime's website and promotions.</p>
                                     </div>
                                 </div>
                             </div>
@@ -669,31 +686,43 @@
         <!-- Project Navigation -->
         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="flex justify-between items-center gap-8">
-                <a href="Naillabo.html" class="group flex items-center gap-3 transition-all duration-300">
+                <a href="Aiinlink.html" class="group flex items-center gap-3 transition-all duration-300">
                     <div class="relative">
-                        <div class="w-10 h-10 flex items-center justify-center rounded-full border border-primary group-hover:border-primary transition-all duration-300">
-                            <svg class="w-5 h-5 text-primary group-hover:text-primary transform group-hover:-translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"></path>
+                        <div
+                            class="w-10 h-10 flex items-center justify-center rounded-full border border-primary group-hover:border-primary transition-all duration-300">
+                            <svg class="w-5 h-5 text-primary group-hover:text-primary transform group-hover:-translate-x-1 transition-all duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 19l-7-7 7-7">
+                                </path>
                             </svg>
                         </div>
                     </div>
                     <div class="flex flex-col">
                         <span class="text-sm text-gray-600">Previous Project</span>
-                        <span class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">Naillabo</span>
+                        <span class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">AI
+                            Inlink</span>
                     </div>
                 </a>
-        
-                <div class="h-[0.5px] flex-1 max-w-[200px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-        
+
+                <div
+                    class="h-[0.5px] flex-1 max-w-[200px] bg-gradient-to-r from-transparent via-gray-300 to-transparent">
+                </div>
+
                 <a href="uiproject.html" class="group flex items-center gap-3 transition-all duration-300">
                     <div class="flex flex-col items-end">
                         <span class="text-sm text-gray-600">Next Project</span>
-                        <span class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">More UI</span>
+                        <span class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">More
+                            UI</span>
                     </div>
                     <div class="relative">
-                        <div class="w-10 h-10 flex items-center justify-center rounded-full border border-primary group-hover:border-primary transition-all duration-300">
-                            <svg class="w-5 h-5 text-primary group-hover:text-primary transform group-hover:translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                        <div
+                            class="w-10 h-10 flex items-center justify-center rounded-full border border-primary group-hover:border-primary transition-all duration-300">
+                            <svg class="w-5 h-5 text-primary group-hover:text-primary transform group-hover:translate-x-1 transition-all duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9 5l7 7-7 7">
+                                </path>
                             </svg>
                         </div>
                     </div>
@@ -703,16 +732,14 @@
         <footer class="bg-transparent py-24 pb-4 relative">
             <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="italic text-center mb-24">
-                    I am looking for an internship opportunity and would love to connect with you.
-                    <i class="fa-solid fa-arrow-right ml-2"></i>
-                    <a href="mailto:jankarong@gmail.com"
-                        class="text-gray-900 hover:text-primary transition-colors duration-300 ml-2">
-                        <i class="fas fa-envelope text-xl"></i>
-                    </a>
+                    I am looking for job opportunities and would love to connect with you.
+
+
+
                 </h2>
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
                     <p class="text-gray-900 order-1 md:order-1">
-                        © 2024 Janka Rong | Educational purposes only.
+                        2024 Janka Rong | Educational purposes only.
 
                         <br>
                         Chatime assets remain property of Chatime.
@@ -739,11 +766,13 @@
     <div id="zoomOverlay">
         <img src="" alt="Zoomed Image" id="zoomedImage">
     </div>
-    <div id="custom-cursor" class="fixed w-24 h-24 pointer-events-none hidden items-center justify-center text-gray-700 text-base bg-white/10 backdrop-blur-md border border-primary rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50 shadow-lg hover:scale-105">
+    <div id="custom-cursor"
+        class="fixed w-24 h-24 pointer-events-none hidden items-center justify-center text-gray-700 text-base bg-white/10 backdrop-blur-md border border-primary rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50 shadow-lg hover:scale-105">
         View More
     </div>
 
-    <div id="default-cursor" class="fixed w-8 h-8 pointer-events-none hidden items-center justify-center rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50">
+    <div id="default-cursor"
+        class="fixed w-8 h-8 pointer-events-none hidden items-center justify-center rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50">
         <div class="w-full h-full rounded-full border border-primary p-[1px] animate-spin-slow">
             <div class="w-full h-full rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center">
                 <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
@@ -755,15 +784,17 @@
             from {
                 transform: rotate(0deg);
             }
+
             to {
                 transform: rotate(360deg);
             }
         }
+
         .animate-spin-slow {
             animation: spin-slow 8s linear infinite;
         }
     </style>
-   <script src="../js/mousecursor.js"></script>
+    <script src="../js/mousecursor.js"></script>
 
 
     <script src="../js/toogle.js"></script>
@@ -774,6 +805,38 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/animation-settings.js"></script>
 
+    <script>
+        // Navigation toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarToggle = document.getElementById('navbar-toggle');
+            const navbarMenu = document.getElementById('navbar-menu');
+
+            navbarToggle.addEventListener('click', function () {
+                navbarMenu.classList.toggle('hidden');
+                const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
+                navbarToggle.setAttribute('aria-expanded', !isExpanded);
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function (event) {
+                const isClickInside = navbarToggle.contains(event.target) || navbarMenu.contains(event.target);
+                if (!isClickInside && !navbarMenu.classList.contains('hidden') && window.innerWidth < 768) {
+                    navbarMenu.classList.add('hidden');
+                    navbarToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', function () {
+                if (window.innerWidth >= 768) {
+                    navbarMenu.classList.remove('hidden');
+                } else {
+                    navbarMenu.classList.add('hidden');
+                    navbarToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
