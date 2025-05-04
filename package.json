@@ -6,15 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "postcss ./css/tailwind.css -o ./css/style.css --watch",
-    "build:prod": "postcss ./css/tailwind.css -o ./css/style.css --env production"
+    "build:prod": "postcss ./css/tailwind.css -o ./css/style.css --env production",
+    "optimize-images": "node convert-images.js",
+    "minify-js": "uglifyjs ./js/*.js -o ./js/bundle.min.js",
+    "minify-css": "postcss ./css/style.css -o ./css/style.min.css --env production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "cssnano": "^6.0.1",
     "postcss": "^8.4.47",
     "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.14"
+    "sharp": "^0.33.2",
+    "tailwindcss": "^3.4.14",
+    "uglify-js": "^3.17.4"
   }
 }

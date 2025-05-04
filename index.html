@@ -23,26 +23,34 @@
             y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "pi37bmi9li");
     </script>
-    <!--preload -->
-    <link rel="preload" href="./css/style.css" as="style">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap"
-        as="style">
-
-    <!-- CSS -->
+    <!-- Critical CSS -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Non-critical CSS with media="print" and onload -->
     <link rel="stylesheet" href="./css/sliderstyle.css" media="print" onload="this.media='all'">
-    <!--Swiper CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css" media="print"
-        onload="this.media='all'"> -->
-    <!--SVG Animation CSS -->
-    <link rel="stylesheet" href="./css/svgAnimation.css">
+    <link rel="stylesheet" href="./css/svgAnimation.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./css/stickynote.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./css/backToTop.css" media="print" onload="this.media='all'">
 
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google font with display=swap for better performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+    </noscript>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome with defer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Janka Rong - Portfolio">
@@ -61,14 +69,6 @@
     <!-- favicon link -->
     <link rel="icon" href="./image/RJlogo.png" type="image/x-icon">
 
-    <!-- CSS for sticky notes -->
-    <link rel="stylesheet" href="./css/stickynote.css">
-
-    <!-- css for back to top button -->
-    <link rel="stylesheet" href="./css/backToTop.css">
-
-
-
 
 </head>
 
@@ -79,7 +79,8 @@
             <nav class="bg-white bg-opacity-30 border-gray-200">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="./image/RJlogo.png" class="h-8" alt="RJ portfolio logo" loading="eager">
+                        <img src="./image/RJlogo.png" class="h-8" alt="RJ portfolio logo" loading="eager" width="32"
+                            height="32">
                     </a>
                     <button id="navbar-toggle" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -124,38 +125,7 @@
             </nav>
         </header>
 
-        <script>
-            // Navigation toggle
-            document.addEventListener('DOMContentLoaded', function () {
-                const navbarToggle = document.getElementById('navbar-toggle');
-                const navbarMenu = document.getElementById('navbar-menu');
 
-                navbarToggle.addEventListener('click', function () {
-                    navbarMenu.classList.toggle('hidden');
-                    const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
-                    navbarToggle.setAttribute('aria-expanded', !isExpanded);
-                });
-
-                // Close menu when clicking outside
-                document.addEventListener('click', function (event) {
-                    const isClickInside = navbarToggle.contains(event.target) || navbarMenu.contains(event.target);
-                    if (!isClickInside && !navbarMenu.classList.contains('hidden') && window.innerWidth < 768) {
-                        navbarMenu.classList.add('hidden');
-                        navbarToggle.setAttribute('aria-expanded', 'false');
-                    }
-                });
-
-                // Handle window resize
-                window.addEventListener('resize', function () {
-                    if (window.innerWidth >= 768) {
-                        navbarMenu.classList.remove('hidden');
-                    } else {
-                        navbarMenu.classList.add('hidden');
-                        navbarToggle.setAttribute('aria-expanded', 'false');
-                    }
-                });
-            });
-        </script>
 
         <section id="introduction" class="intro-section my-12 mx-4 md:mx-8 lg:mx-16">
             <h1 class="mb-4 italic leading-tight tracking-tight text-gray-900  text-center">
@@ -189,7 +159,7 @@
                             <div
                                 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8/12 h-8/12 overflow-hidden">
                                 <a href="./pages/naillabo.html"><img src="./image/naillabo/naillaboMockup.png"
-                                        alt="Naillabo Salon app"
+                                        alt="Naillabo Salon app" width="400" height="300"
                                         class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110"></a>
                             </div>
                         </div>
@@ -233,7 +203,7 @@
                             <div
                                 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 overflow-hidden">
                                 <a href="./pages/aiinlink.html"><img src="./image/AiinlinkMockup.png"
-                                        alt="AI Inlink website"
+                                        alt="AI Inlink website" width="400" height="300"
                                         class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110"></a>
                             </div>
                         </div>
@@ -274,7 +244,8 @@
                                 </svg>
                                 <div
                                     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8/12 h-8/12 overflow-hidden">
-                                    <img src="./image/sportpalmockup.png" alt="Sportpal app" loading="lazy"
+                                    <img src="./image/sportpalmockup.png" alt="Sportpal app" loading="lazy" width="400"
+                                        height="300"
                                         class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110">
                                 </div>
                             </div>
@@ -321,7 +292,7 @@
                                 <div
                                     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-11/12 overflow-hidden">
                                     <img src="./image/ai-builtproduct/ai-builtproduct.png"
-                                        alt="Bogcaada Wedding Winery website" loading="lazy"
+                                        alt="Bogcaada Wedding Winery website" loading="lazy" width="400" height="300"
                                         class="w-full h-full object-contain transition-transform duration-300 transform group-hover:scale-110">
                                 </div>
                             </div>
@@ -521,7 +492,7 @@
             </div>
         </div>
 
-        <script src="./js/backToTop.js"></script>
+        <script src="../js/backToTop.js"></script>
  -->
 
 
@@ -553,15 +524,49 @@
             </div>
         </footer>
 
-        <script src="./js/mousecursor.js"></script>
-
+        <!-- All scripts moved to end of body with defer attribute -->
+        <script src="./js/mousecursor.js" defer></script>
         <script src="./js/toogle.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js" defer></script>
         <script src="./js/slider.js" defer></script>
 
-        <!-- Sticky Notes -->
-        <script>
+        <!-- Navigation toggle script -->
+        <script defer>
+            document.addEventListener('DOMContentLoaded', function () {
+                const navbarToggle = document.getElementById('navbar-toggle');
+                const navbarMenu = document.getElementById('navbar-menu');
+
+                navbarToggle.addEventListener('click', function () {
+                    navbarMenu.classList.toggle('hidden');
+                    const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
+                    navbarToggle.setAttribute('aria-expanded', !isExpanded);
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function (event) {
+                    const isClickInside = navbarToggle.contains(event.target) || navbarMenu.contains(event.target);
+                    if (!isClickInside && !navbarMenu.classList.contains('hidden') && window.innerWidth < 768) {
+                        navbarMenu.classList.add('hidden');
+                        navbarToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // Handle window resize
+                window.addEventListener('resize', function () {
+                    if (window.innerWidth >= 768) {
+                        navbarMenu.classList.remove('hidden');
+                    } else {
+                        navbarMenu.classList.add('hidden');
+                        navbarToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        </script>
+
+        <!-- Sticky Notes Script - Consolidated and deferred -->
+        <script defer>
             document.addEventListener('DOMContentLoaded', (event) => {
+                // Sticky notes functionality
                 const stickyNotes = document.querySelectorAll('.sticky-note');
                 const container = document.querySelector('.sticky-notes-container');
 
@@ -634,59 +639,33 @@
                 document.ondragstart = function () {
                     return false;
                 };
+
+                // Custom cursor functionality - consolidated to avoid duplicate code
+                const cursor = document.getElementById('custom-cursor');
+                const projectCards = document.querySelectorAll('.effect-pulse');
+
+                document.addEventListener('mousemove', (e) => {
+                    requestAnimationFrame(() => {
+                        cursor.style.left = e.clientX + 'px';
+                        cursor.style.top = e.clientY + 'px';
+                    });
+                });
+
+                projectCards.forEach(card => {
+                    card.addEventListener('mouseenter', () => {
+                        cursor.classList.remove('hidden');
+                        cursor.classList.add('flex');
+                        card.classList.add('cursor-none');
+                    });
+
+                    card.addEventListener('mouseleave', () => {
+                        cursor.classList.add('hidden');
+                        cursor.classList.remove('flex');
+                        card.classList.remove('cursor-none');
+                    });
+                });
             });
-
         </script>
-        <script>document.addEventListener('DOMContentLoaded', (event) => {
-                const cursor = document.getElementById('custom-cursor');
-                const projectCards = document.querySelectorAll('.effect-pulse');
-
-                document.addEventListener('mousemove', (e) => {
-                    requestAnimationFrame(() => {
-                        cursor.style.left = e.clientX + 'px';
-                        cursor.style.top = e.clientY + 'px';
-                    });
-                });
-
-                projectCards.forEach(card => {
-                    card.addEventListener('mouseenter', () => {
-                        cursor.classList.remove('hidden');
-                        cursor.classList.add('flex');
-                        card.classList.add('cursor-none');
-                    });
-
-                    card.addEventListener('mouseleave', () => {
-                        cursor.classList.add('hidden');
-                        cursor.classList.remove('flex');
-                        card.classList.remove('cursor-none');
-                    });
-                });
-            });</script>
-        <script>document.addEventListener('DOMContentLoaded', (event) => {
-                const cursor = document.getElementById('custom-cursor');
-                const projectCards = document.querySelectorAll('.effect-pulse');
-
-                document.addEventListener('mousemove', (e) => {
-                    requestAnimationFrame(() => {
-                        cursor.style.left = e.clientX + 'px';
-                        cursor.style.top = e.clientY + 'px';
-                    });
-                });
-
-                projectCards.forEach(card => {
-                    card.addEventListener('mouseenter', () => {
-                        cursor.classList.remove('hidden');
-                        cursor.classList.add('flex');
-                        card.classList.add('cursor-none');
-                    });
-
-                    card.addEventListener('mouseleave', () => {
-                        cursor.classList.add('hidden');
-                        cursor.classList.remove('flex');
-                        card.classList.remove('cursor-none');
-                    });
-                });
-            });</script>
 
     </div>
 </body>
