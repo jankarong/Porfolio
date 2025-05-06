@@ -46,20 +46,8 @@
     <!-- zoomable link -->
     <link rel="stylesheet" href="../css/zoomable.css">
 
-    <!-- css for back to top button -->
-    <link rel="stylesheet" href="../css/backToTop.css" media="print" onload="this.media='all'">
-
-    <style>
-        /* CSS to remove fixed bottom navigation on mobile */
-        @media (max-width: 767px) {
-            nav.md\:w-1\/5.fixed.bottom-0.left-0.right-0 {
-                position: relative !important;
-                background-color: transparent !important;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-            }
-        }
-    </style>
+    <!-- mobile navigation -->
+    <link rel="stylesheet" href="../css/mobile-nav.css">
 
 </head>
 
@@ -1457,19 +1445,6 @@
         .animate-spin-slow {
             animation: spin-slow 8s linear infinite;
         }
-
-        /* Fix for mobile bottom navigation */
-        @media (max-width: 767px) {
-            nav.md\:w-1\/5 {
-                position: relative !important;
-                background-color: transparent !important;
-                bottom: auto !important;
-                left: auto !important;
-                right: auto !important;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-            }
-        }
     </style>
     <script src="../js/mousecursor.js"></script>
 
@@ -1482,47 +1457,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/animation-settings.js"></script>
     <script src="../js/toggleDescription.js"></script>
-
-    <script>
-        // Navigation toggle
-        document.addEventListener('DOMContentLoaded', function () {
-            const navbarToggle = document.getElementById('navbar-toggle');
-            const navbarMenu = document.getElementById('navbar-menu');
-
-            navbarToggle.addEventListener('click', function () {
-                navbarMenu.classList.toggle('hidden');
-                const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
-                navbarToggle.setAttribute('aria-expanded', !isExpanded);
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', function (event) {
-                const isClickInside = navbarToggle.contains(event.target) || navbarMenu.contains(event.target);
-                if (!isClickInside && !navbarMenu.classList.contains('hidden') && window.innerWidth < 768) {
-                    navbarMenu.classList.add('hidden');
-                    navbarToggle.setAttribute('aria-expanded', 'false');
-                }
-            });
-
-            // Handle window resize
-            window.addEventListener('resize', function () {
-                if (window.innerWidth >= 768) {
-                    navbarMenu.classList.remove('hidden');
-                } else {
-                    navbarMenu.classList.add('hidden');
-                    navbarToggle.setAttribute('aria-expanded', 'false');
-                }
-            });
-        });
-    </script>
-
-    <!-- Back to Top Button -->
-    <div id="backToTopContainer">
-        <div id="backToTopArrow"></div>
-        <div id="backToTopLine"></div>
-    </div>
-
-    <script src="../js/backToTop.js" defer></script>
+    <script src="../js/mobile-nav.js"></script>
 </body>
 
 </html>

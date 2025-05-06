@@ -1,32 +1,60 @@
 #backToTopContainer {
-    position: relative;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
 }
 
-#backToTopContainer i {
-    animation: bounce 2s infinite;
+#backToTopLine {
+    width: 40px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#backToTop {
-    position: relative;
-    overflow: hidden;
+#backToTopContainer:hover #backToTopLine {
+    opacity: 0;
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-6px);
-    }
-    60% {
-        transform: translateY(-3px);
-    }
+#backToTopArrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #333;
+    border-right: 3px solid #333;
+    transform: rotate(-45deg) scale(0);
+    opacity: 0;
+    transition: all 0.3s ease;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -10px;
+}
+
+#backToTopContainer:hover #backToTopArrow {
+    transform: rotate(-45deg) scale(1);
+    opacity: 1;
 }
 
 .ripple {
     position: absolute;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
     transform: scale(0);
     animation: ripple-animation 0.6s linear;
     pointer-events: none;
@@ -36,5 +64,12 @@
     to {
         transform: scale(4);
         opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #backToTopContainer {
+        bottom: 20px;
+        right: 20px;
     }
 }

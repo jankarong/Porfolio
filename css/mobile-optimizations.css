@@ -1,0 +1,52 @@
+/* Mobile optimizations for better performance */
+
+/* Hide testimonials section on mobile devices */
+@media (max-width: 767px) {
+
+    /* Hide testimonials content */
+    #testimonials .testimonials-content {
+        display: none;
+    }
+
+    /* Add message for mobile users */
+    #testimonials::after {
+        content: "💻 View on desktop";
+        display: block;
+        text-align: center;
+        padding: 0.8rem;
+        margin: 1rem 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 0.5rem;
+        font-style: italic;
+        color: #555;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    /* Reduce spacing for mobile */
+    #testimonials {
+        margin-bottom: 2rem;
+    }
+
+    /* Optimize images for mobile */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Improve spacing between sections */
+    section {
+        margin-bottom: 2rem;
+    }
+
+    /* Reduce footer padding on mobile */
+    footer {
+        padding-top: 3rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    footer h2 {
+        margin-bottom: 2rem !important;
+    }
+}

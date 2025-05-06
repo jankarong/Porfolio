@@ -1,0 +1,14 @@
+/* CSS to remove fixed bottom navigation on mobile */
+@media (max-width: 767px) {
+    /* Target all fixed bottom navigation bars */
+    nav.md\:w-1\/5.fixed.bottom-0.left-0.right-0,
+    nav.md\:w-1\/5.mb-8.md\:mb-0.md\:pl-24.fixed.bottom-0.left-0.right-0.md\:relative.bg-white.md\:bg-transparent.z-50.md\:z-auto {
+        position: relative !important;
+        background-color: transparent !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}

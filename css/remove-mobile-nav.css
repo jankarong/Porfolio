@@ -1,0 +1,9 @@
+/* CSS to remove fixed bottom navigation on mobile */
+@media (max-width: 767px) {
+    nav.md\:w-1\/5 {
+        position: relative !important;
+        background-color: transparent !important;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}

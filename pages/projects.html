@@ -48,6 +48,8 @@
 
     <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
 
+    <!-- css for back to top button -->
+    <link rel="stylesheet" href="../css/backToTop.css" media="print" onload="this.media='all'">
 
 
 </head>
@@ -520,6 +522,12 @@
                 </div>
             </div>
         </div>
+
+        <!-- Back to Top Button -->
+        <div id="backToTopContainer">
+            <div id="backToTopArrow"></div>
+            <div id="backToTopLine"></div>
+        </div>
         <style>
             @keyframes spin-slow {
                 from {
@@ -536,12 +544,10 @@
             }
         </style>
         <script src="../js/mousecursor.js"></script>
-
-
-
         <script src="../js/toogle.js"></script>
         <script src="../js/fliter.js"></script>
         <script src="../js/pagination.js"></script>
+        <script src="../js/backToTop.js" defer></script>
         <script>
             // Navigation toggle
             document.addEventListener('DOMContentLoaded', function () {

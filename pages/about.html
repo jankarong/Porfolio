@@ -29,8 +29,7 @@
 
 
     <!-- css for back to top button -->
-    <link rel="stylesheet" href="../css/backToTop.css">
-
+    <link rel="stylesheet" href="../css/backToTop.css" media="print" onload="this.media='all'">
 
 
 
@@ -413,6 +412,12 @@
             </div>
         </div>
     </div>
+
+    <!-- Back to Top Button -->
+    <div id="backToTopContainer">
+        <div id="backToTopArrow"></div>
+        <div id="backToTopLine"></div>
+    </div>
     <style>
         @keyframes spin-slow {
             from {
@@ -429,13 +434,12 @@
         }
     </style>
     <script src="../js/mousecursor.js"></script>
-
     <script src="../js/toogle.js"></script>
     <script src="../js/fliter.js"></script>
     <script src="../js/pagination.js"></script>
     <script src="../js/guessGame.js"></script>
     <script src="../js/mousedraw.js"></script>
-    <!-- <script src="../js/backToTop.js"></script> -->
+    <script src="../js/backToTop.js" defer></script>
     <script>
         const durianText = document.querySelector('.highlight');
         const durianImageContainer = document.getElementById('durian-image-container');

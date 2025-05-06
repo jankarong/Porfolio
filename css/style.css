@@ -1140,6 +1140,9 @@ td {
 .w-full {
   width: 100%;
 }
+.w-1 {
+  width: 0.25rem;
+}
 .min-w-full {
   min-width: 100%;
 }
