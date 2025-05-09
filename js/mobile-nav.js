@@ -1,70 +1,51 @@
-/**
- * Enhanced Mobile Navigation
- * Provides improved functionality and animations for mobile navigation
- */
+// Enhanced mobile navigation functionality
 document.addEventListener('DOMContentLoaded', function () {
     const navbarToggle = document.getElementById('navbar-toggle');
     const navbarMenu = document.getElementById('navbar-menu');
-    
-    if (!navbarToggle || !navbarMenu) return;
-    
-    // Set initial state
-    if (window.innerWidth < 768) {
-        navbarMenu.classList.add('hidden');
-        navbarToggle.setAttribute('aria-expanded', 'false');
-    }
-    
-    // Add animation classes to menu items
-    const menuItems = navbarMenu.querySelectorAll('ul li');
-    menuItems.forEach((item, index) => {
-        item.style.setProperty('--item-index', index);
-    });
-    
-    // Toggle menu with animation
+
+    // Toggle menu with enhanced animation
     navbarToggle.addEventListener('click', function () {
         navbarMenu.classList.toggle('hidden');
-        navbarMenu.classList.toggle('active');
-        
+        navbarMenu.classList.toggle('show');
+
         const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
         navbarToggle.setAttribute('aria-expanded', !isExpanded);
-        
-        // Prevent body scrolling when menu is open
-        document.body.style.overflow = !isExpanded ? 'hidden' : '';
     });
-    
+
     // Close menu when clicking outside
     document.addEventListener('click', function (event) {
         const isClickInside = navbarToggle.contains(event.target) || navbarMenu.contains(event.target);
         if (!isClickInside && !navbarMenu.classList.contains('hidden') && window.innerWidth < 768) {
             navbarMenu.classList.add('hidden');
-            navbarMenu.classList.remove('active');
+            navbarMenu.classList.remove('show');
             navbarToggle.setAttribute('aria-expanded', 'false');
-            document.body.style.overflow = '';
         }
     });
-    
-    // Close menu when clicking on a link
-    const navLinks = navbarMenu.querySelectorAll('a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth < 768) {
-                navbarMenu.classList.add('hidden');
-                navbarMenu.classList.remove('active');
-                navbarToggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            }
-        });
-    });
-    
+
     // Handle window resize
     window.addEventListener('resize', function () {
         if (window.innerWidth >= 768) {
             navbarMenu.classList.remove('hidden');
-            navbarMenu.classList.remove('active');
-            document.body.style.overflow = '';
+            navbarMenu.classList.remove('show');
         } else {
             navbarMenu.classList.add('hidden');
+            navbarMenu.classList.remove('show');
             navbarToggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    // Set current page indicator
+    const currentPath = window.location.pathname;
+    const menuLinks = document.querySelectorAll('#navbar-menu a');
+
+    menuLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (linkPath) {
+            // Check if the current path includes the link path or if it's the home page
+            if ((currentPath.includes(linkPath) && linkPath !== '/index.html' && linkPath !== '../index.html') ||
+                (linkPath.includes('index.html') && (currentPath === '/' || currentPath.endsWith('index.html')))) {
+                link.setAttribute('aria-current', 'page');
+            }
         }
     });
 });
