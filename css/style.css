@@ -1089,6 +1089,9 @@ td {
 .min-h-screen {
   min-height: 100vh;
 }
+.w-1 {
+  width: 0.25rem;
+}
 .w-1\.5 {
   width: 0.375rem;
 }
@@ -1139,9 +1142,6 @@ td {
 }
 .w-full {
   width: 100%;
-}
-.w-1 {
-  width: 0.25rem;
 }
 .min-w-full {
   min-width: 100%;
@@ -1410,6 +1410,10 @@ td {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 .bg-gray-500 {
   --tw-bg-opacity: 1;
