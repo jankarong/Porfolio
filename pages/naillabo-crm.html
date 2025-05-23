@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore NailLabo Salon's CRM system case study: Custom-built solution with advanced reservation system, service management, and automated workflows resulting in significant time and cost savings.">
+    <title>Nail Labo CRM: System Case Study | Janka Rong</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFHGTL0SV1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NFHGTL0SV1');
+    </script>
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "pi37bmi9li");
+    </script>
+    <!-- css link -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- favicon link -->
+    <link rel="icon" href="../image/RJlogo.png" type="image/x-icon">
+
+    <!-- zoomable css link -->
+    <link rel="stylesheet" href="../css/zoomable.css">
+
+    <!--scroll animation CSS links -->
+    <link rel="stylesheet" href="../css/scroll-indicator.css">
+
+    <!-- css for back to top button -->
+    <link rel="stylesheet" href="../css/backToTop.css" media="print" onload="this.media='all'">
+
+    <style>
+        /* CSS to remove fixed bottom navigation on mobile */
+        @media (max-width: 767px) {
+            nav.md\:w-1\/5.fixed.bottom-0.left-0.right-0 {
+                position: relative !important;
+                background-color: transparent !important;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-tri-color-gradient">
+        <header>
+            <nav class="bg-white bg-opacity-30 border-gray-200">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="../image/RJlogo.png" class="h-8" alt="RJ portfolio logo">
+                    </a>
+                    <button id="navbar-toggle" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-menu">
+                        <ul
+                            class="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:translate-y-2">
+                            <li>
+                                <a href="../index.html" class="block py-2 pl-3 pr-4 md:p-0 hover:text-primary"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="./projects.html"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">Projects</a>
+                            </li>
+                            <li>
+                                <a href="./about.html"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">About</a>
+                            </li>
+                            <li>
+                                <a href="mailto:jankarong@gmail.com"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
+                                    class="block py-2 pl-3 pr-4 md:p-0 text-gray-900 hover:text-primary">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Video Section -->
+        <section class="relative min-h-[60vh] flex items-center justify-center py-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div class="text-center mb-8">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">NailLabo CRM System</h1>
+                    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                        Watch the comprehensive demo of our custom-built CRM solution that transformed salon operations
+                    </p>
+                </div>
+
+                <!-- Video Container -->
+                <div class="relative max-w-4xl mx-auto">
+                    <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-xl shadow-2xl bg-gray-100">
+                        <iframe
+                            src="https://player.vimeo.com/video/1080683545?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&quality=1080p"
+                            class="absolute top-0 left-0 w-full h-full border-0 rounded-xl"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"
+                            title="NailLabo CRM Demo Video">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-[1440px] mx-auto py-8 md:py-12 px-4 sm:px-6 md:px-8 lg:px-12">
+            <div class="flex flex-col md:flex-row">
+                <!-- Main Content - 4/5 width -->
+                <div class="md:w-4/5 md:pr-8">
+                    <!-- Overview Section -->
+                    <section id="overview" class="mb-12" data-aos="fade-up" data-aos-duration="800">
+                        <h2>Overview</h2>
+
+                        <!-- Main Content -->
+                        <div class="challenge-opportunity">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                                <div>
+                                    <h3>Problem</h3>
+                                    <p class="text-highlight">The salon was using multiple tools for different tasks,
+                                        leading to inefficient workflows and increased costs. They needed a centralized
+                                        system to manage bookings, customer data, and business operations.</p>
+                                </div>
+
+                                <div>
+                                    <h3>Solution</h3>
+                                    <p class="text-highlight">I designed and developed a custom CRM system that
+                                        seamlessly integrates booking management, customer database, staff
+                                        scheduling, salary and income calculation, and automated workflows. Tailored
+                                        specifically for small businesses, the
+                                        system ensures cost-effectiveness and operational efficiency.</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-8">
+                                <h3>Impact:</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 my-4">
+                                    <!-- Cost Savings -->
+                                    <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg text-center">
+                                        <div class="text-primary text-highlight mb-2">$100/month</div>
+                                        <div class="text-sm">Subscription Savings</div>
+                                        <p class="text-xs mt-1">Eliminated multiple tool costs</p>
+                                    </div>
+                                    <!-- Time Savings -->
+                                    <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg text-center">
+                                        <div class="text-primary text-highlight mb-2">5+ hours/month</div>
+                                        <div class="text-sm">Time Saved</div>
+                                        <p class="text-xs mt-1">Automated manual processes</p>
+                                    </div>
+                                    <!-- Customer Database -->
+                                    <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg text-center">
+                                        <div class="text-primary text-highlight mb-2">300+</div>
+                                        <div class="text-sm">Customer Records</div>
+                                        <p class="text-xs mt-1">Centralized customer data</p>
+                                    </div>
+                                    <!-- Booking Efficiency -->
+                                    <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg text-center">
+                                        <div class="text-primary text-highlight mb-2">24/7</div>
+                                        <div class="text-sm">Booking Availability</div>
+                                        <p class="text-xs mt-1">Automated booking system</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                                    <div>
+                                        <h4>Timeline</h4>
+                                        <li>Two Months (2024)</li>
+                                    </div>
+                                    <div>
+                                        <h4>Key Features</h4>
+                                        <li>Booking Management</li>
+                                        <li>Customer Database</li>
+                                        <li>Staff Scheduling</li>
+                                        <li>Service Management</li>
+                                    </div>
+                                    <div>
+                                        <h4>&nbsp;</h4>
+                                        <li>Automated Workflows</li>
+                                        <li>Performance Analytics</li>
+                                        <li>Inventory Tracking</li>
+                                        <li>Financial Reports</li>
+                                    </div>
+                                    <div>
+                                        <h4>Tech Stack</h4>
+                                        <li>Next.js</li>
+                                        <li>Supabase</li>
+                                        <li>Tailwind CSS</li>
+                                        <li>TypeScript</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- System Architecture Section -->
+                    <section id="architecture" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="mb-8">System Architecture</h2>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
+                            <div class="space-y-4">
+                                <h3 class="mb-4">Technical Overview</h3>
+                                <p>The CRM system is built with modern technologies to ensure:</p>
+                                <ul class="list-disc pl-6">
+                                    <li>Scalability for future growth</li>
+                                    <li>Real-time data synchronization</li>
+                                    <li>Secure data handling</li>
+                                    <li>Easy maintenance and updates</li>
+                                    <li>Mobile-first responsive design</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="../image/naillabo/architecture.webp" alt="System Architecture Diagram"
+                                    class="w-full zoomable" loading="lazy">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Key Features Section -->
+                    <section id="features" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="mb-8">Key Features</h2>
+
+                        <!-- Booking Management -->
+                        <div class="mb-12 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 class="text-primary mb-4">Booking Management</h3>
+                                    <ul class="list-disc pl-6 space-y-2">
+                                        <li>Real-time availability updates</li>
+                                        <li>Automated confirmation system</li>
+                                        <li>Smart scheduling algorithm</li>
+                                        <li>Service combination suggestions</li>
+                                        <li>Customizable booking rules</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="../image/naillabo/booking-system.webp" alt="Booking Management Interface"
+                                        class="w-full zoomable" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Customer Management -->
+                        <div class="mb-12 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <img src="../image/naillabo/customer-management.webp"
+                                        alt="Customer Management Interface" class="w-full zoomable" loading="lazy">
+                                </div>
+                                <div>
+                                    <h3 class="text-primary mb-4">Customer Management</h3>
+                                    <ul class="list-disc pl-6 space-y-2">
+                                        <li>Detailed customer profiles</li>
+                                        <li>Service history tracking</li>
+                                        <li>Preference management</li>
+                                        <li>Automated reminders</li>
+                                        <li>Loyalty program integration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Staff Management -->
+                        <div class="mb-12 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 class="text-primary mb-4">Staff Management</h3>
+                                    <ul class="list-disc pl-6 space-y-2">
+                                        <li>Schedule optimization</li>
+                                        <li>Performance tracking</li>
+                                        <li>Commission calculation</li>
+                                        <li>Time-off management</li>
+                                        <li>Skill set mapping</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="../image/naillabo/staff-management.webp" alt="Staff Management Interface"
+                                        class="w-full zoomable" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Development Process -->
+                    <section id="process" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="mb-8">Development Process</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Research Phase -->
+                            <div class="bg-white bg-opacity-30 rounded-lg p-6">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                        <i class="fa-solid fa-magnifying-glass text-primary text-xl"></i>
+                                    </div>
+                                    <h3>Research</h3>
+                                </div>
+                                <p>Conducted extensive research on existing salon management systems and identified key
+                                    pain points in current workflows.</p>
+                            </div>
+
+                            <!-- Design Phase -->
+                            <div class="bg-white bg-opacity-30 rounded-lg p-6">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                        <i class="fa-solid fa-pencil text-primary text-xl"></i>
+                                    </div>
+                                    <h3>Design</h3>
+                                </div>
+                                <p>Created wireframes and prototypes with focus on user experience and efficient
+                                    workflow management.</p>
+                            </div>
+
+                            <!-- Implementation Phase -->
+                            <div class="bg-white bg-opacity-30 rounded-lg p-6">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                        <i class="fa-solid fa-code text-primary text-xl"></i>
+                                    </div>
+                                    <h3>Implementation</h3>
+                                </div>
+                                <p>Developed the system using modern technologies and implemented automated workflows
+                                    for efficiency.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Results Section -->
+                    <section id="results" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="mb-8">Results & Impact</h2>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white bg-opacity-30 p-8 rounded-lg border border-gray-200">
+                            <div>
+                                <h3 class="mb-4">Business Impact</h3>
+                                <ul class="list-disc pl-6 space-y-2">
+                                    <li>Reduced operational costs by eliminating multiple subscription fees</li>
+                                    <li>Improved staff efficiency through automated workflows</li>
+                                    <li>Enhanced customer satisfaction with streamlined booking process</li>
+                                    <li>Better business insights through comprehensive reporting</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="../image/naillabo/results-dashboard.webp" alt="Results Dashboard"
+                                    class="w-full zoomable" loading="lazy">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Takeaways Section -->
+                    <section id="takeaways" class="mb-12" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="mb-4">Takeaways</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Takeaway 1 -->
+                            <div class="bg-white bg-opacity-30 rounded-lg p-6">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                        <i class="fa-solid fa-lightbulb text-primary text-xl"></i>
+                                    </div>
+                                    <h3>User-Centric Design</h3>
+                                </div>
+                                <p>Understanding user workflows and pain points is crucial for creating an effective
+                                    business solution.</p>
+                            </div>
+
+                            <!-- Takeaway 2 -->
+                            <div class="bg-white bg-opacity-30 rounded-lg p-6">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                        <i class="fa-solid fa-gears text-primary text-xl"></i>
+                                    </div>
+                                    <h3>Automation Impact</h3>
+                                </div>
+                                <p>Strategic automation of routine tasks can significantly improve operational
+                                    efficiency and reduce costs.</p>
+                            </div>
+
+                            <!-- Takeaway 3 -->
+                            <div class="bg-white bg-opacity-30 rounded-lg p-6">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="bg-primary bg-opacity-20 rounded-full p-4">
+                                        <i class="fa-solid fa-chart-line text-primary text-xl"></i>
+                                    </div>
+                                    <h3>Data-Driven Decisions</h3>
+                                </div>
+                                <p>Implementing comprehensive analytics helps businesses make informed decisions and
+                                    optimize operations.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Side Navigation -->
+                <nav class="md:w-1/5 mb-8 md:mb-0 md:pl-24 md:relative bg-transparent z-50 md:z-auto">
+                    <div class="md:sticky md:top-24 md:mr-[-2rem]">
+                        <ul
+                            class="flex md:flex-col space-x-4 md:space-x-0 md:space-y-2 overflow-x-auto md:overflow-visible p-4 md:p-0 whitespace-nowrap">
+                            <li><a href="#overview" class="text-gray-900 hover:text-primary">Overview</a></li>
+                            <li><a href="#architecture" class="text-gray-900 hover:text-primary">Architecture</a></li>
+                            <li><a href="#features" class="text-gray-900 hover:text-primary">Key Features</a></li>
+                            <li><a href="#process" class="text-gray-900 hover:text-primary">Development Process</a></li>
+                            <li><a href="#results" class="text-gray-900 hover:text-primary">Results</a></li>
+                            <li><a href="#takeaways" class="text-gray-900 hover:text-primary">Takeaways</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Project Navigation -->
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="flex justify-between items-center gap-8">
+                <a href="naillabo.html" class="group flex items-center gap-3 transition-all duration-300">
+                    <div class="relative">
+                        <div
+                            class="w-10 h-10 flex items-center justify-center rounded-full border border-primary group-hover:border-primary transition-all duration-300">
+                            <svg class="w-5 h-5 text-primary group-hover:text-primary transform group-hover:-translate-x-1 transition-all duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm text-gray-600">Previous Project</span>
+                        <span
+                            class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">Naillabo
+                            Website</span>
+                    </div>
+                </a>
+
+                <div
+                    class="h-[0.5px] flex-1 max-w-[200px] bg-gradient-to-r from-transparent via-gray-300 to-transparent">
+                </div>
+
+                <a href="aiinlink.html" class="group flex items-center gap-3 transition-all duration-300">
+                    <div class="flex flex-col items-end">
+                        <span class="text-sm text-gray-600">Next Project</span>
+                        <span class="text-lg text-gray-900 group-hover:text-primary transition-colors duration-300">AI
+                            Inlink</span>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="w-10 h-10 flex items-center justify-center rounded-full border border-primary group-hover:border-primary transition-all duration-300">
+                            <svg class="w-5 h-5 text-primary group-hover:text-primary transform group-hover:translate-x-1 transition-all duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <footer class="bg-transparent py-24 pb-4 relative">
+            <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="italic text-center mb-24">
+                    I am looking for job opportunities and would love to connect with you.
+                </h2>
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+                    <p class="text-gray-900 order-1 md:order-1">
+                        2024 Janka Rong. All rights reserved.
+                    </p>
+                    <div class="flex space-x-4 order-2 md:order-2">
+                        <a href="https://www.linkedin.com/in/jankarong-bcit-newmediawebdesign/"
+                            class="text-gray-900 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="mailto:jankarong@gmail.com"
+                            class="text-gray-900 hover:text-primary transition-colors duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-900 order-3 md:order-3">
+                        jankarong@gmail.com
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="zoomOverlay">
+        <img src="" alt="Zoomed Image" id="zoomedImage">
+    </div>
+    <div id="custom-cursor"
+        class="fixed w-24 h-24 pointer-events-none hidden items-center justify-center text-gray-700 text-base bg-white/10 backdrop-blur-md border border-primary rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50 shadow-lg hover:scale-105">
+        View More
+    </div>
+
+    <div id="default-cursor"
+        class="fixed w-8 h-8 pointer-events-none hidden items-center justify-center rounded-full transition-all duration-300 ease-out transform -translate-x-1/2 -translate-y-1/2 z-50">
+        <div class="w-full h-full rounded-full border border-primary p-[1px] animate-spin-slow">
+            <div class="w-full h-full rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center">
+                <div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/toogle.js"></script>
+    <script src="../js/transition.js"></script>
+    <script src="../js/zoomable.js"></script>
+    <script src="../js/cursortrail.js"></script>
+    <script src="../js/scroll-nav.js"></script>
+    <script src="../js/animation-settings.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/backToTop.js" defer></script>
+
+    <!-- Back to Top Button -->
+    <div id="backToTopContainer">
+        <div id="backToTopArrow"></div>
+        <div id="backToTopLine"></div>
+    </div>
+</body>
+
+</html>
